@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #0d1117;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unicam.cs.mpgc.RPG122755.controller.PiantaOspedaleController">
+
+    <!-- ══════════ HEADER ══════════ -->
+    <top>
+        <VBox alignment="CENTER" spacing="2.0" style="-fx-background-color: #161b22;">
+            <padding>
+                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+            </padding>
+            <Label text="OSPEDALE CENTRALE — Pianta" textFill="#58a6ff">
+                <font><Font name="System Bold" size="18.0" /></font>
+            </Label>
+            <Label fx:id="lblGiornoCorrente" text="Giorno 1  —  Stato: Operativo" textFill="#8b949e">
+                <font><Font name="System Italic" size="12.0" /></font>
+            </Label>
+        </VBox>
+    </top>
+
+    <!-- ══════════ PIANTA ══════════ -->
+    <center>
+        <Pane prefHeight="650.0" prefWidth="1200.0" style="-fx-background-color: #0d1117;">
+
+            <!-- Mura esterne -->
+            <Rectangle arcHeight="8" arcWidth="8" fill="TRANSPARENT" height="614.0" layoutX="34.0" layoutY="20.0" stroke="#30363d" strokeWidth="4.0" width="1110.0" />
+            <!-- Pavimento interno -->
+            <Rectangle fill="#161b22" height="602" layoutX="39.0" layoutY="24.0" stroke="TRANSPARENT" width="1102" />
+
+            <!-- ────────────────────────────────
+                 CORRIDOIO ORIZZONTALE PRINCIPALE
+                 ──────────────────────────────── -->
+            <Rectangle fill="#1c2333" height="75" layoutX="44" layoutY="280" stroke="#30363d" strokeWidth="1.0" width="1102" />
+            <Line endX="1146" endY="317" startX="44" startY="317" stroke="#30363d" strokeDashArray="10,8" strokeWidth="1.0" />
+            <Text fill="#484f58" layoutX="510" layoutY="322">
+                <font><Font name="System Bold" size="11.0" /></font>
+            </Text>
+
+            <!-- CORRIDOIO VERTICALE CENTRALE -->
+            <Rectangle fill="#1c2333" height="256" layoutX="545" layoutY="24" stroke="#30363d" strokeWidth="1.0" width="65" />
+            <Rectangle fill="#1c2333" height="271" layoutX="545" layoutY="355" stroke="#30363d" strokeWidth="1.0" width="65" />
+            <Line endX="577" endY="280" startX="577" startY="24" stroke="#30363d" strokeDashArray="8,6" strokeWidth="1.0" />
+            <Line endX="577" endY="626" startX="577" startY="355" stroke="#30363d" strokeDashArray="8,6" strokeWidth="1.0" />
+
+            <!-- ════════════════════════════════
+                 ALA SINISTRA — SOPRA CORRIDOIO
+                 ════════════════════════════════ -->
+
+            <!-- PRONTO SOCCORSO -->
+            <Button fx:id="btnProntoSoccorso" alignment="TOP_CENTER" layoutX="50.0" layoutY="30.0" prefHeight="120" prefWidth="230" style="-fx-background-color: #1a1f2b; -fx-border-color: #f85149; -fx-border-width: 2.5; -fx-border-radius: 6; -fx-background-radius: 6; -fx-text-fill: #f85149; -fx-font-weight: bold; -fx-font-size: 12; -fx-padding: 12 5 5 5;" text="PRONTO SOCCORSO" wrapText="true" />
+            <Circle fill="#f85149" layoutX="75" layoutY="55" opacity="0.7" radius="7" />
+            <Text fill="WHITE" layoutX="70" layoutY="60" text="✚">
+                <font><Font name="System Bold" size="9.0" /></font>
+            </Text>
+            <!-- Letti PS (fila 1) -->
+            <Rectangle arcHeight="3" arcWidth="3" fill="#21262d" height="18" layoutX="65" layoutY="75" stroke="#f85149" strokeWidth="1.0" width="36" />
+            <Rectangle fill="#f85149" height="14" layoutX="65" layoutY="77" opacity="0.3" width="9" />
+            <Circle fill="#8b949e" layoutX="83" layoutY="71" radius="4" />
+
+            <Rectangle arcHeight="3" arcWidth="3" fill="#21262d" height="18" layoutX="112" layoutY="75" stroke="#f85149" strokeWidth="1.0" width="36" />
+            <Rectangle fill="#f85149" height="14" layoutX="112" layoutY="77" opacity="0.3" width="9" />
+            <Circle fill="#8b949e" layoutX="130" layoutY="71" radius="4" />
+
+            <Rectangle arcHeight="3" arcWidth="3" fill="#21262d" height="18" layoutX="159" layoutY="75" stroke="#f85149" strokeWidth="1.0" width="36" />
+            <Rectangle fill="#f85149" height="14" layoutX="159" layoutY="77" opacity="0.3" width="9" />
+            <!-- Letti PS (fila 2) -->
+            <Rectangle arcHeight="3" arcWidth="3" fill="#21262d" height="18" layoutX="65" layoutY="112" stroke="#f85149" strokeWidth="1.0" width="36" />
+            <Rectangle fill="#f85149" height="14" layoutX="65" layoutY="114" opacity="0.3" width="9" />
+            <Circle fill="#8b949e" layoutX="83" layoutY="108" radius="4" />
+
+            <Rectangle arcHeight="3" arcWidth="3" fill="#21262d" height="18" layoutX="112" layoutY="112" stroke="#f85149" strokeWidth="1.0" width="36" />
+            <Rectangle fill="#f85149" height="14" layoutX="112" layoutY="114" opacity="0.3" width="9" />
+
+            <Rectangle arcHeight="3" arcWidth="3" fill="#21262d" height="18" layoutX="159" layoutY="112" stroke="#f85149" strokeWidth="1.0" width="36" />
+            <Circle fill="#8b949e" layoutX="177" layoutY="108" radius="4" />
+
+            <Circle fx:id="ledProntoSoccorso" fill="#2ecc71" layoutX="265" layoutY="40" radius="6" />
+            <Text fill="#484f58" layoutX="54" layoutY="142" text="6 letti">
+                <font><Font size="9.0" /></font>
+            </Text>
+
+            <!-- CHIRURGIA -->
+            <Button fx:id="btnChirurgia" alignment="TOP_CENTER" layoutX="50.0" layoutY="160.0" prefHeight="110" prefWidth="230" style="-fx-background-color: #1a1f2b; -fx-border-color: #58a6ff; -fx-border-width: 2.5; -fx-border-radius: 6; -fx-background-radius: 6; -fx-text-fill: #58a6ff; -fx-font-weight: bold; -fx-font-size: 12; -fx-padding: 12 5 5 5;" text="CHIRURGIA" wrapText="true" />
+            <!-- Tavolo operatorio 1 -->
+            <Rectangle arcHeight="5" arcWidth="5" fill="#21262d" height="22" layoutX="70" layoutY="200" stroke="#58a6ff" strokeWidth="1.5" width="50" />
+            <Circle fill="TRANSPARENT" layoutX="95" layoutY="195" opacity="0.5" radius="7" stroke="#58a6ff" strokeWidth="1.0" />
+            <Text fill="#58a6ff" layoutX="90" layoutY="213" text="✚">
+                <font><Font size="8.0" /></font>
+            </Text>
+            <!-- Tavolo operatorio 2 -->
+            <Rectangle arcHeight="5" arcWidth="5" fill="#21262d" height="22" layoutX="155" layoutY="200" stroke="#58a6ff" strokeWidth="1.5" width="50" />
+            <Circle fill="TRANSPARENT" layoutX="180" layoutY="195" opacity="0.5" radius="7" stroke="#58a6ff" strokeWidth="1.0" />
+            <Text fill="#58a6ff" layoutX="175" layoutY="213" text="✚">
+                <font><Font size="8.0" /></font>
+            </Text>
+            <!-- Strumenti -->
+            <Rectangle fill="#58a6ff" height="8" layoutX="70" layoutY="238" opacity="0.1" width="130" />
+            <Circle fx:id="ledChirurgia" fill="#2ecc71" layoutX="265" layoutY="170" radius="6" />
+            <Text fill="#484f58" layoutX="54" layoutY="258" text="2 sale operatorie">
+                <font><Font size="9.0" /></font>
+            </Text>
+
+            <!-- ════════════════════════════════
+                 ALA SINISTRA — SOTTO CORRIDOIO
+                 ════════════════════════════════ -->
+
+            <!-- PEDIATRIA -->
+            <Button fx:id="btnPediatria" alignment="TOP_CENTER" layoutX="50" layoutY="365" prefHeight="120" prefWidth="220" style="-fx-background-color: #1a1f2b; -fx-border-color: #3fb950; -fx-border-width: 2.5; -fx-border-radius: 6; -fx-background-radius: 6; -fx-text-fill: #3fb950; -fx-font-weight: bold; -fx-font-size: 12; -fx-padding: 12 5 5 5;" text="PEDIATRIA" wrapText="true" />
+            <!-- Lettini piccoli (fila 1) -->
+            <Rectangle arcHeight="3" arcWidth="3" fill="#21262d" height="14" layoutX="65" layoutY="400" stroke="#3fb950" strokeWidth="1.0" width="28" />
+            <Circle fill="#8b949e" layoutX="79" layoutY="396" radius="3" />
+            <Rectangle arcHeight="3" arcWidth="3" fill="#21262d" height="14" layoutX="105" layoutY="400" stroke="#3fb950" strokeWidth="1.0" width="28" />
+            <Circle fill="#8b949e" layoutX="119" layoutY="396" radius="3" />
+            <Rectangle arcHeight="3" arcWidth="3" fill="#21262d" height="14" layoutX="145" layoutY="400" stroke="#3fb950" strokeWidth="1.0" width="28" />
+            <Rectangle arcHeight="3" arcWidth="3" fill="#21262d" height="14" layoutX="185" layoutY="400" stroke="#3fb950" strokeWidth="1.0" width="28" />
+            <Circle fill="#8b949e" layoutX="199" layoutY="396" radius="3" />
+            <!-- Lettini piccoli (fila 2) -->
+            <Rectangle arcHeight="3" arcWidth="3" fill="#21262d" height="14" layoutX="65" layoutY="432" stroke="#3fb950" strokeWidth="1.0" width="28" />
+            <Rectangle arcHeight="3" arcWidth="3" fill="#21262d" height="14" layoutX="105" layoutY="432" stroke="#3fb950" strokeWidth="1.0" width="28" />
+            <Circle fill="#8b949e" layoutX="119" layoutY="428" radius="3" />
+            <!-- Zona giochi -->
+            <Circle fill="#3fb950" layoutX="78" layoutY="462" opacity="0.2" radius="5" />
+            <Circle fill="#d2a8ff" layoutX="95" layoutY="458" opacity="0.2" radius="4" />
+            <Circle fill="#f0883e" layoutX="112" layoutY="462" opacity="0.2" radius="5" />
+
+            <Circle fx:id="ledPediatria" fill="#2ecc71" layoutX="255" layoutY="375" radius="6" />
+            <Text fill="#484f58" layoutX="54" layoutY="476" text="6 letti">
+                <font><Font size="9.0" /></font>
+            </Text>
+
+            <!-- FARMACIA -->
+            <Button fx:id="btnFarmacia" alignment="TOP_CENTER" layoutX="50" layoutY="500" prefHeight="120" prefWidth="220" style="-fx-background-color: #1a1f2b; -fx-border-color: #d2a8ff; -fx-border-width: 2.5; -fx-border-radius: 6; -fx-background-radius: 6; -fx-text-fill: #d2a8ff; -fx-font-weight: bold; -fx-font-size: 12; -fx-padding: 12 5 5 5;" text="FARMACIA" wrapText="true" />
+            <!-- Scaffali -->
+            <Rectangle fill="#d2a8ff" height="7" layoutX="65" layoutY="535" opacity="0.15" width="65" />
+            <Rectangle fill="#d2a8ff" height="7" layoutX="65" layoutY="550" opacity="0.15" width="65" />
+            <Rectangle fill="#d2a8ff" height="7" layoutX="65" layoutY="565" opacity="0.15" width="65" />
+            <Rectangle fill="#d2a8ff" height="7" layoutX="65" layoutY="580" opacity="0.15" width="65" />
+            <!-- Flaconi -->
+            <Rectangle arcHeight="2" arcWidth="2" fill="#d2a8ff" height="10" layoutX="70" layoutY="530" opacity="0.5" width="6" />
+            <Rectangle arcHeight="2" arcWidth="2" fill="#d2a8ff" height="9" layoutX="82" layoutY="531" opacity="0.4" width="6" />
+            <Rectangle arcHeight="2" arcWidth="2" fill="#d2a8ff" height="10" layoutX="94" layoutY="530" opacity="0.6" width="6" />
+            <Rectangle arcHeight="2" arcWidth="2" fill="#f85149" height="8" layoutX="106" layoutY="532" opacity="0.4" width="6" />
+            <Rectangle arcHeight="2" arcWidth="2" fill="#58a6ff" height="10" layoutX="70" layoutY="546" opacity="0.4" width="6" />
+            <Rectangle arcHeight="2" arcWidth="2" fill="#d2a8ff" height="9" layoutX="82" layoutY="547" opacity="0.5" width="6" />
+            <!-- Banco dispensazione -->
+            <Rectangle fill="#d2a8ff" height="12" layoutX="155" layoutY="545" opacity="0.12" width="85" />
+            <Rectangle fill="#d2a8ff" height="2" layoutX="155" layoutY="545" opacity="0.4" width="85" />
+
+            <Circle fx:id="ledFarmacia" fill="#2ecc71" layoutX="255" layoutY="510" radius="6" />
+
+            <!-- ════════════════════════════════
+                 ALA DESTRA — SOPRA CORRIDOIO
+                 ════════════════════════════════ -->
+
+            <!-- CARDIOLOGIA -->
+            <Button fx:id="btnCardiologia" alignment="TOP_CENTER" layoutX="621.0" layoutY="24.0" prefHeight="120" prefWidth="240" style="-fx-background-color: #1a1f2b; -fx-border-color: #f778ba; -fx-border-width: 2.5; -fx-border-radius: 6; -fx-background-radius: 6; -fx-text-fill: #f778ba; -fx-font-weight: bold; -fx-font-size: 12; -fx-padding: 12 5 5 5;" text="CARDIOLOGIA" wrapText="true" />
+            <!-- Letti con monitor ECG -->
+            <Rectangle arcHeight="3" arcWidth="3" fill="#21262d" height="18" layoutX="635" layoutY="72" stroke="#f778ba" strokeWidth="1.0" width="36" />
+            <Rectangle fill="#f778ba" height="14" layoutX="635.0" layoutY="74.0" opacity="0.3" width="9" />
+            <Circle fill="#8b949e" layoutX="653" layoutY="68" radius="4" />
+            <!-- Monitor ECG -->
+            <Rectangle arcHeight="2" arcWidth="2" fill="#21262d" height="10" layoutX="678" layoutY="67" stroke="#f778ba" strokeWidth="0.8" width="14" />
+            <Line endX="684" endY="69" startX="681" startY="72" stroke="#f778ba" strokeWidth="0.8" />
+            <Line endX="687" endY="75" startX="684" startY="69" stroke="#f778ba" strokeWidth="0.8" />
+            <Line endX="689" endY="72" startX="687" startY="75" stroke="#f778ba" strokeWidth="0.8" />
+
+            <Rectangle arcHeight="3" arcWidth="3" fill="#21262d" height="18" layoutX="710" layoutY="72" stroke="#f778ba" strokeWidth="1.0" width="36" />
+            <Rectangle fill="#f778ba" height="14" layoutX="710" layoutY="74" opacity="0.3" width="9" />
+            <Circle fill="#8b949e" layoutX="728" layoutY="68" radius="4" />
+
+            <Rectangle arcHeight="3" arcWidth="3" fill="#21262d" height="18" layoutX="763" layoutY="72" stroke="#f778ba" strokeWidth="1.0" width="36" />
+            <Rectangle fill="#f778ba" height="14" layoutX="763" layoutY="74" opacity="0.3" width="9" />
+
+            <Rectangle arcHeight="3" arcWidth="3" fill="#21262d" height="18" layoutX="635" layoutY="108" stroke="#f778ba" strokeWidth="1.0" width="36" />
+            <Circle fill="#8b949e" layoutX="653" layoutY="104" radius="4" />
+            <Rectangle arcHeight="3" arcWidth="3" fill="#21262d" height="18" layoutX="710" layoutY="108" stroke="#f778ba" strokeWidth="1.0" width="36" />
+            <Circle fill="#8b949e" layoutX="728" layoutY="104" radius="4" />
+
+            <Circle fx:id="ledCardiologia" fill="#2ecc71" layoutX="845" layoutY="40" radius="6" />
+            <Text fill="#484f58" layoutX="624" layoutY="142" text="5 letti">
+                <font><Font size="9.0" /></font>
+            </Text>
+
+            <!-- ONCOLOGIA -->
+            <Button fx:id="btnOncologia" alignment="TOP_CENTER" layoutX="624.0" layoutY="155.0" prefHeight="110" prefWidth="240" style="-fx-background-color: #1a1f2b; -fx-border-color: #d29922; -fx-border-width: 2.5; -fx-border-radius: 6; -fx-background-radius: 6; -fx-text-fill: #d29922; -fx-font-weight: bold; -fx-font-size: 12; -fx-padding: 12 5 5 5;" text="ONCOLOGIA" wrapText="true" />
+            <!-- Poltrone chemioterapia -->
+            <Rectangle arcHeight="5" arcWidth="5" fill="#21262d" height="22" layoutX="640" layoutY="200" stroke="#d29922" strokeWidth="1.0" width="22" />
+            <Circle fill="#8b949e" layoutX="651" layoutY="196" radius="4" />
+            <Line endX="665" endY="220" startX="665" startY="200" stroke="#d29922" strokeWidth="1.0" />
+            <Circle fill="#d29922" layoutX="665" layoutY="197" opacity="0.5" radius="3" />
+
+            <Rectangle arcHeight="5" arcWidth="5" fill="#21262d" height="22" layoutX="692" layoutY="200" stroke="#d29922" strokeWidth="1.0" width="22" />
+            <Circle fill="#8b949e" layoutX="703" layoutY="196" radius="4" />
+
+            <Rectangle arcHeight="5" arcWidth="5" fill="#21262d" height="22" layoutX="744" layoutY="200" stroke="#d29922" strokeWidth="1.0" width="22" />
+            <Rectangle arcHeight="5" arcWidth="5" fill="#21262d" height="22" layoutX="796" layoutY="200" stroke="#d29922" strokeWidth="1.0" width="22" />
+            <Circle fill="#8b949e" layoutX="807" layoutY="196" radius="4" />
+
+            <Circle fx:id="ledOncologia" fill="#2ecc71" layoutX="845" layoutY="170" radius="6" />
+            <Text fill="#484f58" layoutX="624" layoutY="258" text="4 poltrone">
+                <font><Font size="9.0" /></font>
+            </Text>
+
+            <!-- ════════════════════════════════
+                 ALA DESTRA — SOTTO CORRIDOIO
+                 ════════════════════════════════ -->
+
+            <!-- RADIOLOGIA / TAC -->
+            <Button fx:id="btnRadiologia" alignment="TOP_CENTER" layoutX="620" layoutY="365" prefHeight="120" prefWidth="240" style="-fx-background-color: #1a1f2b; -fx-border-color: #79c0ff; -fx-border-width: 2.5; -fx-border-radius: 6; -fx-background-radius: 6; -fx-text-fill: #79c0ff; -fx-font-weight: bold; -fx-font-size: 12; -fx-padding: 12 5 5 5;" text="RADIOLOGIA" wrapText="true" />
+            <!-- Macchinario TAC (anello) -->
+            <Circle fill="TRANSPARENT" layoutX="700" layoutY="435" radius="28" stroke="#79c0ff" strokeWidth="2.0" />
+            <Circle fill="#79c0ff" layoutX="700" layoutY="435" opacity="0.07" radius="16" />
+            <Rectangle arcHeight="3" arcWidth="3" fill="#21262d" height="12" layoutX="683" layoutY="429" stroke="#79c0ff" strokeWidth="0.8" width="34" />
+            <Text fill="#79c0ff" layoutX="688" layoutY="439" text="TAC">
+                <font><Font name="System Bold" size="8.0" /></font>
+            </Text>
+            <!-- Schermo refertazione -->
+            <Rectangle arcHeight="2" arcWidth="2" fill="#21262d" height="22" layoutX="770" layoutY="400" stroke="#79c0ff" strokeWidth="1.0" width="32" />
+            <Rectangle fill="#79c0ff" height="12" layoutX="775" layoutY="405" opacity="0.12" width="22" />
+
+            <Circle fx:id="ledRadiologia" fill="#2ecc71" layoutX="845" layoutY="375" radius="6" />
+
+            <!-- LABORATORIO ANALISI -->
+            <Button fx:id="btnLaboratorio" alignment="TOP_CENTER" layoutX="620" layoutY="500" prefHeight="120" prefWidth="240" style="-fx-background-color: #1a1f2b; -fx-border-color: #7ee787; -fx-border-width: 2.5; -fx-border-radius: 6; -fx-background-radius: 6; -fx-text-fill: #7ee787; -fx-font-weight: bold; -fx-font-size: 11; -fx-padding: 12 5 5 5;" text="LABORATORIO ANALISI" wrapText="true" />
+            <!-- Bancone -->
+            <Rectangle fill="#7ee787" height="9" layoutX="635" layoutY="540" opacity="0.12" width="100" />
+            <Rectangle fill="#7ee787" height="2" layoutX="635" layoutY="540" opacity="0.35" width="100" />
+            <!-- Provette colorate -->
+            <Rectangle arcHeight="1" arcWidth="1" fill="#f85149" height="11" layoutX="640" layoutY="530" opacity="0.6" width="5" />
+            <Rectangle arcHeight="1" arcWidth="1" fill="#58a6ff" height="10" layoutX="650" layoutY="531" opacity="0.6" width="5" />
+            <Rectangle arcHeight="1" arcWidth="1" fill="#3fb950" height="11" layoutX="660" layoutY="530" opacity="0.6" width="5" />
+            <Rectangle arcHeight="1" arcWidth="1" fill="#d29922" height="9" layoutX="670" layoutY="532" opacity="0.6" width="5" />
+            <Rectangle arcHeight="1" arcWidth="1" fill="#d2a8ff" height="11" layoutX="680" layoutY="530" opacity="0.6" width="5" />
+            <!-- Microscopio -->
+            <Circle fill="TRANSPARENT" layoutX="775" layoutY="560" opacity="0.5" radius="9" stroke="#7ee787" strokeWidth="1.0" />
+            <Rectangle fill="#7ee787" height="14" layoutX="771" layoutY="564" opacity="0.15" width="8" />
+            <!-- Secondo bancone -->
+            <Rectangle fill="#7ee787" height="9" layoutX="635" layoutY="570" opacity="0.12" width="100" />
+
+            <Circle fx:id="ledLaboratorio" fill="#2ecc71" layoutX="845" layoutY="510" radius="6" />
+
+            <!-- ════════════════════════════════
+                 ALA DESTRA ESTREMA — DEGENZA
+                 ════════════════════════════════ -->
+
+            <!-- Struttura degenza -->
+            <Button fx:id="btnDegenza" alignment="TOP_CENTER" layoutX="880" layoutY="30" prefHeight="250" prefWidth="258" style="-fx-background-color: #1a1f2b; -fx-border-color: #8b949e; -fx-border-width: 2; -fx-border-radius: 6; -fx-background-radius: 6; -fx-text-fill: #8b949e; -fx-font-weight: bold; -fx-font-size: 13; -fx-padding: 12 5 5 5;" text="DEGENZA" wrapText="true" />
+            <!-- Camera 101 -->
+            <Rectangle arcHeight="3" arcWidth="3" fill="#21262d" height="60" layoutX="893" layoutY="65" stroke="#484f58" strokeWidth="1.0" width="112" />
+            <Text fill="#484f58" layoutX="900" layoutY="79" text="Camera 101">
+                <font><Font size="8.0" /></font>
+            </Text>
+            <Rectangle arcHeight="2" arcWidth="2" fill="#21262d" height="14" layoutX="902" layoutY="88" stroke="#8b949e" strokeWidth="0.8" width="32" />
+            <Circle fill="#8b949e" layoutX="918" layoutY="84" radius="3" />
+            <Rectangle arcHeight="2" arcWidth="2" fill="#21262d" height="14" layoutX="945" layoutY="88" stroke="#8b949e" strokeWidth="0.8" width="32" />
+            <Circle fill="#8b949e" layoutX="961" layoutY="84" radius="3" />
+
+            <!-- Camera 102 -->
+            <Rectangle arcHeight="3" arcWidth="3" fill="#21262d" height="60" layoutX="1018" layoutY="65" stroke="#484f58" strokeWidth="1.0" width="112" />
+            <Text fill="#484f58" layoutX="1025" layoutY="79" text="Camera 102">
+                <font><Font size="8.0" /></font>
+            </Text>
+            <Rectangle arcHeight="2" arcWidth="2" fill="#21262d" height="14" layoutX="1027" layoutY="88" stroke="#8b949e" strokeWidth="0.8" width="32" />
+            <Circle fill="#8b949e" layoutX="1043" layoutY="84" radius="3" />
+            <Rectangle arcHeight="2" arcWidth="2" fill="#21262d" height="14" layoutX="1070" layoutY="88" stroke="#8b949e" strokeWidth="0.8" width="32" />
+
+            <!-- Camera 103 -->
+            <Rectangle arcHeight="3" arcWidth="3" fill="#21262d" height="60" layoutX="893" layoutY="140" stroke="#484f58" strokeWidth="1.0" width="112" />
+            <Text fill="#484f58" layoutX="900" layoutY="154" text="Camera 103">
+                <font><Font size="8.0" /></font>
+            </Text>
+            <Rectangle arcHeight="2" arcWidth="2" fill="#21262d" height="14" layoutX="902" layoutY="163" stroke="#8b949e" strokeWidth="0.8" width="32" />
+            <Circle fill="#8b949e" layoutX="918" layoutY="159" radius="3" />
+            <Rectangle arcHeight="2" arcWidth="2" fill="#21262d" height="14" layoutX="945" layoutY="163" stroke="#8b949e" strokeWidth="0.8" width="32" />
+
+            <!-- Camera 104 -->
+            <Rectangle arcHeight="3" arcWidth="3" fill="#21262d" height="60" layoutX="1018" layoutY="140" stroke="#484f58" strokeWidth="1.0" width="112" />
+            <Text fill="#484f58" layoutX="1025" layoutY="154" text="Camera 104">
+                <font><Font size="8.0" /></font>
+            </Text>
+            <Rectangle arcHeight="2" arcWidth="2" fill="#21262d" height="14" layoutX="1027" layoutY="163" stroke="#8b949e" strokeWidth="0.8" width="32" />
+            <Rectangle arcHeight="2" arcWidth="2" fill="#21262d" height="14" layoutX="1070" layoutY="163" stroke="#8b949e" strokeWidth="0.8" width="32" />
+            <Circle fill="#8b949e" layoutX="1086" layoutY="159" radius="3" />
+
+            <Text fill="#484f58" layoutX="940" layoutY="220" text="8 letti — 4 camere">
+                <font><Font size="9.0" /></font>
+            </Text>
+
+            <!-- Corridoio interno degenza -->
+            <Line endX="1130" endY="215" startX="883" startY="215" stroke="#30363d" strokeDashArray="6,5" strokeWidth="1.0" />
+
+            <!-- Camera 105 -->
+            <Rectangle arcHeight="3" arcWidth="3" fill="#21262d" height="50" layoutX="893" layoutY="220" stroke="#484f58" strokeWidth="1.0" width="112" />
+            <Text fill="#484f58" layoutX="900" layoutY="234" text="Camera 105">
+                <font><Font size="8.0" /></font>
+            </Text>
+            <Rectangle arcHeight="2" arcWidth="2" fill="#21262d" height="14" layoutX="902" layoutY="242" stroke="#8b949e" strokeWidth="0.8" width="32" />
+            <Circle fill="#8b949e" layoutX="918" layoutY="238" radius="3" />
+            <Rectangle arcHeight="2" arcWidth="2" fill="#21262d" height="14" layoutX="945" layoutY="242" stroke="#8b949e" strokeWidth="0.8" width="32" />
+
+            <!-- Camera 106 -->
+            <Rectangle arcHeight="3" arcWidth="3" fill="#21262d" height="50" layoutX="1018" layoutY="220" stroke="#484f58" strokeWidth="1.0" width="112" />
+            <Text fill="#484f58" layoutX="1025" layoutY="234" text="Camera 106">
+                <font><Font size="8.0" /></font>
+            </Text>
+            <Rectangle arcHeight="2" arcWidth="2" fill="#21262d" height="14" layoutX="1027" layoutY="242" stroke="#8b949e" strokeWidth="0.8" width="32" />
+            <Rectangle arcHeight="2" arcWidth="2" fill="#21262d" height="14" layoutX="1070" layoutY="242" stroke="#8b949e" strokeWidth="0.8" width="32" />
+            <Circle fill="#8b949e" layoutX="1043" layoutY="238" radius="3" />
+
+            <!-- ════════════════════════════════
+                 ALA DESTRA ESTREMA — SOTTO
+                 ════════════════════════════════ -->
+
+            <!-- DIREZIONE SANITARIA -->
+            <Button fx:id="btnDirezione" alignment="TOP_CENTER" layoutX="880" layoutY="365" prefHeight="100" prefWidth="258" style="-fx-background-color: #1a1f2b; -fx-border-color: #a371f7; -fx-border-width: 2; -fx-border-radius: 6; -fx-background-radius: 6; -fx-text-fill: #a371f7; -fx-font-weight: bold; -fx-font-size: 11; -fx-padding: 12 5 5 5;" text="DIREZIONE SANITARIA" wrapText="true" />
+            <!-- Scrivanie -->
+            <Rectangle arcHeight="3" arcWidth="3" fill="#a371f7" height="20" layoutX="900" layoutY="405" opacity="0.12" width="55" />
+            <Rectangle arcHeight="3" arcWidth="3" fill="#21262d" height="15" layoutX="918" layoutY="428" stroke="#a371f7" strokeWidth="0.8" width="16" />
+            <Rectangle arcHeight="3" arcWidth="3" fill="#a371f7" height="20" layoutX="1000" layoutY="405" opacity="0.12" width="55" />
+            <Rectangle arcHeight="3" arcWidth="3" fill="#21262d" height="15" layoutX="1018" layoutY="428" stroke="#a371f7" strokeWidth="0.8" width="16" />
+            <!-- Armadio archivio -->
+            <Rectangle fill="#a371f7" height="55" layoutX="1090" layoutY="390" opacity="0.08" stroke="#a371f7" strokeWidth="0.8" width="32" />
+            <Line endX="1122" endY="417" opacity="0.5" startX="1090" startY="417" stroke="#a371f7" strokeWidth="0.5" />
+
+            <!-- MENSA -->
+            <Button fx:id="btnMensa" alignment="TOP_CENTER" layoutX="880" layoutY="478" prefHeight="142" prefWidth="258" style="-fx-background-color: #1a1f2b; -fx-border-color: #ffa657; -fx-border-width: 2; -fx-border-radius: 6; -fx-background-radius: 6; -fx-text-fill: #ffa657; -fx-font-weight: bold; -fx-font-size: 12; -fx-padding: 12 5 5 5;" text="MENSA" wrapText="true" />
+            <!-- Tavoli rotondi -->
+            <Circle fill="TRANSPARENT" layoutX="930" layoutY="535" opacity="0.35" radius="14" stroke="#ffa657" strokeWidth="1.0" />
+            <Circle fill="#8b949e" layoutX="930" layoutY="521" radius="3" />
+            <Circle fill="#8b949e" layoutX="944" layoutY="535" radius="3" />
+            <Circle fill="#8b949e" layoutX="930" layoutY="549" radius="3" />
+            <Circle fill="#8b949e" layoutX="916" layoutY="535" radius="3" />
+
+            <Circle fill="TRANSPARENT" layoutX="990" layoutY="535" opacity="0.35" radius="14" stroke="#ffa657" strokeWidth="1.0" />
+            <Circle fill="#8b949e" layoutX="990" layoutY="521" radius="3" />
+            <Circle fill="#8b949e" layoutX="1004" layoutY="535" radius="3" />
+            <Circle fill="#8b949e" layoutX="990" layoutY="549" radius="3" />
+
+            <Circle fill="TRANSPARENT" layoutX="1050" layoutY="535" opacity="0.35" radius="14" stroke="#ffa657" strokeWidth="1.0" />
+            <Circle fill="#8b949e" layoutX="1050" layoutY="521" radius="3" />
+            <Circle fill="#8b949e" layoutX="1064" layoutY="535" radius="3" />
+
+            <!-- Bancone servizio mensa -->
+            <Rectangle fill="#ffa657" height="10" layoutX="900" layoutY="573" opacity="0.12" width="215" />
+            <Rectangle fill="#ffa657" height="2" layoutX="900" layoutY="573" opacity="0.35" width="215" />
+            <Text fill="#484f58" layoutX="965" layoutY="600" text="— Area Ristoro —">
+                <font><Font name="System Italic" size="9.0" /></font>
+            </Text>
+
+            <!-- ════════════════════════════════
+                 SERVIZI CENTRALI SOPRA
+                 (tra corridoio verticale e reparti)
+                 ════════════════════════════════ -->
+
+            <!-- Vano Scale -->
+            <Rectangle arcHeight="4" arcWidth="4" fill="#1a1f2b" height="65" layoutX="296" layoutY="30" stroke="#484f58" strokeWidth="1.5" width="82" />
+            <Text fill="#484f58" layoutX="315" layoutY="50" text="SCALE">
+                <font><Font name="System Bold" size="9.0" /></font>
+            </Text>
+            <Line endX="368" endY="60" startX="305" startY="60" stroke="#484f58" strokeWidth="0.6" />
+            <Line endX="368" endY="67" startX="305" startY="67" stroke="#484f58" strokeWidth="0.6" />
+            <Line endX="368" endY="74" startX="305" startY="74" stroke="#484f58" strokeWidth="0.6" />
+            <Line endX="368" endY="81" startX="305" startY="81" stroke="#484f58" strokeWidth="0.6" />
+
+            <!-- Ascensore -->
+            <Rectangle arcHeight="4" arcWidth="4" fill="#1a1f2b" height="65" layoutX="393" layoutY="30" stroke="#484f58" strokeWidth="1.5" width="60" />
+            <Text fill="#484f58" layoutX="400" layoutY="64" text="ASC.">
+                <font><Font name="System Bold" size="9.0" /></font>
+            </Text>
+            <Rectangle fill="#484f58" height="28" layoutX="407" layoutY="40" opacity="0.25" width="13" />
+            <Line endX="421" endY="68" startX="421" startY="40" stroke="#484f58" strokeWidth="0.8" />
+
+            <!-- Bagni sopra dx -->
+            <Rectangle arcHeight="4" arcWidth="4" fill="#1a1f2b" height="50" layoutX="296" layoutY="105" stroke="#484f58" strokeWidth="1.5" width="82" />
+            <Text fill="#484f58" layoutX="309" layoutY="125" text="WC  🚻">
+                <font><Font size="9.0" /></font>
+            </Text>
+            <Rectangle arcHeight="4" arcWidth="4" fill="#1a1f2b" height="50" layoutX="393" layoutY="105" stroke="#484f58" strokeWidth="1.5" width="60" />
+            <Text fill="#484f58" layoutX="403" layoutY="125" text="WC ♿">
+                <font><Font size="9.0" /></font>
+            </Text>
+
+            <!-- Bagni zona sotto -->
+            <Rectangle arcHeight="4" arcWidth="4" fill="#1a1f2b" height="50" layoutX="296" layoutY="365" stroke="#484f58" strokeWidth="1.5" width="82" />
+            <Text fill="#484f58" layoutX="309" layoutY="386" text="WC  🚻">
+                <font><Font size="9.0" /></font>
+            </Text>
+            <Rectangle arcHeight="4" arcWidth="4" fill="#1a1f2b" height="50" layoutX="393" layoutY="365" stroke="#484f58" strokeWidth="1.5" width="60" />
+            <Text fill="#484f58" layoutX="403" layoutY="386" text="WC ♿">
+                <font><Font size="9.0" /></font>
+            </Text>
+
+            <!-- ════════════════════════════════
+                 SALA RIUNIONI
+                 ════════════════════════════════ -->
+            <Rectangle arcHeight="4" arcWidth="4" fill="#1a1f2b" height="95" layoutX="296" layoutY="430" stroke="#484f58" strokeWidth="1.5" width="170" />
+            <Text fill="#484f58" layoutX="326" layoutY="452" text="SALA RIUNIONI">
+                <font><Font name="System Bold" size="10.0" /></font>
+            </Text>
+            <Rectangle arcHeight="4" arcWidth="4" fill="#484f58" height="28" layoutX="340" layoutY="468" opacity="0.12" width="80" />
+            <Rectangle fill="#484f58" height="2" layoutX="340" layoutY="468" opacity="0.3" width="80" />
+            <Circle fill="#484f58" layoutX="355" layoutY="463" opacity="0.3" radius="4" />
+            <Circle fill="#484f58" layoutX="375" layoutY="463" opacity="0.3" radius="4" />
+            <Circle fill="#484f58" layoutX="395" layoutY="463" opacity="0.3" radius="4" />
+            <Circle fill="#484f58" layoutX="355" layoutY="500" opacity="0.3" radius="4" />
+            <Circle fill="#484f58" layoutX="375" layoutY="500" opacity="0.3" radius="4" />
+            <Circle fill="#484f58" layoutX="395" layoutY="500" opacity="0.3" radius="4" />
+
+            <!-- ════════════════════════════════
+                 LEGENDA
+                 ════════════════════════════════ -->
+            <Rectangle arcHeight="4" arcWidth="4" fill="#1a1f2b" height="80" layoutX="296.0" layoutY="540.0" stroke="#30363d" strokeWidth="1.0" width="170" />
+            <Text fill="#8b949e" layoutX="350" layoutY="558" text="LEGENDA">
+                <font><Font name="System Bold" size="10.0" /></font>
+            </Text>
+            <Rectangle arcHeight="2" arcWidth="2" fill="#21262d" height="9" layoutX="308" layoutY="566" stroke="#8b949e" strokeWidth="0.7" width="13" />
+            <Text fill="#8b949e" layoutX="328" layoutY="575" text="Letto / Posto">
+                <font><Font size="9.0" /></font>
+            </Text>
+            <Circle fill="#8b949e" layoutX="314" layoutY="585" radius="4" />
+            <Text fill="#8b949e" layoutX="328" layoutY="589" text="Paziente">
+                <font><Font size="9.0" /></font>
+            </Text>
+            <Circle fill="#2ecc71" layoutX="314" layoutY="600" radius="4" />
+            <Text fill="#8b949e" layoutX="328" layoutY="604" text="Reparto operativo">
+                <font><Font size="9.0" /></font>
+            </Text>
+            <Circle fill="#f85149" layoutX="314" layoutY="614" radius="4" />
+            <Text fill="#8b949e" layoutX="328.0" layoutY="618.0" text="Reparto in emergenza">
+                <font><Font size="9.0" /></font>
+            </Text>
+
+        </Pane>
+    </center>
+
+    <!-- ══════════ FOOTER STATS ══════════ -->
+    <bottom>
+        <HBox alignment="CENTER" spacing="22.0" style="-fx-background-color: #161b22;">
+            <padding>
+                <Insets bottom="8.0" left="20.0" right="20.0" top="8.0" />
+            </padding>
+            <HBox alignment="CENTER" spacing="5.0">
+                <Circle fill="#4FC3F7" radius="4" />
+                <Label fx:id="lblFiduciaPazienti" text="Fiducia: 50" textFill="#4FC3F7">
+                    <font><Font name="System Bold" size="11.0" /></font>
+                </Label>
+            </HBox>
+            <HBox alignment="CENTER" spacing="5.0">
+                <Circle fill="#FFD54F" radius="4" />
+                <Label fx:id="lblBudgetOperativo" text="Budget: 50" textFill="#FFD54F">
+                    <font><Font name="System Bold" size="11.0" /></font>
+                </Label>
+            </HBox>
+            <HBox alignment="CENTER" spacing="5.0">
+                <Circle fill="#81C784" radius="4" />
+                <Label fx:id="lblMoralePersonale" text="Morale: 50" textFill="#81C784">
+                    <font><Font name="System Bold" size="11.0" /></font>
+                </Label>
+            </HBox>
+            <HBox alignment="CENTER" spacing="5.0">
+                <Circle fill="#E57373" radius="4" />
+                <Label fx:id="lblQualitaCure" text="Qualità: 50" textFill="#E57373">
+                    <font><Font name="System Bold" size="11.0" /></font>
+                </Label>
+            </HBox>
+            <Label text="|" textFill="#30363d" />
+            <Label fx:id="lblTotalePazienti" text="Pazienti: 23" textFill="#8b949e">
+                <font><Font size="11.0" /></font>
+            </Label>
+            <Label fx:id="lblStatoGenerale" text="Stato: Operativo" textFill="#2ecc71">
+                <font><Font name="System Bold" size="11.0" /></font>
+            </Label>
+        </HBox>
+    </bottom>
+
+</BorderPane>
