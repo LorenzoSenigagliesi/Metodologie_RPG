@@ -1,5 +1,7 @@
 package it.unicam.cs.mpgc.RPG122755;
 
+import it.unicam.cs.mpgc.RPG122755.controller.GameBoardController;
+import it.unicam.cs.mpgc.RPG122755.model.TypeReparto;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -7,12 +9,15 @@ import javafx.scene.Scene;
 import javafx.scene.layout.Region;
 import javafx.stage.Stage;
 
-public class Main extends Application {
+import java.io.IOException;
 
+public class Main extends Application {
+    Parent root;
+    GameBoardController Board;
     @Override
     public void start(Stage stage) throws Exception {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/Fxml/PiantaOspedale.fxml"));
-        Parent root = loader.load();
+        root = loader.load();
 
         Scene scene = new Scene(root, 1200, 800);
 
@@ -28,6 +33,11 @@ public class Main extends Application {
         stage.setMinHeight(600);
         stage.setResizable(true);
         stage.show();
+    }
+
+    public void OpenBoard(String Reparto) throws IOException {
+        Board= new GameBoardController(TypeReparto.valueOf(Reparto));
+        root = Board.LoadBoard().load();
     }
 
     public static void main(String[] args) {

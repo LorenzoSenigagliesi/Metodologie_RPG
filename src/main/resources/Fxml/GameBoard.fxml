@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: #1e2a38;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unicam.cs.mpgc.RPG122755.Main">
+<BorderPane prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: #1e2a38;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unicam.cs.mpgc.RPG122755.controller.GameBoardController">
 
     <top>
         <VBox alignment="CENTER" spacing="10.0" style="-fx-background-color: #14202c;">
@@ -133,7 +133,7 @@
                 <padding>
                     <Insets bottom="15.0" left="25.0" right="25.0" top="15.0" />
                 </padding>
-                <Label fx:id="lblEvento" alignment="CENTER" text="Un evento accade in ospedale..." textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                <Label fx:id="LabelEvento" alignment="CENTER" text="Un evento accade in ospedale..." textAlignment="CENTER" textFill="WHITE" wrapText="true">
                     <font>
                         <Font name="System Italic" size="18.0" />
                     </font>
@@ -155,7 +155,7 @@
 
                     <Region VBox.vgrow="ALWAYS" />
 
-                    <Label fx:id="lblTestoSinistra" alignment="CENTER" text="Descrizione della scelta a sinistra..." textAlignment="CENTER" textFill="#34495e" wrapText="true">
+                    <Label fx:id="LabelScelta1" alignment="CENTER" text="Descrizione della scelta a sinistra..." textAlignment="CENTER" textFill="#34495e" wrapText="true">
                         <font>
                             <Font size="15.0" />
                         </font>
@@ -163,7 +163,7 @@
 
                     <Region VBox.vgrow="ALWAYS" />
 
-                    <Label fx:id="lblEffettiSinistra" alignment="CENTER" text="" textAlignment="CENTER" textFill="#7f8c8d" wrapText="true">
+                    <Label fx:id="LabelEffettiScelta1" alignment="CENTER" text="" textAlignment="CENTER" textFill="#7f8c8d" wrapText="true">
                         <font>
                             <Font name="System Italic" size="12.0" />
                         </font>
@@ -183,7 +183,7 @@
 
                     <Region VBox.vgrow="ALWAYS" />
 
-                    <Label fx:id="lblTestoDestra" alignment="CENTER" text="Descrizione della scelta a destra..." textAlignment="CENTER" textFill="#34495e" wrapText="true">
+                    <Label fx:id="LabelScelta2" alignment="CENTER" text="Descrizione della scelta a destra..." textAlignment="CENTER" textFill="#34495e" wrapText="true">
                         <font>
                             <Font size="15.0" />
                         </font>
@@ -191,7 +191,7 @@
 
                     <Region VBox.vgrow="ALWAYS" />
 
-                    <Label fx:id="lblEffettiDestra" alignment="CENTER" text="" textAlignment="CENTER" textFill="#7f8c8d" wrapText="true">
+                    <Label fx:id="LabelEffettiScelta2" alignment="CENTER" text="" textAlignment="CENTER" textFill="#7f8c8d" wrapText="true">
                         <font>
                             <Font name="System Italic" size="12.0" />
                         </font>
