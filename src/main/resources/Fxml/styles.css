@@ -1,0 +1,26 @@
+/* ── Carte selezionabili ── */
+.carta {
+    -fx-cursor: hand;
+    -fx-background-color: #ecf0f1;
+    -fx-background-radius: 16;
+    -fx-border-color: #bdc3c7;
+    -fx-border-radius: 16;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 8, 0, 0, 2);
+}
+
+.carta:hover {
+    -fx-background-color: #dde4ea;
+    -fx-border-color: #58a6ff;
+    -fx-border-width: 3;
+    -fx-effect: dropshadow(gaussian, rgba(88,166,255,0.45), 18, 0, 0, 4);
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+}
+
+.carta:pressed {
+    -fx-background-color: #c8d6e0;
+    -fx-scale-x: 0.97;
+    -fx-scale-y: 0.97;
+    -fx-effect: dropshadow(gaussian, rgba(88,166,255,0.25), 6, 0, 0, 1);
+}

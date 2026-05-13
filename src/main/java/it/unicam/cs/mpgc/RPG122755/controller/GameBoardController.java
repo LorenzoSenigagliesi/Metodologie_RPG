@@ -3,39 +3,50 @@ package it.unicam.cs.mpgc.RPG122755.controller;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
+import it.unicam.cs.mpgc.RPG122755.gestione.GestioneGameBoard;
+import it.unicam.cs.mpgc.RPG122755.gestione.GestioneOspedale;
 import it.unicam.cs.mpgc.RPG122755.model.Eventi;
+import it.unicam.cs.mpgc.RPG122755.model.Ospedale;
 import it.unicam.cs.mpgc.RPG122755.model.Scelte;
 import it.unicam.cs.mpgc.RPG122755.model.TypeReparto;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.input.MouseButton;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.Region;
+import javafx.stage.Stage;
 
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.Reader;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
 public class GameBoardController {
-    private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
-    private static FXMLLoader loader;
-    private static final String FILE_Eventi = "src/main/resources/FileJson/Eventi.json";
-    private static final String FILE_Scelte = "src/main/resources/FileJson/Scelte.json";
+
     private final StringProperty testoEvento = new SimpleStringProperty();
     private final StringProperty testoScelta1 = new SimpleStringProperty();
     private final StringProperty testoScelta2 = new SimpleStringProperty();
     private final StringProperty testoEffettiScelta1 = new SimpleStringProperty();
     private final StringProperty testoEffettiScelta2 = new SimpleStringProperty();
-    private List<Eventi> Eventi;
-    @FXML private Label LabelEvento,LabelScelta1,LabelScelta2,LabelEffettiScelta1,LabelEffettiScelta2;
+    GestioneGameBoard gestioneGameBoard;
+    @FXML private Label LabelEvento;
+    @FXML private Label LabelScelta1;
+    @FXML private Label LabelScelta2;
+    @FXML private Label LabelEffettiScelta1;
+    @FXML private Label LabelEffettiScelta2;
+    private Stage stage = null;
+    private Eventi Evento;
 
-    public GameBoardController(TypeReparto reparto) {
-        Eventi = ReadEventi(reparto);
-        loader = new FXMLLoader(getClass().getResource("/Fxml/GameBoard.fxml"));
+    @FXML
+    private void initialize() {
+        // Imposta solo i binding — le label @FXML sono pronte qui
         LabelEvento.textProperty().bind(testoEvento);
         LabelScelta1.textProperty().bind(testoScelta1);
         LabelScelta2.textProperty().bind(testoScelta2);
@@ -43,20 +54,33 @@ public class GameBoardController {
         LabelEffettiScelta2.textProperty().bind(testoEffettiScelta2);
     }
 
-    public FXMLLoader LoadBoard()
-    {
-        return loader;
-    }
-
-    public void GenerateEvento(){
-        Random random = new Random();
-        Eventi Evento = Eventi.get(random.nextInt(0, Eventi.size()-1));
+    /** Chiamato da LoadBoard dopo loader.load() con l'istanza già pronta **/
+    public void setGestioneGameBoard(GestioneGameBoard gestione) {
+        this.gestioneGameBoard = gestione;
+        Evento = gestioneGameBoard.getEvento();
         testoEvento.set(Evento.getDescription());
-        FillScelte(Evento.getId());
+        FillScelte();
+    }
+    @FXML
+    private void RunScelta(MouseEvent event) {
+        if ( event.getButton().equals(MouseButton.PRIMARY))
+            return;
+        GestioneOspedale ospedale = new GestioneOspedale();
+        int SceltaIndex = 0;
+        String id = ((Node) event.getTarget()).getId();
+        if(id.equals("cartDestra")){
+            SceltaIndex = 1;
+        }
+        Scelte Scelta = gestioneGameBoard.ReadScelte().get(SceltaIndex);
+        if (! ospedale.ChangeParameters(Scelta.getFiduciaPazienti(),Scelta.getBudget(),Scelta.getMoralePersonale(),Scelta.getQualitaCure())) {
+            //Qui bisogna che capisco come chudere il tutto
+            return;
+        }
+        gestioneGameBoard.GenerateEvento();
     }
 
-    private void FillScelte(int idEvento) {
-        List<Scelte> Scelte = ReadScelte(idEvento);
+    private void FillScelte() {
+        List<Scelte> Scelte = gestioneGameBoard.ReadScelte();
         if (!Scelte.isEmpty()) {
             testoScelta1.set(Scelte.get(0).getDescription());
             testoScelta2.set(Scelte.get(1).getDescription());
@@ -65,39 +89,4 @@ public class GameBoardController {
         }
     }
 
-    public List<Eventi> ReadEventi(TypeReparto reparto) {
-        File file = new File(FILE_Scelte);
-        if (!file.exists() || file.length() == 0) {
-            return new ArrayList<>();// Oppure null, a tua scelta
-        }
-
-        try (Reader reader = new FileReader(FILE_Eventi)) {
-            var listType = new TypeToken<List<Eventi>>(){}.getType();
-            List<Eventi> Eventi = GSON.fromJson(reader, listType);
-            // Se il file è vuoto o contiene null
-            reader.close();
-            return Eventi != null ? Eventi.stream().filter(evento -> evento.getReparto().equals(reparto)).toList()
-                            : new ArrayList<>();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    public List<Scelte> ReadScelte(int IdEvento) {
-        File file = new File(FILE_Scelte);
-        if (!file.exists() || file.length() == 0) {
-            return new ArrayList<>();// Oppure null, a tua scelta
-        }
-
-        try (Reader reader = new FileReader(FILE_Scelte)) {
-            var listType = new TypeToken<List<Eventi>>(){}.getType();
-            List<Scelte> Scelte = GSON.fromJson(reader, listType);
-            // Se il file è vuoto o contiene null
-            reader.close();
-            return Scelte != null ? Scelte.stream().filter(scelta -> scelta.getIdEvento() == IdEvento).toList()
-                                    : new ArrayList<>();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
 }

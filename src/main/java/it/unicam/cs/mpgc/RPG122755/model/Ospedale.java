@@ -6,6 +6,13 @@ public class Ospedale {
     private int MoralePersonale;
     private int QualitaCure;
 
+    public Ospedale(){
+        FiduciaPazienti = 50;
+        Budget = 50;
+        MoralePersonale = 50;
+        QualitaCure = 50;
+    }
+
     public int getFiduciaPazienti() {
         return FiduciaPazienti;
     }

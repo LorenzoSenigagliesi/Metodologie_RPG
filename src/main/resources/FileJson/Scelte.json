@@ -1,0 +1,20 @@
+[
+  {
+    "IdEvento": 1,
+    "id": 1,
+    "Description": "Sceltaewqd1",
+    "FiduciaPazienti": 1,
+    "Budget": 1,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 1,
+    "id": 1,
+    "Description": "Sceltaewdwe2",
+    "FiduciaPazienti": 1,
+    "Budget": 1,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  }
+]

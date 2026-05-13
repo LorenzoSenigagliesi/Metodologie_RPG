@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: #1e2a38;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unicam.cs.mpgc.RPG122755.controller.GameBoardController">
+<BorderPane prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: #1e2a38;" stylesheets="/styles.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unicam.cs.mpgc.RPG122755.controller.GameBoardController">
 
     <top>
         <VBox alignment="CENTER" spacing="10.0" style="-fx-background-color: #14202c;">
@@ -142,22 +142,20 @@
 
             <HBox alignment="CENTER" spacing="60.0" VBox.vgrow="ALWAYS">
 
-                <VBox fx:id="cartaSinistra" alignment="CENTER" prefHeight="360.0" prefWidth="320.0" spacing="15.0" style="-fx-background-color: #ecf0f1; -fx-background-radius: 16; -fx-border-color: #bdc3c7; -fx-border-radius: 16; -fx-border-width: 2;">
+                <VBox fx:id="cartaSinistra" alignment="CENTER" onMouseClicked="#RunScelta" prefHeight="360.0" prefWidth="320.0" spacing="15.0" styleClass="carta">
                     <padding>
                         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                     </padding>
 
-                    <Label text="Scelta A" textFill="#2c3e50">
+                    <Label text="Scelta A" textFill="#27ff00">
                         <font>
                             <Font name="System Bold" size="20.0" />
                         </font>
                     </Label>
 
-                    <Region VBox.vgrow="ALWAYS" />
-
-                    <Label fx:id="LabelScelta1" alignment="CENTER" text="Descrizione della scelta a sinistra..." textAlignment="CENTER" textFill="#34495e" wrapText="true">
+                    <Label fx:id="LabelScelta1" alignment="CENTER" text="Descrizione della scelta a sinistra..." textAlignment="CENTER" textFill="WHITE" wrapText="true">
                         <font>
-                            <Font size="15.0" />
+                            <Font size="18.0" />
                         </font>
                     </Label>
 
@@ -165,27 +163,25 @@
 
                     <Label fx:id="LabelEffettiScelta1" alignment="CENTER" text="" textAlignment="CENTER" textFill="#7f8c8d" wrapText="true">
                         <font>
-                            <Font name="System Italic" size="12.0" />
+                            <Font name="System Italic" size="16.0" />
                         </font>
                     </Label>
                 </VBox>
 
-                <VBox fx:id="cartaDestra" alignment="CENTER" prefHeight="360.0" prefWidth="320.0" spacing="15.0" style="-fx-background-color: #ecf0f1; -fx-background-radius: 16; -fx-border-color: #bdc3c7; -fx-border-radius: 16; -fx-border-width: 2;">
+                <VBox fx:id="cartaDestra" alignment="CENTER" onMouseClicked="#RunScelta" prefHeight="360.0" prefWidth="320.0" spacing="15.0" styleClass="carta">
                     <padding>
                         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                     </padding>
 
-                    <Label text="Scelta B" textFill="#2c3e50">
+                    <Label text="Scelta B" textFill="#1ebd27">
                         <font>
                             <Font name="System Bold" size="20.0" />
                         </font>
                     </Label>
 
-                    <Region VBox.vgrow="ALWAYS" />
-
-                    <Label fx:id="LabelScelta2" alignment="CENTER" text="Descrizione della scelta a destra..." textAlignment="CENTER" textFill="#34495e" wrapText="true">
+                    <Label fx:id="LabelScelta2" alignment="CENTER" text="Descrizione della scelta a destra..." textAlignment="CENTER" textFill="WHITE" wrapText="true">
                         <font>
-                            <Font size="15.0" />
+                            <Font size="18.0" />
                         </font>
                     </Label>
 
@@ -193,7 +189,7 @@
 
                     <Label fx:id="LabelEffettiScelta2" alignment="CENTER" text="" textAlignment="CENTER" textFill="#7f8c8d" wrapText="true">
                         <font>
-                            <Font name="System Italic" size="12.0" />
+                            <Font name="System Italic" size="16.0" />
                         </font>
                     </Label>
                 </VBox>
