@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: #1e2a38;" stylesheets="/styles.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unicam.cs.mpgc.RPG122755.controller.GameBoardController">
+<BorderPane prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: #1e2a38;" stylesheets="/Fxml/styles.css" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unicam.cs.mpgc.RPG122755.controller.GameBoardController">
 
     <top>
         <VBox alignment="CENTER" spacing="10.0" style="-fx-background-color: #14202c;">
@@ -42,7 +42,7 @@
                         </font>
                      </Label>
                      <ProgressBar fx:id="barFiduciaPazienti" prefWidth="170.0" progress="0.5" style="-fx-accent: #4FC3F7;" />
-                     <Label fx:id="lblFiduciaPazienti" text="50 / 100" textFill="WHITE">
+                     <Label fx:id="LabelFiduciaPazienti" text="50 / 100" textFill="WHITE">
                         <font>
                            <Font size="12.0" />
                         </font>
@@ -65,7 +65,7 @@
                         </font>
                      </Label>
                      <ProgressBar fx:id="barBudgetOperativo" prefWidth="170.0" progress="0.5" style="-fx-accent: #FFD54F;" />
-                     <Label fx:id="lblBudgetOperativo" text="50 / 100" textFill="WHITE">
+                     <Label fx:id="LabelBudgetOperativo" text="50 / 100" textFill="WHITE">
                         <font>
                            <Font size="12.0" />
                         </font>
@@ -88,7 +88,7 @@
                         </font>
                      </Label>
                      <ProgressBar fx:id="barMoralePersonale" prefWidth="170.0" progress="0.5" style="-fx-accent: #81C784;" />
-                     <Label fx:id="lblMoralePersonale" text="50 / 100" textFill="WHITE">
+                     <Label fx:id="LabelMoralePersonale" text="50 / 100" textFill="WHITE">
                         <font>
                            <Font size="12.0" />
                         </font>
@@ -111,7 +111,7 @@
                         </font>
                      </Label>
                      <ProgressBar fx:id="barQualitaCure" prefWidth="170.0" progress="0.5" style="-fx-accent: #E57373;" />
-                     <Label fx:id="lblQualitaCure" text="50 / 100" textFill="WHITE">
+                     <Label fx:id="LabelQualitaCure" text="50 / 100" textFill="WHITE">
                         <font>
                            <Font size="12.0" />
                         </font>
@@ -147,13 +147,13 @@
                         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                     </padding>
 
-                    <Label text="Scelta A" textFill="#27ff00">
+                    <Label text="Scelta A" textFill="#0d5100">
                         <font>
                             <Font name="System Bold" size="20.0" />
                         </font>
                     </Label>
 
-                    <Label fx:id="LabelScelta1" alignment="CENTER" text="Descrizione della scelta a sinistra..." textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                    <Label fx:id="LabelScelta1" alignment="CENTER" text="Descrizione della scelta a sinistra..." textAlignment="CENTER" wrapText="true">
                         <font>
                             <Font size="18.0" />
                         </font>
@@ -173,13 +173,13 @@
                         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                     </padding>
 
-                    <Label text="Scelta B" textFill="#1ebd27">
+                    <Label text="Scelta B" textFill="#005b05">
                         <font>
                             <Font name="System Bold" size="20.0" />
                         </font>
                     </Label>
 
-                    <Label fx:id="LabelScelta2" alignment="CENTER" text="Descrizione della scelta a destra..." textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                    <Label fx:id="LabelScelta2" alignment="CENTER" text="Descrizione della scelta a destra..." textAlignment="CENTER" wrapText="true">
                         <font>
                             <Font size="18.0" />
                         </font>
@@ -209,7 +209,7 @@
                 </font>
             </Label>
             <Region HBox.hgrow="ALWAYS" />
-            <Button fx:id="btnPiantina" style="-fx-background-color: #2c3e50; -fx-text-fill: #58a6ff; -fx-background-radius: 6; -fx-border-color: #58a6ff; -fx-border-radius: 6; -fx-border-width: 1; -fx-padding: 6 14 6 14;" text="Torna alla piantina">
+            <Button fx:id="btnPiantina" onAction="#tornaAllaPiantina" style="-fx-background-color: #2c3e50; -fx-text-fill: #58a6ff; -fx-background-radius: 6; -fx-border-color: #58a6ff; -fx-border-radius: 6; -fx-border-width: 1; -fx-padding: 6 14 6 14;" text="Torna alla piantina">
                 <font>
                     <Font name="System Bold" size="12.0" />
                 </font>

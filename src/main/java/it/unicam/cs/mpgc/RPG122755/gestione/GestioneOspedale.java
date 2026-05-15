@@ -38,7 +38,7 @@ public class GestioneOspedale {
         if(FiduciaPazienti != 0)
         {
             ospedale.setFiduciaPazienti(ospedale.getFiduciaPazienti() + FiduciaPazienti);
-            if (ospedale.getFiduciaPazienti() == 0)
+            if (ospedale.getFiduciaPazienti() <= 0)
             {
                 return false;
             }
@@ -47,7 +47,7 @@ public class GestioneOspedale {
         if(Budget != 0)
         {
             ospedale.setBudget(ospedale.getBudget() + Budget);
-            if (ospedale.getBudget() == 0)
+            if (ospedale.getBudget() <= 0)
             {
                 return false;
             }
@@ -56,7 +56,7 @@ public class GestioneOspedale {
         if(MoralePersonale != 0)
         {
             ospedale.setMoralePersonale(ospedale.getMoralePersonale() + MoralePersonale);
-            if (ospedale.getMoralePersonale() == 0)
+            if (ospedale.getMoralePersonale() <= 0)
             {
                 return false;
             }
@@ -66,12 +66,12 @@ public class GestioneOspedale {
         {
             ospedale.setQualitaCure(ospedale.getQualitaCure() + QualitaCure);
 
-            if (ospedale.getQualitaCure() == 0)
+            if (ospedale.getQualitaCure() <= 0)
             {
                 return false;
             }
         }
-
+        CaricaOspedale(ospedale);
         return true;
     }
 
@@ -87,6 +87,10 @@ public class GestioneOspedale {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public Ospedale getOspedale(){
+        return ospedale;
     }
 
 }

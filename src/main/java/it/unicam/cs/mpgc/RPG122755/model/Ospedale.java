@@ -19,6 +19,9 @@ public class Ospedale {
 
     public void setFiduciaPazienti(int fiduciaPazienti) {
         FiduciaPazienti = fiduciaPazienti;
+        if (FiduciaPazienti > 100) {
+            FiduciaPazienti = 100;
+        }
     }
 
     public int getBudget() {
@@ -27,6 +30,9 @@ public class Ospedale {
 
     public void setBudget(int budget) {
         Budget = budget;
+        if (Budget > 100) {
+            Budget = 100;
+        }
     }
 
     public int getMoralePersonale() {
@@ -35,6 +41,9 @@ public class Ospedale {
 
     public void setMoralePersonale(int moralePersonale) {
         MoralePersonale = moralePersonale;
+        if (MoralePersonale > 100) {
+            MoralePersonale = 100;
+        }
     }
 
     public int getQualitaCure() {
@@ -43,5 +52,8 @@ public class Ospedale {
 
     public void setQualitaCure(int qualitaCure) {
         QualitaCure = qualitaCure;
+        if (QualitaCure > 100) {
+            QualitaCure = 100;
+        }
     }
 }

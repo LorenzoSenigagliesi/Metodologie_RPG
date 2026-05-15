@@ -1,12 +1,1252 @@
 [
   {
     "id": 1,
-    "Description": "Patata",
+    "Description": "Epidemia di bronchiolite nel reparto",
     "typeReparto": "Pediatria"
   },
   {
     "id": 2,
-    "Description": "Patata2",
+    "Description": "Genitori ansiosi chiedono aggiornamenti continui",
     "typeReparto": "Pediatria"
+  },
+  {
+    "id": 3,
+    "Description": "Clown di corsia propongono un evento speciale",
+    "typeReparto": "Pediatria"
+  },
+  {
+    "id": 4,
+    "Description": "Giocattoli non igienici trovati nella sala giochi",
+    "typeReparto": "Pediatria"
+  },
+  {
+    "id": 5,
+    "Description": "Bambino spaventato rifiuta le cure",
+    "typeReparto": "Pediatria"
+  },
+  {
+    "id": 6,
+    "Description": "Proposta di creare una nuova sala giochi",
+    "typeReparto": "Pediatria"
+  },
+  {
+    "id": 7,
+    "Description": "Vaccinazioni pediatriche in ritardo",
+    "typeReparto": "Pediatria"
+  },
+  {
+    "id": 8,
+    "Description": "Burnout del personale infermieristico",
+    "typeReparto": "Pediatria"
+  },
+  {
+    "id": 9,
+    "Description": "Caso clinico complesso richiede specialisti",
+    "typeReparto": "Pediatria"
+  },
+  {
+    "id": 10,
+    "Description": "Implementazione del protocollo Dolore Zero",
+    "typeReparto": "Pediatria"
+  },
+  {
+    "id": 11,
+    "Description": "Screening neonatale avanzato proposto",
+    "typeReparto": "Pediatria"
+  },
+  {
+    "id": 12,
+    "Description": "Riduzione delle attese per visite pediatriche",
+    "typeReparto": "Pediatria"
+  },
+  {
+    "id": 13,
+    "Description": "Corso di comunicazione con i bambini",
+    "typeReparto": "Pediatria"
+  },
+  {
+    "id": 14,
+    "Description": "Pediatra di fama propone un workshop",
+    "typeReparto": "Pediatria"
+  },
+  {
+    "id": 15,
+    "Description": "Famiglia in difficoltà economiche chiede aiuto",
+    "typeReparto": "Pediatria"
+  },
+  {
+    "id": 16,
+    "Description": "Nuovi lettini pediatrici richiesti",
+    "typeReparto": "Pediatria"
+  },
+  {
+    "id": 17,
+    "Description": "Allergia alimentare grave in mensa",
+    "typeReparto": "Pediatria"
+  },
+  {
+    "id": 18,
+    "Description": "Mancanza di farmaci pediatrici essenziali",
+    "typeReparto": "Pediatria"
+  },
+  {
+    "id": 19,
+    "Description": "Richiesta di visite psicologiche per i piccoli pazienti",
+    "typeReparto": "Pediatria"
+  },
+  {
+    "id": 20,
+    "Description": "Guasto ai macchinari per radiografie pediatriche",
+    "typeReparto": "Pediatria"
+  },
+  {
+    "id": 21,
+    "Description": "Donazione di libri illustrati per il reparto",
+    "typeReparto": "Pediatria"
+  },
+  {
+    "id": 22,
+    "Description": "Bambino iperattivo crea disordine nel reparto",
+    "typeReparto": "Pediatria"
+  },
+  {
+    "id": 23,
+    "Description": "Proposta di introdurre musica rilassante",
+    "typeReparto": "Pediatria"
+  },
+  {
+    "id": 24,
+    "Description": "Contestazione dei genitori per tempi di attesa",
+    "typeReparto": "Pediatria"
+  },
+  {
+    "id": 25,
+    "Description": "Nuovo protocollo di igiene per giocattoli e superfici",
+    "typeReparto": "Pediatria"
+  },
+  {
+    "id": 26,
+    "Description": "Intervento d'urgenza per appendicite complicata",
+    "typeReparto": "Chirurgia"
+  },
+  {
+    "id": 27,
+    "Description": "Paziente rifiuta l'anestesia generale",
+    "typeReparto": "Chirurgia"
+  },
+  {
+    "id": 28,
+    "Description": "Strumentazione chirurgica danneggiata",
+    "typeReparto": "Chirurgia"
+  },
+  {
+    "id": 29,
+    "Description": "Richiesta di introdurre un robot chirurgico",
+    "typeReparto": "Chirurgia"
+  },
+  {
+    "id": 30,
+    "Description": "Complicazione intraoperatoria inattesa",
+    "typeReparto": "Chirurgia"
+  },
+  {
+    "id": 31,
+    "Description": "Chirurgo senior propone un nuovo protocollo",
+    "typeReparto": "Chirurgia"
+  },
+  {
+    "id": 32,
+    "Description": "Paziente anziano necessita di intervento ad alto rischio",
+    "typeReparto": "Chirurgia"
+  },
+  {
+    "id": 33,
+    "Description": "Mancanza temporanea di sangue per trasfusioni",
+    "typeReparto": "Chirurgia"
+  },
+  {
+    "id": 34,
+    "Description": "Richiesta di aggiornare la sala operatoria",
+    "typeReparto": "Chirurgia"
+  },
+  {
+    "id": 35,
+    "Description": "Errore nella preparazione pre-operatoria",
+    "typeReparto": "Chirurgia"
+  },
+  {
+    "id": 36,
+    "Description": "Paziente con allergia rara ai farmaci",
+    "typeReparto": "Chirurgia"
+  },
+  {
+    "id": 37,
+    "Description": "Nuovo chirurgo giovane entra nel reparto",
+    "typeReparto": "Chirurgia"
+  },
+  {
+    "id": 38,
+    "Description": "Proposta di ridurre gli interventi programmati",
+    "typeReparto": "Chirurgia"
+  },
+  {
+    "id": 39,
+    "Description": "Paziente richiede un secondo parere",
+    "typeReparto": "Chirurgia"
+  },
+  {
+    "id": 40,
+    "Description": "Guasto al sistema di illuminazione della sala operatoria",
+    "typeReparto": "Chirurgia"
+  },
+  {
+    "id": 41,
+    "Description": "Intervento complesso richiede più personale",
+    "typeReparto": "Chirurgia"
+  },
+  {
+    "id": 42,
+    "Description": "Paziente non rispetta il digiuno pre-operatorio",
+    "typeReparto": "Chirurgia"
+  },
+  {
+    "id": 43,
+    "Description": "Richiesta di introdurre check-list più severe",
+    "typeReparto": "Chirurgia"
+  },
+  {
+    "id": 44,
+    "Description": "Complicazioni post-operatorie in aumento",
+    "typeReparto": "Chirurgia"
+  },
+  {
+    "id": 45,
+    "Description": "Paziente VIP richiede trattamento prioritario",
+    "typeReparto": "Chirurgia"
+  },
+  {
+    "id": 46,
+    "Description": "Mancanza di infermieri specializzati in sala operatoria",
+    "typeReparto": "Chirurgia"
+  },
+  {
+    "id": 47,
+    "Description": "Proposta di introdurre turni notturni aggiuntivi",
+    "typeReparto": "Chirurgia"
+  },
+  {
+    "id": 48,
+    "Description": "Paziente con infezione resistente agli antibiotici",
+    "typeReparto": "Chirurgia"
+  },
+  {
+    "id": 49,
+    "Description": "Richiesta di acquistare nuovi bisturi elettrici",
+    "typeReparto": "Chirurgia"
+  },
+  {
+    "id": 50,
+    "Description": "Chirurgo esperto va in pensione",
+    "typeReparto": "Chirurgia"
+  },
+  {
+    "id": 51,
+    "Description": "Arriva un politrauma da incidente stradale",
+    "typeReparto": "ProntoSoccorso"
+  },
+  {
+    "id": 52,
+    "Description": "Paziente aggressivo crea tensione in sala d'attesa",
+    "typeReparto": "ProntoSoccorso"
+  },
+  {
+    "id": 53,
+    "Description": "Mancanza di barelle disponibili",
+    "typeReparto": "ProntoSoccorso"
+  },
+  {
+    "id": 54,
+    "Description": "Blackout improvviso nel reparto",
+    "typeReparto": "ProntoSoccorso"
+  },
+  {
+    "id": 55,
+    "Description": "Afflusso massiccio di pazienti per intossicazione alimentare",
+    "typeReparto": "ProntoSoccorso"
+  },
+  {
+    "id": 56,
+    "Description": "Paziente con sintomi di infarto richiede priorità",
+    "typeReparto": "ProntoSoccorso"
+  },
+  {
+    "id": 57,
+    "Description": "Richiesta di aumentare il personale triage",
+    "typeReparto": "ProntoSoccorso"
+  },
+  {
+    "id": 58,
+    "Description": "Paziente senza documenti rifiuta di identificarsi",
+    "typeReparto": "ProntoSoccorso"
+  },
+  {
+    "id": 59,
+    "Description": "Guasto al monitor dei parametri vitali",
+    "typeReparto": "ProntoSoccorso"
+  },
+  {
+    "id": 60,
+    "Description": "Arriva un bambino con febbre altissima",
+    "typeReparto": "ProntoSoccorso"
+  },
+  {
+    "id": 61,
+    "Description": "Paziente sospetto caso infettivo",
+    "typeReparto": "ProntoSoccorso"
+  },
+  {
+    "id": 62,
+    "Description": "Protesta dei pazienti per lunghe attese",
+    "typeReparto": "ProntoSoccorso"
+  },
+  {
+    "id": 63,
+    "Description": "Ambulanza in arrivo con codice rosso",
+    "typeReparto": "ProntoSoccorso"
+  },
+  {
+    "id": 64,
+    "Description": "Paziente in overdose necessita intervento immediato",
+    "typeReparto": "ProntoSoccorso"
+  },
+  {
+    "id": 65,
+    "Description": "Richiesta di introdurre un nuovo protocollo triage",
+    "typeReparto": "ProntoSoccorso"
+  },
+  {
+    "id": 66,
+    "Description": "Paziente anziano cade in sala d'attesa",
+    "typeReparto": "ProntoSoccorso"
+  },
+  {
+    "id": 67,
+    "Description": "Mancanza di farmaci salvavita",
+    "typeReparto": "ProntoSoccorso"
+  },
+  {
+    "id": 68,
+    "Description": "Arriva un paziente VIP che chiede priorità",
+    "typeReparto": "ProntoSoccorso"
+  },
+  {
+    "id": 69,
+    "Description": "Personale lamenta turni troppo pesanti",
+    "typeReparto": "ProntoSoccorso"
+  },
+  {
+    "id": 70,
+    "Description": "Paziente con trauma cranico necessita TAC urgente",
+    "typeReparto": "ProntoSoccorso"
+  },
+  {
+    "id": 71,
+    "Description": "Richiesta di aumentare la sicurezza nel reparto",
+    "typeReparto": "ProntoSoccorso"
+  },
+  {
+    "id": 72,
+    "Description": "Paziente con crisi epilettica improvvisa",
+    "typeReparto": "ProntoSoccorso"
+  },
+  {
+    "id": 73,
+    "Description": "Arriva un caso di sospetta violenza domestica",
+    "typeReparto": "ProntoSoccorso"
+  },
+  {
+    "id": 74,
+    "Description": "Guasto al sistema informatico del triage",
+    "typeReparto": "ProntoSoccorso"
+  },
+  {
+    "id": 75,
+    "Description": "Paziente con ferita da arma da taglio",
+    "typeReparto": "ProntoSoccorso"
+  },
+  {
+    "id": 76,
+    "Description": "Mancanza improvvisa di antibiotici essenziali",
+    "typeReparto": "Farmacia"
+  },
+  {
+    "id": 77,
+    "Description": "Errore nella consegna dei farmaci da parte del fornitore",
+    "typeReparto": "Farmacia"
+  },
+  {
+    "id": 78,
+    "Description": "Richiesta urgente di farmaci salvavita dal Pronto Soccorso",
+    "typeReparto": "Farmacia"
+  },
+  {
+    "id": 79,
+    "Description": "Farmaci scaduti trovati in magazzino",
+    "typeReparto": "Farmacia"
+  },
+  {
+    "id": 80,
+    "Description": "Proposta di introdurre un sistema digitale di inventario",
+    "typeReparto": "Farmacia"
+  },
+  {
+    "id": 81,
+    "Description": "Paziente reclama un errore nella prescrizione",
+    "typeReparto": "Farmacia"
+  },
+  {
+    "id": 82,
+    "Description": "Furto sospetto di farmaci costosi",
+    "typeReparto": "Farmacia"
+  },
+  {
+    "id": 83,
+    "Description": "Richiesta di aumentare le scorte di analgesici",
+    "typeReparto": "Farmacia"
+  },
+  {
+    "id": 84,
+    "Description": "Nuovo farmaco sperimentale richiede autorizzazione",
+    "typeReparto": "Farmacia"
+  },
+  {
+    "id": 85,
+    "Description": "Guasto al frigorifero dei farmaci refrigerati",
+    "typeReparto": "Farmacia"
+  },
+  {
+    "id": 86,
+    "Description": "Consegna di farmaci ritardata per problemi logistici",
+    "typeReparto": "Farmacia"
+  },
+  {
+    "id": 87,
+    "Description": "Richiesta di formazione per l’uso di nuovi dispositivi",
+    "typeReparto": "Farmacia"
+  },
+  {
+    "id": 88,
+    "Description": "Paziente richiede un farmaco non disponibile",
+    "typeReparto": "Farmacia"
+  },
+  {
+    "id": 89,
+    "Description": "Controllo ispettivo sulla gestione dei farmaci",
+    "typeReparto": "Farmacia"
+  },
+  {
+    "id": 90,
+    "Description": "Proposta di ridurre le scorte per risparmiare budget",
+    "typeReparto": "Farmacia"
+  },
+  {
+    "id": 91,
+    "Description": "Farmacista segnala sovraccarico di lavoro",
+    "typeReparto": "Farmacia"
+  },
+  {
+    "id": 92,
+    "Description": "Richiesta urgente di farmaci pediatrici",
+    "typeReparto": "Farmacia"
+  },
+  {
+    "id": 93,
+    "Description": "Errore di etichettatura su un lotto di farmaci",
+    "typeReparto": "Farmacia"
+  },
+  {
+    "id": 94,
+    "Description": "Proposta di introdurre un servizio di consegna interna rapida",
+    "typeReparto": "Farmacia"
+  },
+  {
+    "id": 95,
+    "Description": "Farmaci ad alto rischio richiedono nuove procedure di sicurezza",
+    "typeReparto": "Farmacia"
+  },
+  {
+    "id": 96,
+    "Description": "Paziente lamenta tempi lunghi per il ritiro dei farmaci",
+    "typeReparto": "Farmacia"
+  },
+  {
+    "id": 97,
+    "Description": "Richiesta di acquistare farmaci più economici",
+    "typeReparto": "Farmacia"
+  },
+  {
+    "id": 98,
+    "Description": "Nuovo fornitore propone un contratto vantaggioso",
+    "typeReparto": "Farmacia"
+  },
+  {
+    "id": 99,
+    "Description": "Farmaci danneggiati durante il trasporto",
+    "typeReparto": "Farmacia"
+  },
+  {
+    "id": 100,
+    "Description": "Proposta di creare un'area sterile dedicata",
+    "typeReparto": "Farmacia"
+  },
+  {
+    "id": 101,
+    "Description": "Guasto alla macchina TAC principale",
+    "typeReparto": "Radiologia"
+  },
+  {
+    "id": 102,
+    "Description": "Richiesta urgente di radiografie dal Pronto Soccorso",
+    "typeReparto": "Radiologia"
+  },
+  {
+    "id": 103,
+    "Description": "Paziente claustrofobico rifiuta la risonanza magnetica",
+    "typeReparto": "Radiologia"
+  },
+  {
+    "id": 104,
+    "Description": "Mancanza di contrasto per esami avanzati",
+    "typeReparto": "Radiologia"
+  },
+  {
+    "id": 105,
+    "Description": "Proposta di acquistare un nuovo ecografo",
+    "typeReparto": "Radiologia"
+  },
+  {
+    "id": 106,
+    "Description": "Errore nella refertazione di un esame",
+    "typeReparto": "Radiologia"
+  },
+  {
+    "id": 107,
+    "Description": "Paziente VIP richiede priorità per una risonanza",
+    "typeReparto": "Radiologia"
+  },
+  {
+    "id": 108,
+    "Description": "Richiesta di aumentare il personale tecnico",
+    "typeReparto": "Radiologia"
+  },
+  {
+    "id": 109,
+    "Description": "Sovraccarico di richieste per esami urgenti",
+    "typeReparto": "Radiologia"
+  },
+  {
+    "id": 110,
+    "Description": "Guasto al sistema di archiviazione immagini (PACS)",
+    "typeReparto": "Radiologia"
+  },
+  {
+    "id": 111,
+    "Description": "Paziente non collaborativo durante l'esame",
+    "typeReparto": "Radiologia"
+  },
+  {
+    "id": 112,
+    "Description": "Proposta di introdurre radiologia domiciliare",
+    "typeReparto": "Radiologia"
+  },
+  {
+    "id": 113,
+    "Description": "Ritardo nella consegna dei referti",
+    "typeReparto": "Radiologia"
+  },
+  {
+    "id": 114,
+    "Description": "Paziente con sospetta frattura richiede esame immediato",
+    "typeReparto": "Radiologia"
+  },
+  {
+    "id": 115,
+    "Description": "Richiesta di aggiornare i protocolli di sicurezza",
+    "typeReparto": "Radiologia"
+  },
+  {
+    "id": 116,
+    "Description": "Nuovo tecnico inesperto entra nel reparto",
+    "typeReparto": "Radiologia"
+  },
+  {
+    "id": 117,
+    "Description": "Paziente obeso richiede apparecchiatura speciale",
+    "typeReparto": "Radiologia"
+  },
+  {
+    "id": 118,
+    "Description": "Mancanza di dispositivi di protezione dalle radiazioni",
+    "typeReparto": "Radiologia"
+  },
+  {
+    "id": 119,
+    "Description": "Protesta dei pazienti per attese troppo lunghe",
+    "typeReparto": "Radiologia"
+  },
+  {
+    "id": 120,
+    "Description": "Richiesta di esami aggiuntivi non programmati",
+    "typeReparto": "Radiologia"
+  },
+  {
+    "id": 121,
+    "Description": "Paziente con pacemaker richiede esame alternativo",
+    "typeReparto": "Radiologia"
+  },
+  {
+    "id": 122,
+    "Description": "Proposta di introdurre intelligenza artificiale per refertazione",
+    "typeReparto": "Radiologia"
+  },
+  {
+    "id": 123,
+    "Description": "Guasto al sistema di raffreddamento della risonanza",
+    "typeReparto": "Radiologia"
+  },
+  {
+    "id": 124,
+    "Description": "Paziente pediatrico necessita esame con sedazione",
+    "typeReparto": "Radiologia"
+  },
+  {
+    "id": 125,
+    "Description": "Richiesta di aumentare la qualità delle immagini diagnostiche",
+    "typeReparto": "Radiologia"
+  },
+  {
+    "id": 126,
+    "Description": "Guasto all’analizzatore principale del sangue",
+    "typeReparto": "LaboratorioAnalisi"
+  },
+  {
+    "id": 127,
+    "Description": "Campione ematico insufficiente per l’esame richiesto",
+    "typeReparto": "LaboratorioAnalisi"
+  },
+  {
+    "id": 128,
+    "Description": "Richiesta urgente di analisi dal Pronto Soccorso",
+    "typeReparto": "LaboratorioAnalisi"
+  },
+  {
+    "id": 129,
+    "Description": "Errore nella registrazione di un campione",
+    "typeReparto": "LaboratorioAnalisi"
+  },
+  {
+    "id": 130,
+    "Description": "Proposta di acquistare un nuovo analizzatore automatico",
+    "typeReparto": "LaboratorioAnalisi"
+  },
+  {
+    "id": 131,
+    "Description": "Reagenti in esaurimento",
+    "typeReparto": "LaboratorioAnalisi"
+  },
+  {
+    "id": 132,
+    "Description": "Paziente richiede risultati immediati",
+    "typeReparto": "LaboratorioAnalisi"
+  },
+  {
+    "id": 133,
+    "Description": "Contaminazione sospetta di un lotto di campioni",
+    "typeReparto": "LaboratorioAnalisi"
+  },
+  {
+    "id": 134,
+    "Description": "Richiesta di aumentare la qualità dei controlli",
+    "typeReparto": "LaboratorioAnalisi"
+  },
+  {
+    "id": 135,
+    "Description": "Nuovo tecnico inesperto entra nel laboratorio",
+    "typeReparto": "LaboratorioAnalisi"
+  },
+  {
+    "id": 136,
+    "Description": "Sistema informatico LIMS rallentato",
+    "typeReparto": "LaboratorioAnalisi"
+  },
+  {
+    "id": 137,
+    "Description": "Richiesta di esami tossicologici urgenti",
+    "typeReparto": "LaboratorioAnalisi"
+  },
+  {
+    "id": 138,
+    "Description": "Paziente contesta i risultati ottenuti",
+    "typeReparto": "LaboratorioAnalisi"
+  },
+  {
+    "id": 139,
+    "Description": "Proposta di introdurre turni notturni",
+    "typeReparto": "LaboratorioAnalisi"
+  },
+  {
+    "id": 140,
+    "Description": "Mancanza di provette sterili",
+    "typeReparto": "LaboratorioAnalisi"
+  },
+  {
+    "id": 141,
+    "Description": "Richiesta di referti più rapidi",
+    "typeReparto": "LaboratorioAnalisi"
+  },
+  {
+    "id": 142,
+    "Description": "Errore nella centrifugazione dei campioni",
+    "typeReparto": "LaboratorioAnalisi"
+  },
+  {
+    "id": 143,
+    "Description": "Proposta di introdurre IA per analisi automatiche",
+    "typeReparto": "LaboratorioAnalisi"
+  },
+  {
+    "id": 144,
+    "Description": "Campione perso durante il trasporto interno",
+    "typeReparto": "LaboratorioAnalisi"
+  },
+  {
+    "id": 145,
+    "Description": "Richiesta di aumentare la sicurezza biologica",
+    "typeReparto": "LaboratorioAnalisi"
+  },
+  {
+    "id": 146,
+    "Description": "Paziente necessita analisi rare e costose",
+    "typeReparto": "LaboratorioAnalisi"
+  },
+  {
+    "id": 147,
+    "Description": "Guasto alla centrifuga principale",
+    "typeReparto": "LaboratorioAnalisi"
+  },
+  {
+    "id": 148,
+    "Description": "Richiesta di collaborazione con un laboratorio esterno",
+    "typeReparto": "LaboratorioAnalisi"
+  },
+  {
+    "id": 149,
+    "Description": "Protesta del personale per carico di lavoro eccessivo",
+    "typeReparto": "LaboratorioAnalisi"
+  },
+  {
+    "id": 150,
+    "Description": "Richiesta di aumentare la precisione degli esami",
+    "typeReparto": "LaboratorioAnalisi"
+  },
+  {
+    "id": 151,
+    "Description": "Mancanza improvvisa di ingredienti freschi",
+    "typeReparto": "Mensa"
+  },
+  {
+    "id": 152,
+    "Description": "Protesta dei pazienti per la qualità dei pasti",
+    "typeReparto": "Mensa"
+  },
+  {
+    "id": 153,
+    "Description": "Guasto al forno principale della cucina",
+    "typeReparto": "Mensa"
+  },
+  {
+    "id": 154,
+    "Description": "Richiesta di pasti speciali per un reparto",
+    "typeReparto": "Mensa"
+  },
+  {
+    "id": 155,
+    "Description": "Controllo igienico-sanitario a sorpresa",
+    "typeReparto": "Mensa"
+  },
+  {
+    "id": 156,
+    "Description": "Proposta di introdurre un menu vegetariano",
+    "typeReparto": "Mensa"
+  },
+  {
+    "id": 157,
+    "Description": "Paziente allergico riceve un pasto sbagliato",
+    "typeReparto": "Mensa"
+  },
+  {
+    "id": 158,
+    "Description": "Richiesta di aumentare le porzioni",
+    "typeReparto": "Mensa"
+  },
+  {
+    "id": 159,
+    "Description": "Personale cucina lamenta turni troppo pesanti",
+    "typeReparto": "Mensa"
+  },
+  {
+    "id": 160,
+    "Description": "Fornitore ritarda la consegna degli alimenti",
+    "typeReparto": "Mensa"
+  },
+  {
+    "id": 161,
+    "Description": "Proposta di introdurre pasti personalizzati",
+    "typeReparto": "Mensa"
+  },
+  {
+    "id": 162,
+    "Description": "Carenza di stoviglie pulite",
+    "typeReparto": "Mensa"
+  },
+  {
+    "id": 163,
+    "Description": "Pazienti lamentano cibo troppo freddo",
+    "typeReparto": "Mensa"
+  },
+  {
+    "id": 164,
+    "Description": "Richiesta di pasti per pazienti diabetici",
+    "typeReparto": "Mensa"
+  },
+  {
+    "id": 165,
+    "Description": "Guasto al frigorifero principale",
+    "typeReparto": "Mensa"
+  },
+  {
+    "id": 166,
+    "Description": "Proposta di introdurre un menu internazionale",
+    "typeReparto": "Mensa"
+  },
+  {
+    "id": 167,
+    "Description": "Paziente rifiuta il pasto per motivi religiosi",
+    "typeReparto": "Mensa"
+  },
+  {
+    "id": 168,
+    "Description": "Mancanza di personale in cucina",
+    "typeReparto": "Mensa"
+  },
+  {
+    "id": 169,
+    "Description": "Richiesta di migliorare la qualità degli ingredienti",
+    "typeReparto": "Mensa"
+  },
+  {
+    "id": 170,
+    "Description": "Pazienti lamentano tempi di consegna troppo lunghi",
+    "typeReparto": "Mensa"
+  },
+  {
+    "id": 171,
+    "Description": "Proposta di introdurre pasti biologici",
+    "typeReparto": "Mensa"
+  },
+  {
+    "id": 172,
+    "Description": "Errore nella distribuzione dei pasti ai reparti",
+    "typeReparto": "Mensa"
+  },
+  {
+    "id": 173,
+    "Description": "Richiesta di pasti ipocalorici",
+    "typeReparto": "Mensa"
+  },
+  {
+    "id": 174,
+    "Description": "Carenza di acqua potabile in mensa",
+    "typeReparto": "Mensa"
+  },
+  {
+    "id": 175,
+    "Description": "Proposta di rinnovare completamente la cucina",
+    "typeReparto": "Mensa"
+  },
+  {
+    "id": 176,
+    "Description": "Richiesta di aumentare il budget annuale dell’ospedale",
+    "typeReparto": "Direzione"
+  },
+  {
+    "id": 177,
+    "Description": "Protesta del personale per stipendi troppo bassi",
+    "typeReparto": "Direzione"
+  },
+  {
+    "id": 178,
+    "Description": "Ispezione ministeriale a sorpresa",
+    "typeReparto": "Direzione"
+  },
+  {
+    "id": 179,
+    "Description": "Proposta di digitalizzare completamente la documentazione",
+    "typeReparto": "Direzione"
+  },
+  {
+    "id": 180,
+    "Description": "Pazienti lamentano tempi di attesa troppo lunghi",
+    "typeReparto": "Direzione"
+  },
+  {
+    "id": 181,
+    "Description": "Richiesta di assumere nuovo personale medico",
+    "typeReparto": "Direzione"
+  },
+  {
+    "id": 182,
+    "Description": "Guasto al sistema informatico centrale",
+    "typeReparto": "Direzione"
+  },
+  {
+    "id": 183,
+    "Description": "Proposta di riorganizzare i turni ospedalieri",
+    "typeReparto": "Direzione"
+  },
+  {
+    "id": 184,
+    "Description": "Paziente VIP richiede trattamento prioritario",
+    "typeReparto": "Direzione"
+  },
+  {
+    "id": 185,
+    "Description": "Richiesta di aumentare la sicurezza interna",
+    "typeReparto": "Direzione"
+  },
+  {
+    "id": 186,
+    "Description": "Proposta di tagliare i costi in diversi reparti",
+    "typeReparto": "Direzione"
+  },
+  {
+    "id": 187,
+    "Description": "Personale lamenta carenza di formazione",
+    "typeReparto": "Direzione"
+  },
+  {
+    "id": 188,
+    "Description": "Richiesta di rinnovare le attrezzature obsolete",
+    "typeReparto": "Direzione"
+  },
+  {
+    "id": 189,
+    "Description": "Pazienti segnalano scarsa comunicazione tra reparti",
+    "typeReparto": "Direzione"
+  },
+  {
+    "id": 190,
+    "Description": "Proposta di introdurre un sistema di valutazione del personale",
+    "typeReparto": "Direzione"
+  },
+  {
+    "id": 191,
+    "Description": "Richiesta di aumentare i posti letto disponibili",
+    "typeReparto": "Direzione"
+  },
+  {
+    "id": 192,
+    "Description": "Guasto all’impianto di climatizzazione dell’ospedale",
+    "typeReparto": "Direzione"
+  },
+  {
+    "id": 193,
+    "Description": "Protesta dei cittadini per la gestione dell’ospedale",
+    "typeReparto": "Direzione"
+  },
+  {
+    "id": 194,
+    "Description": "Richiesta di migliorare la qualità dei servizi",
+    "typeReparto": "Direzione"
+  },
+  {
+    "id": 195,
+    "Description": "Proposta di aprire un nuovo reparto specialistico",
+    "typeReparto": "Direzione"
+  },
+  {
+    "id": 196,
+    "Description": "Paziente denuncia un presunto errore medico",
+    "typeReparto": "Direzione"
+  },
+  {
+    "id": 197,
+    "Description": "Richiesta di aumentare la trasparenza amministrativa",
+    "typeReparto": "Direzione"
+  },
+  {
+    "id": 198,
+    "Description": "Proposta di introdurre un sistema di prenotazioni online",
+    "typeReparto": "Direzione"
+  },
+  {
+    "id": 199,
+    "Description": "Carenza di fondi per progetti futuri",
+    "typeReparto": "Direzione"
+  },
+  {
+    "id": 200,
+    "Description": "Richiesta di migliorare la comunicazione con i media",
+    "typeReparto": "Direzione"
+  },
+  {
+    "id": 201,
+    "Description": "Richiesta urgente di chemioterapia per un paziente critico",
+    "typeReparto": "Oncologia"
+  },
+  {
+    "id": 202,
+    "Description": "Mancanza di farmaci chemioterapici essenziali",
+    "typeReparto": "Oncologia"
+  },
+  {
+    "id": 203,
+    "Description": "Paziente manifesta gravi effetti collaterali",
+    "typeReparto": "Oncologia"
+  },
+  {
+    "id": 204,
+    "Description": "Proposta di introdurre un nuovo protocollo terapeutico",
+    "typeReparto": "Oncologia"
+  },
+  {
+    "id": 205,
+    "Description": "Guasto alla pompa di infusione per chemioterapia",
+    "typeReparto": "Oncologia"
+  },
+  {
+    "id": 206,
+    "Description": "Richiesta di aumentare il personale infermieristico",
+    "typeReparto": "Oncologia"
+  },
+  {
+    "id": 207,
+    "Description": "Paziente rifiuta il trattamento consigliato",
+    "typeReparto": "Oncologia"
+  },
+  {
+    "id": 208,
+    "Description": "Protesta dei familiari per tempi di attesa troppo lunghi",
+    "typeReparto": "Oncologia"
+  },
+  {
+    "id": 209,
+    "Description": "Richiesta di accesso a farmaci sperimentali",
+    "typeReparto": "Oncologia"
+  },
+  {
+    "id": 210,
+    "Description": "Paziente necessita ricovero immediato per complicazioni",
+    "typeReparto": "Oncologia"
+  },
+  {
+    "id": 211,
+    "Description": "Proposta di creare un’area dedicata alle cure palliative",
+    "typeReparto": "Oncologia"
+  },
+  {
+    "id": 212,
+    "Description": "Mancanza di posti disponibili per infusioni",
+    "typeReparto": "Oncologia"
+  },
+  {
+    "id": 213,
+    "Description": "Errore nella preparazione di un farmaco chemioterapico",
+    "typeReparto": "Oncologia"
+  },
+  {
+    "id": 214,
+    "Description": "Richiesta di supporto psicologico aggiuntivo per i pazienti",
+    "typeReparto": "Oncologia"
+  },
+  {
+    "id": 215,
+    "Description": "Paziente VIP richiede un trattamento prioritario",
+    "typeReparto": "Oncologia"
+  },
+  {
+    "id": 216,
+    "Description": "Proposta di acquistare nuove apparecchiature diagnostiche",
+    "typeReparto": "Oncologia"
+  },
+  {
+    "id": 217,
+    "Description": "Paziente segnala scarsa comunicazione con il personale",
+    "typeReparto": "Oncologia"
+  },
+  {
+    "id": 218,
+    "Description": "Richiesta di aumentare la qualità dei controlli sui farmaci",
+    "typeReparto": "Oncologia"
+  },
+  {
+    "id": 219,
+    "Description": "Guasto al sistema di refrigerazione dei farmaci",
+    "typeReparto": "Oncologia"
+  },
+  {
+    "id": 220,
+    "Description": "Paziente necessita trasporto urgente per radioterapia",
+    "typeReparto": "Oncologia"
+  },
+  {
+    "id": 221,
+    "Description": "Proposta di introdurre un servizio di telemedicina",
+    "typeReparto": "Oncologia"
+  },
+  {
+    "id": 222,
+    "Description": "Personale lamenta sovraccarico di lavoro",
+    "typeReparto": "Oncologia"
+  },
+  {
+    "id": 223,
+    "Description": "Richiesta di aumentare la privacy nelle sale trattamento",
+    "typeReparto": "Oncologia"
+  },
+  {
+    "id": 224,
+    "Description": "Paziente richiede un secondo parere esterno",
+    "typeReparto": "Oncologia"
+  },
+  {
+    "id": 225,
+    "Description": "Proposta di riorganizzare completamente il reparto",
+    "typeReparto": "Oncologia"
+  },
+  {
+    "id": 226,
+    "Description": "Arriva un paziente con sospetto infarto acuto",
+    "typeReparto": "Cardiologia"
+  },
+  {
+    "id": 227,
+    "Description": "Mancanza di posti disponibili in terapia intensiva cardiologica",
+    "typeReparto": "Cardiologia"
+  },
+  {
+    "id": 228,
+    "Description": "Guasto all’elettrocardiografo principale",
+    "typeReparto": "Cardiologia"
+  },
+  {
+    "id": 229,
+    "Description": "Richiesta urgente di ecocardiogramma dal Pronto Soccorso",
+    "typeReparto": "Cardiologia"
+  },
+  {
+    "id": 230,
+    "Description": "Paziente rifiuta l’impianto di pacemaker consigliato",
+    "typeReparto": "Cardiologia"
+  },
+  {
+    "id": 231,
+    "Description": "Proposta di introdurre un nuovo protocollo per aritmie",
+    "typeReparto": "Cardiologia"
+  },
+  {
+    "id": 232,
+    "Description": "Mancanza di farmaci antiaritmici essenziali",
+    "typeReparto": "Cardiologia"
+  },
+  {
+    "id": 233,
+    "Description": "Paziente manifesta complicazioni dopo angioplastica",
+    "typeReparto": "Cardiologia"
+  },
+  {
+    "id": 234,
+    "Description": "Richiesta di aumentare il personale infermieristico",
+    "typeReparto": "Cardiologia"
+  },
+  {
+    "id": 235,
+    "Description": "Protesta dei pazienti per attese troppo lunghe",
+    "typeReparto": "Cardiologia"
+  },
+  {
+    "id": 236,
+    "Description": "Guasto al monitor multiparametrico",
+    "typeReparto": "Cardiologia"
+  },
+  {
+    "id": 237,
+    "Description": "Richiesta di accesso a un farmaco sperimentale cardiologico",
+    "typeReparto": "Cardiologia"
+  },
+  {
+    "id": 238,
+    "Description": "Paziente VIP richiede priorità per un esame cardiaco",
+    "typeReparto": "Cardiologia"
+  },
+  {
+    "id": 239,
+    "Description": "Proposta di acquistare un nuovo ecocardiografo",
+    "typeReparto": "Cardiologia"
+  },
+  {
+    "id": 240,
+    "Description": "Errore nella refertazione di un ECG",
+    "typeReparto": "Cardiologia"
+  },
+  {
+    "id": 241,
+    "Description": "Richiesta di aumentare la qualità dei controlli",
+    "typeReparto": "Cardiologia"
+  },
+  {
+    "id": 242,
+    "Description": "Paziente necessita trasporto urgente in sala emodinamica",
+    "typeReparto": "Cardiologia"
+  },
+  {
+    "id": 243,
+    "Description": "Personale lamenta sovraccarico di lavoro",
+    "typeReparto": "Cardiologia"
+  },
+  {
+    "id": 244,
+    "Description": "Proposta di introdurre telemonitoraggio cardiaco",
+    "typeReparto": "Cardiologia"
+  },
+  {
+    "id": 245,
+    "Description": "Mancanza di elettrodi monouso per ECG",
+    "typeReparto": "Cardiologia"
+  },
+  {
+    "id": 246,
+    "Description": "Paziente richiede un secondo parere esterno",
+    "typeReparto": "Cardiologia"
+  },
+  {
+    "id": 247,
+    "Description": "Guasto al defibrillatore principale",
+    "typeReparto": "Cardiologia"
+  },
+  {
+    "id": 248,
+    "Description": "Richiesta di migliorare la privacy nelle sale visita",
+    "typeReparto": "Cardiologia"
+  },
+  {
+    "id": 249,
+    "Description": "Paziente con insufficienza cardiaca richiede ricovero immediato",
+    "typeReparto": "Cardiologia"
+  },
+  {
+    "id": 250,
+    "Description": "Proposta di riorganizzare completamente il reparto",
+    "typeReparto": "Cardiologia"
   }
 ]

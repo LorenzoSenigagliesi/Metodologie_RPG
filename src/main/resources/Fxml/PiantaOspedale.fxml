@@ -251,7 +251,9 @@
             <Circle fx:id="ledRadiologia" fill="#2ecc71" layoutX="845" layoutY="375" radius="6" />
 
             <!-- LABORATORIO ANALISI -->
-            <Button fx:id="btnLaboratorio" alignment="TOP_CENTER" layoutX="620" layoutY="500" prefHeight="120" prefWidth="240" style="-fx-background-color: #1a1f2b; -fx-border-color: #7ee787; -fx-border-width: 2.5; -fx-border-radius: 6; -fx-background-radius: 6; -fx-text-fill: #7ee787; -fx-font-weight: bold; -fx-font-size: 11; -fx-padding: 12 5 5 5;" text="LABORATORIO ANALISI" wrapText="true" />
+            <Button fx:id="LaboratorioAnalisi" alignment="TOP_CENTER" layoutX="620" layoutY="500" prefHeight="120"
+                    prefWidth="240" style="-fx-background-color: #1a1f2b; -fx-border-color: #7ee787; -fx-border-width: 2.5; -fx-border-radius: 6; -fx-background-radius: 6; -fx-text-fill: #7ee787; -fx-font-weight: bold; -fx-font-size: 11; -fx-padding: 12 5 5 5;"
+                    text="LABORATORIO ANALISI" wrapText="true" onAction="#OpenBoard"/>
             <!-- Bancone -->
             <Rectangle fill="#7ee787" height="9" layoutX="635" layoutY="540" opacity="0.12" width="100" />
             <Rectangle fill="#7ee787" height="2" layoutX="635" layoutY="540" opacity="0.35" width="100" />
@@ -276,8 +278,7 @@
             <!-- Struttura degenza -->
             <Button fx:id="Degenza" alignment="TOP_CENTER" layoutX="880" layoutY="30" prefHeight="250" prefWidth="258"
                     style="-fx-background-color: #1a1f2b; -fx-border-color: #8b949e; -fx-border-width: 2; -fx-border-radius: 6; -fx-background-radius: 6; -fx-text-fill: #8b949e; -fx-font-weight: bold; -fx-font-size: 13; -fx-padding: 12 5 5 5;"
-                    text="DEGENZA" wrapText="true"
-                    onAction="#OpenBoard"/>
+                    text="DEGENZA" wrapText="true"/>
             <!-- Camera 101 -->
             <Rectangle arcHeight="3" arcWidth="3" fill="#21262d" height="60" layoutX="893" layoutY="65" stroke="#484f58" strokeWidth="1.0" width="112" />
             <Text fill="#484f58" layoutX="900" layoutY="79" text="Camera 101">
@@ -347,7 +348,7 @@
             <!-- DIREZIONE SANITARIA -->
             <Button fx:id="Direzione" alignment="TOP_CENTER" layoutX="880" layoutY="365" prefHeight="100" prefWidth="258"
                     style="-fx-background-color: #1a1f2b; -fx-border-color: #a371f7; -fx-border-width: 2; -fx-border-radius: 6; -fx-background-radius: 6; -fx-text-fill: #a371f7; -fx-font-weight: bold; -fx-font-size: 11; -fx-padding: 12 5 5 5;"
-                    text="DIREZIONE SANITARIA" wrapText="true" />
+                    text="DIREZIONE SANITARIA" wrapText="true" onAction="#OpenBoard"/>
             <!-- Scrivanie -->
             <Rectangle arcHeight="3" arcWidth="3" fill="#a371f7" height="20" layoutX="900" layoutY="405" opacity="0.12" width="55" />
             <Rectangle arcHeight="3" arcWidth="3" fill="#21262d" height="15" layoutX="918" layoutY="428" stroke="#a371f7" strokeWidth="0.8" width="16" />
@@ -358,7 +359,9 @@
             <Line endX="1122" endY="417" opacity="0.5" startX="1090" startY="417" stroke="#a371f7" strokeWidth="0.5" />
 
             <!-- MENSA -->
-            <Button fx:id="btnMensa" alignment="TOP_CENTER" layoutX="880" layoutY="478" prefHeight="142" prefWidth="258" style="-fx-background-color: #1a1f2b; -fx-border-color: #ffa657; -fx-border-width: 2; -fx-border-radius: 6; -fx-background-radius: 6; -fx-text-fill: #ffa657; -fx-font-weight: bold; -fx-font-size: 12; -fx-padding: 12 5 5 5;" text="MENSA" wrapText="true" />
+            <Button fx:id="Mensa" alignment="TOP_CENTER" layoutX="880" layoutY="478" prefHeight="142"
+                    prefWidth="258" style="-fx-background-color: #1a1f2b; -fx-border-color: #ffa657; -fx-border-width: 2; -fx-border-radius: 6; -fx-background-radius: 6; -fx-text-fill: #ffa657; -fx-font-weight: bold; -fx-font-size: 12; -fx-padding: 12 5 5 5;"
+                    text="MENSA" wrapText="true" onAction="#OpenBoard"/>
             <!-- Tavoli rotondi -->
             <Circle fill="TRANSPARENT" layoutX="930" layoutY="535" opacity="0.35" radius="14" stroke="#ffa657" strokeWidth="1.0" />
             <Circle fill="#8b949e" layoutX="930" layoutY="521" radius="3" />
@@ -476,33 +479,33 @@
             </padding>
             <HBox alignment="CENTER" spacing="5.0">
                 <Circle fill="#4FC3F7" radius="4" />
-                <Label fx:id="lblFiduciaPazienti" text="Fiducia: 50" textFill="#4FC3F7">
+                <Label fx:id="LabelFiduciaPazienti" text="Fiducia: 50" textFill="#4FC3F7">
                     <font><Font name="System Bold" size="11.0" /></font>
                 </Label>
             </HBox>
             <HBox alignment="CENTER" spacing="5.0">
                 <Circle fill="#FFD54F" radius="4" />
-                <Label fx:id="lblBudgetOperativo" text="Budget: 50" textFill="#FFD54F">
+                <Label fx:id="LabelBudgetOperativo" text="Budget: 50" textFill="#FFD54F">
                     <font><Font name="System Bold" size="11.0" /></font>
                 </Label>
             </HBox>
             <HBox alignment="CENTER" spacing="5.0">
                 <Circle fill="#81C784" radius="4" />
-                <Label fx:id="lblMoralePersonale" text="Morale: 50" textFill="#81C784">
+                <Label fx:id="LabelMoralePersonale" text="Morale: 50" textFill="#81C784">
                     <font><Font name="System Bold" size="11.0" /></font>
                 </Label>
             </HBox>
             <HBox alignment="CENTER" spacing="5.0">
                 <Circle fill="#E57373" radius="4" />
-                <Label fx:id="lblQualitaCure" text="Qualità: 50" textFill="#E57373">
+                <Label fx:id="LabelQualitaCure" text="Qualità: 50" textFill="#E57373">
                     <font><Font name="System Bold" size="11.0" /></font>
                 </Label>
             </HBox>
             <Label text="|" textFill="#30363d" />
-            <Label fx:id="lblTotalePazienti" text="Pazienti: 23" textFill="#8b949e">
+            <Label fx:id="LabelTotalePazienti" text="Pazienti: 23" textFill="#8b949e">
                 <font><Font size="11.0" /></font>
             </Label>
-            <Label fx:id="lblStatoGenerale" text="Stato: Operativo" textFill="#2ecc71">
+            <Label fx:id="LabelStatoGenerale" text="Stato: Operativo" textFill="#2ecc71">
                 <font><Font name="System Bold" size="11.0" /></font>
             </Label>
         </HBox>

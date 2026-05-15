@@ -2,19 +2,4501 @@
   {
     "IdEvento": 1,
     "id": 1,
-    "Description": "Sceltaewqd1",
-    "FiduciaPazienti": 1,
+    "Description": "Assumi personale extra per gestire l'epidemia",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 1,
+    "id": 2,
+    "Description": "Gestisci l'emergenza con le risorse attuali",
+    "FiduciaPazienti": -1,
     "Budget": 1,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 2,
+    "id": 1,
+    "Description": "Dedica più tempo ai genitori ansiosi",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": -1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 2,
+    "id": 2,
+    "Description": "Riduci gli aggiornamenti per mantenere l'efficienza",
+    "FiduciaPazienti": -2,
+    "Budget": 1,
+    "MoralePersonale": 1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 3,
+    "id": 1,
+    "Description": "Approvi l'evento dei clown di corsia",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 2,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 3,
+    "id": 2,
+    "Description": "Rifiuti l'evento per evitare distrazioni",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 4,
+    "id": 1,
+    "Description": "Sostituisci tutti i giocattoli non igienici",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 0,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 4,
+    "id": 2,
+    "Description": "Disinfetta e riutilizza i giocattoli",
+    "FiduciaPazienti": 0,
+    "Budget": -1,
+    "MoralePersonale": 0,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 5,
+    "id": 1,
+    "Description": "Applichi un protocollo di cura più delicato",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 5,
+    "id": 2,
+    "Description": "Procedi con le cure standard",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 6,
+    "id": 1,
+    "Description": "Investi nella nuova sala giochi",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 2,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 6,
+    "id": 2,
+    "Description": "Rimandi il progetto",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 7,
+    "id": 1,
+    "Description": "Avvii una campagna vaccinale",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 7,
+    "id": 2,
+    "Description": "Rimandi la campagna",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 8,
+    "id": 1,
+    "Description": "Assumi rinforzi per ridurre il burnout",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 2,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 8,
+    "id": 2,
+    "Description": "Ignori il problema",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -2,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 9,
+    "id": 1,
+    "Description": "Trasferisci il caso complesso a un centro specializzato",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 9,
+    "id": 2,
+    "Description": "Gestisci internamente il caso",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 10,
+    "id": 1,
+    "Description": "Implementi il protocollo Dolore Zero",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 10,
+    "id": 2,
+    "Description": "Rinunci al protocollo",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 11,
+    "id": 1,
+    "Description": "Introduci lo screening neonatale avanzato",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 11,
+    "id": 2,
+    "Description": "Mantieni lo screening base",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 12,
+    "id": 1,
+    "Description": "Aumenti i turni per ridurre le attese",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": -1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 12,
+    "id": 2,
+    "Description": "Mantieni gli orari attuali",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": 1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 13,
+    "id": 1,
+    "Description": "Invii il personale al corso di comunicazione",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 2,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 13,
+    "id": 2,
+    "Description": "Eviti la spesa del corso",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 14,
+    "id": 1,
+    "Description": "Organizzi il workshop con il pediatra famoso",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 2,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 14,
+    "id": 2,
+    "Description": "Declini la proposta",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 15,
+    "id": 1,
+    "Description": "Concedi supporto economico alla famiglia",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
     "MoralePersonale": 1,
     "QualitaCure": 1
   },
   {
-    "IdEvento": 1,
+    "IdEvento": 15,
+    "id": 2,
+    "Description": "Rifiuti l'aiuto",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 16,
     "id": 1,
-    "Description": "Sceltaewdwe2",
+    "Description": "Acquisti nuovi lettini pediatrici",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 16,
+    "id": 2,
+    "Description": "Continui a usare quelli vecchi",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 17,
+    "id": 1,
+    "Description": "Rivedi il menu della mensa per evitare allergeni",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 17,
+    "id": 2,
+    "Description": "Mantieni il menu attuale",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 18,
+    "id": 1,
+    "Description": "Acquisti farmaci pediatrici mancanti",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 18,
+    "id": 2,
+    "Description": "Rimandi l'acquisto",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 19,
+    "id": 1,
+    "Description": "Introduci visite psicologiche pediatriche",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 19,
+    "id": 2,
+    "Description": "Rinunci al servizio psicologico",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 20,
+    "id": 1,
+    "Description": "Ripari subito i macchinari radiologici",
     "FiduciaPazienti": 1,
-    "Budget": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 20,
+    "id": 2,
+    "Description": "Usi un centro esterno temporaneamente",
+    "FiduciaPazienti": -1,
+    "Budget": -1,
+    "MoralePersonale": 0,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 21,
+    "id": 1,
+    "Description": "Accetti la donazione di libri illustrati",
+    "FiduciaPazienti": 1,
+    "Budget": 0,
+    "MoralePersonale": 1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 21,
+    "id": 2,
+    "Description": "Rifiuti la donazione",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 22,
+    "id": 1,
+    "Description": "Coinvolgi educatori per gestire il bambino iperattivo",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
     "MoralePersonale": 1,
     "QualitaCure": 1
+  },
+  {
+    "IdEvento": 22,
+    "id": 2,
+    "Description": "Lasci che il personale gestisca da solo",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 23,
+    "id": 1,
+    "Description": "Introduci musica rilassante nel reparto",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 23,
+    "id": 2,
+    "Description": "Eviti modifiche all'ambiente",
+    "FiduciaPazienti": 0,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 24,
+    "id": 1,
+    "Description": "Aumenti il personale per ridurre le attese",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 24,
+    "id": 2,
+    "Description": "Ignori le proteste dei genitori",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 25,
+    "id": 1,
+    "Description": "Applichi un nuovo protocollo di igiene",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 25,
+    "id": 2,
+    "Description": "Mantieni il protocollo attuale",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 26,
+    "id": 1,
+    "Description": "Mobiliti un team d'urgenza per l'appendicite complicata",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 26,
+    "id": 2,
+    "Description": "Gestisci l'intervento con il personale disponibile",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 27,
+    "id": 1,
+    "Description": "Cerchi un anestesista esperto in alternative",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 27,
+    "id": 2,
+    "Description": "Insisti sull'anestesia generale standard",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 28,
+    "id": 1,
+    "Description": "Sostituisci subito la strumentazione danneggiata",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 28,
+    "id": 2,
+    "Description": "Continui a usare strumenti di riserva",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 29,
+    "id": 1,
+    "Description": "Valuti l'acquisto del robot chirurgico",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 29,
+    "id": 2,
+    "Description": "Rimandi l'investimento",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 30,
+    "id": 1,
+    "Description": "Chiami un chirurgo senior per supporto",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 30,
+    "id": 2,
+    "Description": "Gestisci la complicazione internamente",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 31,
+    "id": 1,
+    "Description": "Applichi il nuovo protocollo proposto",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 31,
+    "id": 2,
+    "Description": "Mantieni i protocolli attuali",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 32,
+    "id": 1,
+    "Description": "Accetti l'intervento ad alto rischio",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 32,
+    "id": 2,
+    "Description": "Trasferisci il paziente in un altro centro",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 33,
+    "id": 1,
+    "Description": "Richiedi sangue a un ospedale vicino",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 0,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 33,
+    "id": 2,
+    "Description": "Rinvi gli interventi non urgenti",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 34,
+    "id": 1,
+    "Description": "Aggiorni la sala operatoria",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 2,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 34,
+    "id": 2,
+    "Description": "Rinunci all'aggiornamento",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 35,
+    "id": 1,
+    "Description": "Ripeti la preparazione pre-operatoria",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 0,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 35,
+    "id": 2,
+    "Description": "Procedi comunque con l'intervento",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 36,
+    "id": 1,
+    "Description": "Cerchi farmaci alternativi sicuri",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 36,
+    "id": 2,
+    "Description": "Usi farmaci standard con cautela",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 37,
+    "id": 1,
+    "Description": "Affianchi il nuovo chirurgo con un tutor",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 2,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 37,
+    "id": 2,
+    "Description": "Lo lasci lavorare autonomamente",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 38,
+    "id": 1,
+    "Description": "Riduci gli interventi programmati",
+    "FiduciaPazienti": -1,
+    "Budget": 1,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 38,
+    "id": 2,
+    "Description": "Mantieni il ritmo attuale",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 39,
+    "id": 1,
+    "Description": "Accetti il secondo parere richiesto",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 0,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 39,
+    "id": 2,
+    "Description": "Rifiuti la richiesta",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 40,
+    "id": 1,
+    "Description": "Ripari subito il sistema di illuminazione",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 40,
+    "id": 2,
+    "Description": "Usi illuminazione provvisoria",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 41,
+    "id": 1,
+    "Description": "Chiami personale aggiuntivo per l'intervento complesso",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 41,
+    "id": 2,
+    "Description": "Procedi con il personale disponibile",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 42,
+    "id": 1,
+    "Description": "Rinvi l'intervento per sicurezza",
+    "FiduciaPazienti": 1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 42,
+    "id": 2,
+    "Description": "Procedi nonostante il digiuno non rispettato",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 43,
+    "id": 1,
+    "Description": "Introduci check-list più severe",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 43,
+    "id": 2,
+    "Description": "Mantieni le procedure attuali",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 44,
+    "id": 1,
+    "Description": "Avvii un'indagine sulle complicazioni post-operatorie",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 0,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 44,
+    "id": 2,
+    "Description": "Attribuisci le complicazioni al caso",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 45,
+    "id": 1,
+    "Description": "Accogli la richiesta del paziente VIP",
+    "FiduciaPazienti": -1,
+    "Budget": 1,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 45,
+    "id": 2,
+    "Description": "Rifiuti il trattamento prioritario",
+    "FiduciaPazienti": 1,
+    "Budget": 0,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 46,
+    "id": 1,
+    "Description": "Assumi infermieri specializzati",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 2,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 46,
+    "id": 2,
+    "Description": "Redistribuisci il personale attuale",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 47,
+    "id": 1,
+    "Description": "Introduci turni notturni aggiuntivi",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": -1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 47,
+    "id": 2,
+    "Description": "Mantieni l'attuale organizzazione",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 48,
+    "id": 1,
+    "Description": "Isoli il paziente con infezione resistente",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 0,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 48,
+    "id": 2,
+    "Description": "Continui con le procedure standard",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 49,
+    "id": 1,
+    "Description": "Acquisti nuovi bisturi elettrici",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 49,
+    "id": 2,
+    "Description": "Continui con quelli attuali",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 50,
+    "id": 1,
+    "Description": "Organizzi una transizione con il chirurgo in pensione",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 50,
+    "id": 2,
+    "Description": "Non prepari un passaggio di consegne",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 51,
+    "id": 1,
+    "Description": "Attivi immediatamente il team trauma",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 51,
+    "id": 2,
+    "Description": "Gestisci il politrauma con il personale presente",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 52,
+    "id": 1,
+    "Description": "Chiami la sicurezza per calmare il paziente aggressivo",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 52,
+    "id": 2,
+    "Description": "Lasci che il personale gestisca la situazione",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 53,
+    "id": 1,
+    "Description": "Richiedi barelle aggiuntive da altri reparti",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 0,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 53,
+    "id": 2,
+    "Description": "Usi sedie e soluzioni provvisorie",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 54,
+    "id": 1,
+    "Description": "Attivi il generatore di emergenza",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 54,
+    "id": 2,
+    "Description": "Continui a operare con illuminazione ridotta",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 55,
+    "id": 1,
+    "Description": "Apri un'area triage dedicata all'intossicazione",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 55,
+    "id": 2,
+    "Description": "Gestisci i pazienti insieme agli altri",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 56,
+    "id": 1,
+    "Description": "Dai priorità assoluta al paziente con sintomi di infarto",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 56,
+    "id": 2,
+    "Description": "Segui l'ordine di arrivo",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 57,
+    "id": 1,
+    "Description": "Aumenti il personale al triage",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 2,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 57,
+    "id": 2,
+    "Description": "Mantieni l'organico attuale",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 58,
+    "id": 1,
+    "Description": "Accogli il paziente senza documenti e procedi con cautela",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 0,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 58,
+    "id": 2,
+    "Description": "Rifiuti l'accesso finché non si identifica",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 59,
+    "id": 1,
+    "Description": "Ripari subito il monitor dei parametri vitali",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 59,
+    "id": 2,
+    "Description": "Usi monitor manuali temporanei",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 60,
+    "id": 1,
+    "Description": "Dai priorità al bambino con febbre altissima",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 60,
+    "id": 2,
+    "Description": "Lo inserisci nella lista d'attesa",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 61,
+    "id": 1,
+    "Description": "Isoli il paziente sospetto infettivo",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 0,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 61,
+    "id": 2,
+    "Description": "Lo tratti come un caso normale",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 62,
+    "id": 1,
+    "Description": "Aumenti il personale per ridurre le attese",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 62,
+    "id": 2,
+    "Description": "Ignori le proteste",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 63,
+    "id": 1,
+    "Description": "Prepari subito la sala per il codice rosso",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 63,
+    "id": 2,
+    "Description": "Gestisci l'arrivo senza modificare l'organizzazione",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 64,
+    "id": 1,
+    "Description": "Intervieni immediatamente sul paziente in overdose",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 64,
+    "id": 2,
+    "Description": "Lo inserisci nella lista di priorità standard",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 65,
+    "id": 1,
+    "Description": "Applichi il nuovo protocollo triage",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 65,
+    "id": 2,
+    "Description": "Mantieni il protocollo attuale",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 66,
+    "id": 1,
+    "Description": "Assisti subito il paziente anziano caduto",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 66,
+    "id": 2,
+    "Description": "Lo fai attendere il suo turno",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 67,
+    "id": 1,
+    "Description": "Acquisti farmaci salvavita mancanti",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 67,
+    "id": 2,
+    "Description": "Rimandi l'acquisto",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 68,
+    "id": 1,
+    "Description": "Rifiuti la priorità al paziente VIP",
+    "FiduciaPazienti": 1,
+    "Budget": 0,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 68,
+    "id": 2,
+    "Description": "Accogli la richiesta del VIP",
+    "FiduciaPazienti": -2,
+    "Budget": 1,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 69,
+    "id": 1,
+    "Description": "Riduci i turni pesanti assumendo rinforzi",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 2,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 69,
+    "id": 2,
+    "Description": "Mantieni l'attuale organizzazione dei turni",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -2,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 70,
+    "id": 1,
+    "Description": "Dai priorità alla TAC urgente",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 70,
+    "id": 2,
+    "Description": "Inserisci il paziente nella lista standard",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 71,
+    "id": 1,
+    "Description": "Aumenti la sicurezza nel reparto",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 71,
+    "id": 2,
+    "Description": "Non modifichi le misure di sicurezza",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 72,
+    "id": 1,
+    "Description": "Intervieni immediatamente sulla crisi epilettica",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 72,
+    "id": 2,
+    "Description": "Attendi che il personale sia disponibile",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 73,
+    "id": 1,
+    "Description": "Attivi un protocollo per sospetta violenza domestica",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 0,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 73,
+    "id": 2,
+    "Description": "Tratti il caso come un normale infortunio",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 74,
+    "id": 1,
+    "Description": "Ripari subito il sistema informatico del triage",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 74,
+    "id": 2,
+    "Description": "Usi procedure manuali temporanee",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 75,
+    "id": 1,
+    "Description": "Intervieni immediatamente sulla ferita da arma da taglio",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 75,
+    "id": 2,
+    "Description": "Gestisci il caso secondo priorità standard",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 76,
+    "id": 1,
+    "Description": "Ordini immediatamente nuovi antibiotici essenziali",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 76,
+    "id": 2,
+    "Description": "Ridistribuisci le scorte rimanenti",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 77,
+    "id": 1,
+    "Description": "Contatti subito il fornitore per correggere l'errore",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 0,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 77,
+    "id": 2,
+    "Description": "Accetti la consegna e ti adatti",
+    "FiduciaPazienti": -1,
+    "Budget": 1,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 78,
+    "id": 1,
+    "Description": "Dai priorità ai farmaci salvavita richiesti dal PS",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 78,
+    "id": 2,
+    "Description": "Segui l'ordine di richiesta standard",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 79,
+    "id": 1,
+    "Description": "Elimini i farmaci scaduti e aggiorni i controlli",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 79,
+    "id": 2,
+    "Description": "Tieni i farmaci scaduti in magazzino per emergenze",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 80,
+    "id": 1,
+    "Description": "Implementi il sistema digitale di inventario",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 2,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 80,
+    "id": 2,
+    "Description": "Continui con il sistema manuale",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 81,
+    "id": 1,
+    "Description": "Indaghi sull'errore nella prescrizione",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 0,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 81,
+    "id": 2,
+    "Description": "Attribuisci l'errore al medico",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 82,
+    "id": 1,
+    "Description": "Avvii un'indagine interna sul furto",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 0,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 82,
+    "id": 2,
+    "Description": "Ignori il sospetto per evitare tensioni",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 83,
+    "id": 1,
+    "Description": "Aumenti le scorte di analgesici",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 83,
+    "id": 2,
+    "Description": "Mantieni le scorte attuali",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 84,
+    "id": 1,
+    "Description": "Richiedi autorizzazione per il farmaco sperimentale",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 84,
+    "id": 2,
+    "Description": "Rifiuti l'uso del farmaco sperimentale",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 85,
+    "id": 1,
+    "Description": "Ripari subito il frigorifero dei farmaci",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 85,
+    "id": 2,
+    "Description": "Trasferisci temporaneamente i farmaci altrove",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 86,
+    "id": 1,
+    "Description": "Contatti il corriere per accelerare la consegna",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 0,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 86,
+    "id": 2,
+    "Description": "Aspetti la consegna senza intervenire",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 87,
+    "id": 1,
+    "Description": "Organizzi la formazione sui nuovi dispositivi",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 2,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 87,
+    "id": 2,
+    "Description": "Rinunci alla formazione",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 88,
+    "id": 1,
+    "Description": "Cerchi il farmaco richiesto in altri ospedali",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 88,
+    "id": 2,
+    "Description": "Offri un'alternativa disponibile",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 89,
+    "id": 1,
+    "Description": "Collabori pienamente al controllo ispettivo",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 89,
+    "id": 2,
+    "Description": "Limiti l'accesso ai documenti",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 90,
+    "id": 1,
+    "Description": "Riduci le scorte per risparmiare",
+    "FiduciaPazienti": -1,
+    "Budget": 2,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 90,
+    "id": 2,
+    "Description": "Mantieni scorte abbondanti",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 91,
+    "id": 1,
+    "Description": "Assumi personale per ridurre il sovraccarico",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 2,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 91,
+    "id": 2,
+    "Description": "Mantieni l'organico attuale",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -2,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 92,
+    "id": 1,
+    "Description": "Dai priorità ai farmaci pediatrici richiesti",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 92,
+    "id": 2,
+    "Description": "Segui l'ordine di richiesta standard",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 93,
+    "id": 1,
+    "Description": "Rietichetti immediatamente il lotto errato",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 93,
+    "id": 2,
+    "Description": "Continui a usarlo con attenzione",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 94,
+    "id": 1,
+    "Description": "Introduci il servizio di consegna interna rapida",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 2,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 94,
+    "id": 2,
+    "Description": "Rinunci al nuovo servizio",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 95,
+    "id": 1,
+    "Description": "Applichi nuove procedure di sicurezza",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 95,
+    "id": 2,
+    "Description": "Mantieni le procedure attuali",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 96,
+    "id": 1,
+    "Description": "Aumenti il personale al banco farmaci",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 96,
+    "id": 2,
+    "Description": "Mantieni l'attuale velocità di servizio",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 97,
+    "id": 1,
+    "Description": "Acquisti farmaci più economici",
+    "FiduciaPazienti": -1,
+    "Budget": 2,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 97,
+    "id": 2,
+    "Description": "Mantieni farmaci di qualità superiore",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 98,
+    "id": 1,
+    "Description": "Accetti il contratto del nuovo fornitore",
+    "FiduciaPazienti": 1,
+    "Budget": 2,
+    "MoralePersonale": 0,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 98,
+    "id": 2,
+    "Description": "Rimani con il fornitore attuale",
+    "FiduciaPazienti": 0,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 99,
+    "id": 1,
+    "Description": "Richiedi un rimborso per i farmaci danneggiati",
+    "FiduciaPazienti": 1,
+    "Budget": 1,
+    "MoralePersonale": 0,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 99,
+    "id": 2,
+    "Description": "Accetti la perdita e smaltisci i farmaci",
+    "FiduciaPazienti": -1,
+    "Budget": -1,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 100,
+    "id": 1,
+    "Description": "Crei un'area sterile dedicata",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 2,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 100,
+    "id": 2,
+    "Description": "Rinunci alla nuova area sterile",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 101,
+    "id": 1,
+    "Description": "Ripari immediatamente la TAC principale",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 101,
+    "id": 2,
+    "Description": "Utilizzi la TAC secondaria meno performante",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 102,
+    "id": 1,
+    "Description": "Dai priorità alle richieste urgenti del PS",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 102,
+    "id": 2,
+    "Description": "Segui l'ordine di arrivo standard",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 103,
+    "id": 1,
+    "Description": "Offri una sedazione leggera al paziente claustrofobico",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 0,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 103,
+    "id": 2,
+    "Description": "Rimandi l'esame senza sedazione",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 104,
+    "id": 1,
+    "Description": "Ordini subito nuovo contrasto",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 104,
+    "id": 2,
+    "Description": "Esegui solo esami senza contrasto",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 105,
+    "id": 1,
+    "Description": "Acquisti il nuovo ecografo",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 2,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 105,
+    "id": 2,
+    "Description": "Rimandi l'acquisto",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 106,
+    "id": 1,
+    "Description": "Correggi immediatamente l'errore di refertazione",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 0,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 106,
+    "id": 2,
+    "Description": "Ignori l'errore per evitare ritardi",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 107,
+    "id": 1,
+    "Description": "Rifiuti la priorità al paziente VIP",
+    "FiduciaPazienti": 1,
+    "Budget": 0,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 107,
+    "id": 2,
+    "Description": "Accetti la richiesta del VIP",
+    "FiduciaPazienti": -2,
+    "Budget": 1,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 108,
+    "id": 1,
+    "Description": "Assumi nuovo personale tecnico",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 2,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 108,
+    "id": 2,
+    "Description": "Mantieni l'organico attuale",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -2,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 109,
+    "id": 1,
+    "Description": "Aumenti i turni per gestire le urgenze",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": -1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 109,
+    "id": 2,
+    "Description": "Rifiuti richieste extra",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": 1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 110,
+    "id": 1,
+    "Description": "Ripari subito il sistema PACS",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 110,
+    "id": 2,
+    "Description": "Usi archiviazione manuale temporanea",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 111,
+    "id": 1,
+    "Description": "Dedichi più tempo al paziente non collaborativo",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": -1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 111,
+    "id": 2,
+    "Description": "Procedi rapidamente senza adattamenti",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 112,
+    "id": 1,
+    "Description": "Avvii il servizio di radiologia domiciliare",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 112,
+    "id": 2,
+    "Description": "Rinunci al servizio",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 113,
+    "id": 1,
+    "Description": "Aumenti il personale per velocizzare i referti",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 113,
+    "id": 2,
+    "Description": "Mantieni i tempi attuali",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 114,
+    "id": 1,
+    "Description": "Dai priorità al sospetto di frattura",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 114,
+    "id": 2,
+    "Description": "Segui la lista d'attesa",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 115,
+    "id": 1,
+    "Description": "Aggiorni i protocolli di sicurezza",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 115,
+    "id": 2,
+    "Description": "Mantieni i protocolli attuali",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 116,
+    "id": 1,
+    "Description": "Affianchi il nuovo tecnico con un tutor",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 2,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 116,
+    "id": 2,
+    "Description": "Lo lasci lavorare autonomamente",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 117,
+    "id": 1,
+    "Description": "Usi apparecchiatura speciale per pazienti obesi",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 0,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 117,
+    "id": 2,
+    "Description": "Usi apparecchiatura standard",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 118,
+    "id": 1,
+    "Description": "Acquisti nuovi dispositivi di protezione",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 118,
+    "id": 2,
+    "Description": "Continui con le protezioni attuali",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 119,
+    "id": 1,
+    "Description": "Aumenti il personale per ridurre le attese",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 119,
+    "id": 2,
+    "Description": "Ignori le proteste",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 120,
+    "id": 1,
+    "Description": "Accetti gli esami aggiuntivi richiesti",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": -1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 120,
+    "id": 2,
+    "Description": "Rifiuti gli esami extra",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 121,
+    "id": 1,
+    "Description": "Offri un esame alternativo sicuro per pacemaker",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 0,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 121,
+    "id": 2,
+    "Description": "Rifiuti l'esame richiesto",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 122,
+    "id": 1,
+    "Description": "Introduci IA per la refertazione",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 122,
+    "id": 2,
+    "Description": "Rinunci alla tecnologia IA",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 123,
+    "id": 1,
+    "Description": "Ripari il sistema di raffreddamento della risonanza",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 123,
+    "id": 2,
+    "Description": "Riduci l'uso della risonanza",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 124,
+    "id": 1,
+    "Description": "Richiedi sedazione per il paziente pediatrico",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 124,
+    "id": 2,
+    "Description": "Esegui l'esame senza sedazione",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 125,
+    "id": 1,
+    "Description": "Investi in apparecchiature per immagini più nitide",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 125,
+    "id": 2,
+    "Description": "Mantieni la qualità attuale delle immagini",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 126,
+    "id": 1,
+    "Description": "Ripari subito l’analizzatore principale",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 126,
+    "id": 2,
+    "Description": "Usi un analizzatore secondario più lento",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 127,
+    "id": 1,
+    "Description": "Richiedi un nuovo prelievo",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 0,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 127,
+    "id": 2,
+    "Description": "Procedi con un’analisi parziale",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 128,
+    "id": 1,
+    "Description": "Dai priorità alle analisi urgenti del PS",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 128,
+    "id": 2,
+    "Description": "Segui l’ordine di arrivo",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 129,
+    "id": 1,
+    "Description": "Correggi subito l’errore di registrazione",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 0,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 129,
+    "id": 2,
+    "Description": "Ignori l’errore per non rallentare il lavoro",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 130,
+    "id": 1,
+    "Description": "Acquisti il nuovo analizzatore automatico",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 2,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 130,
+    "id": 2,
+    "Description": "Rimandi l’investimento",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 131,
+    "id": 1,
+    "Description": "Ordini nuovi reagenti",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 131,
+    "id": 2,
+    "Description": "Ridistribuisci le scorte rimanenti",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 132,
+    "id": 1,
+    "Description": "Dai priorità al paziente impaziente",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 0,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 132,
+    "id": 2,
+    "Description": "Segui la procedura standard",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 133,
+    "id": 1,
+    "Description": "Scarti l’intero lotto contaminato",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 0,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 133,
+    "id": 2,
+    "Description": "Analizzi comunque i campioni sospetti",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 134,
+    "id": 1,
+    "Description": "Aumenti i controlli qualità",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 134,
+    "id": 2,
+    "Description": "Mantieni i controlli attuali",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 135,
+    "id": 1,
+    "Description": "Affianchi il nuovo tecnico con un tutor",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 2,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 135,
+    "id": 2,
+    "Description": "Lo lasci lavorare autonomamente",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 136,
+    "id": 1,
+    "Description": "Ripari subito il sistema LIMS",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 136,
+    "id": 2,
+    "Description": "Usi procedure manuali temporanee",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 137,
+    "id": 1,
+    "Description": "Dai priorità agli esami tossicologici",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 137,
+    "id": 2,
+    "Description": "Segui la lista standard",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 138,
+    "id": 1,
+    "Description": "Ripeti l’analisi contestata",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 0,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 138,
+    "id": 2,
+    "Description": "Confermi il risultato senza ripetere l’esame",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 139,
+    "id": 1,
+    "Description": "Introduci turni notturni",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": -1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 139,
+    "id": 2,
+    "Description": "Mantieni l’orario attuale",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 140,
+    "id": 1,
+    "Description": "Acquisti nuove provette sterili",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 140,
+    "id": 2,
+    "Description": "Riusi provette non ideali",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 141,
+    "id": 1,
+    "Description": "Aumenti il personale per velocizzare i referti",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 141,
+    "id": 2,
+    "Description": "Mantieni i tempi attuali",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 142,
+    "id": 1,
+    "Description": "Ripeti la centrifugazione correttamente",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 0,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 142,
+    "id": 2,
+    "Description": "Usi comunque il campione danneggiato",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 143,
+    "id": 1,
+    "Description": "Introduci IA per analisi automatiche",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 143,
+    "id": 2,
+    "Description": "Rinunci alla tecnologia IA",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 144,
+    "id": 1,
+    "Description": "Ripeti il prelievo per il campione perso",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 0,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 144,
+    "id": 2,
+    "Description": "Procedi senza il campione mancante",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 145,
+    "id": 1,
+    "Description": "Aumenti la sicurezza biologica",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 145,
+    "id": 2,
+    "Description": "Mantieni le misure attuali",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 146,
+    "id": 1,
+    "Description": "Accetti di eseguire l’analisi rara e costosa",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 146,
+    "id": 2,
+    "Description": "Rifiuti l’analisi speciale",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 147,
+    "id": 1,
+    "Description": "Ripari la centrifuga principale",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 147,
+    "id": 2,
+    "Description": "Usi una centrifuga secondaria più lenta",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 148,
+    "id": 1,
+    "Description": "Collabori con un laboratorio esterno",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 148,
+    "id": 2,
+    "Description": "Gestisci tutto internamente",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 149,
+    "id": 1,
+    "Description": "Assumi personale per ridurre il carico di lavoro",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 2,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 149,
+    "id": 2,
+    "Description": "Mantieni l’organico attuale",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -2,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 150,
+    "id": 1,
+    "Description": "Investi in strumenti più precisi per aumentare l’accuratezza",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 150,
+    "id": 2,
+    "Description": "Mantieni gli strumenti attuali",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 151,
+    "id": 1,
+    "Description": "Acquisti ingredienti freschi da un fornitore alternativo",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 151,
+    "id": 2,
+    "Description": "Adatti il menu con ciò che rimane",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 152,
+    "id": 1,
+    "Description": "Migliori la qualità dei pasti con ingredienti migliori",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 152,
+    "id": 2,
+    "Description": "Mantieni il menu attuale",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 153,
+    "id": 1,
+    "Description": "Ripari subito il forno principale",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 153,
+    "id": 2,
+    "Description": "Usi forni secondari più lenti",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 154,
+    "id": 1,
+    "Description": "Prepari pasti speciali per il reparto",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 154,
+    "id": 2,
+    "Description": "Rifiuti la richiesta per mancanza di risorse",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 155,
+    "id": 1,
+    "Description": "Rafforzi subito le misure igieniche",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 155,
+    "id": 2,
+    "Description": "Non modifichi le procedure attuali",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 156,
+    "id": 1,
+    "Description": "Introduci un menu vegetariano",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 156,
+    "id": 2,
+    "Description": "Rifiuti la proposta",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 157,
+    "id": 1,
+    "Description": "Rivedi subito le procedure anti-allergeni",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 0,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 157,
+    "id": 2,
+    "Description": "Attribuisci l’errore a un caso isolato",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 158,
+    "id": 1,
+    "Description": "Aumenti leggermente le porzioni",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 158,
+    "id": 2,
+    "Description": "Mantieni le porzioni attuali",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 159,
+    "id": 1,
+    "Description": "Assumi personale aggiuntivo",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 2,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 159,
+    "id": 2,
+    "Description": "Mantieni l’organico attuale",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -2,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 160,
+    "id": 1,
+    "Description": "Contatti un fornitore alternativo",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 0,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 160,
+    "id": 2,
+    "Description": "Aspetti la consegna ritardata",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 161,
+    "id": 1,
+    "Description": "Introduci pasti personalizzati",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 161,
+    "id": 2,
+    "Description": "Rifiuti la personalizzazione",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 162,
+    "id": 1,
+    "Description": "Acquisti nuove stoviglie",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 162,
+    "id": 2,
+    "Description": "Ritardi la distribuzione per lavare le stoviglie",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 163,
+    "id": 1,
+    "Description": "Introduci contenitori termici migliori",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 163,
+    "id": 2,
+    "Description": "Continui con il sistema attuale",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 164,
+    "id": 1,
+    "Description": "Prepari pasti specifici per diabetici",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 164,
+    "id": 2,
+    "Description": "Offri alternative generiche",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 165,
+    "id": 1,
+    "Description": "Ripari subito il frigorifero",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 165,
+    "id": 2,
+    "Description": "Trasferisci gli alimenti in un frigorifero secondario",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 166,
+    "id": 1,
+    "Description": "Introduci un menu internazionale",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 166,
+    "id": 2,
+    "Description": "Mantieni il menu tradizionale",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 167,
+    "id": 1,
+    "Description": "Offri un pasto conforme alle sue esigenze religiose",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 167,
+    "id": 2,
+    "Description": "Non modifichi il pasto",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 168,
+    "id": 1,
+    "Description": "Assumi personale temporaneo",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 2,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 168,
+    "id": 2,
+    "Description": "Riduci il menu per gestire la carenza",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 169,
+    "id": 1,
+    "Description": "Acquisti ingredienti di qualità superiore",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 169,
+    "id": 2,
+    "Description": "Mantieni gli ingredienti attuali",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 170,
+    "id": 1,
+    "Description": "Aumenti il personale per velocizzare la consegna",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 170,
+    "id": 2,
+    "Description": "Mantieni i tempi attuali",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 171,
+    "id": 1,
+    "Description": "Introduci pasti biologici",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 171,
+    "id": 2,
+    "Description": "Rifiuti la proposta",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 172,
+    "id": 1,
+    "Description": "Riorganizzi la distribuzione dei pasti",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 172,
+    "id": 2,
+    "Description": "Continui con la procedura attuale",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 173,
+    "id": 1,
+    "Description": "Introduci pasti ipocalorici dedicati",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 173,
+    "id": 2,
+    "Description": "Offri alternative generiche",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 174,
+    "id": 1,
+    "Description": "Acquisti nuova acqua potabile",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 174,
+    "id": 2,
+    "Description": "Razionalizzi l’acqua disponibile",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 175,
+    "id": 1,
+    "Description": "Rinnovi completamente la cucina",
+    "FiduciaPazienti": 2,
+    "Budget": -3,
+    "MoralePersonale": 2,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 175,
+    "id": 2,
+    "Description": "Rinunci al rinnovo",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 176,
+    "id": 1,
+    "Description": "Richiedi formalmente un aumento del budget annuale",
+    "FiduciaPazienti": 1,
+    "Budget": 2,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 176,
+    "id": 2,
+    "Description": "Accetti il budget attuale senza modifiche",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 177,
+    "id": 1,
+    "Description": "Valuti un aumento degli stipendi",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 2,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 177,
+    "id": 2,
+    "Description": "Rifiuti la richiesta del personale",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -2,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 178,
+    "id": 1,
+    "Description": "Collabori pienamente con l’ispezione",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 178,
+    "id": 2,
+    "Description": "Limiti l’accesso ai documenti",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 179,
+    "id": 1,
+    "Description": "Digitalizzi tutta la documentazione",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 2,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 179,
+    "id": 2,
+    "Description": "Rinunci alla digitalizzazione",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 180,
+    "id": 1,
+    "Description": "Aumenti il personale per ridurre le attese",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 180,
+    "id": 2,
+    "Description": "Mantieni l’organizzazione attuale",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 181,
+    "id": 1,
+    "Description": "Assumi nuovo personale medico",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 2,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 181,
+    "id": 2,
+    "Description": "Rifiuti nuove assunzioni",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -2,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 182,
+    "id": 1,
+    "Description": "Ripari subito il sistema informatico centrale",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 182,
+    "id": 2,
+    "Description": "Usi procedure manuali temporanee",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 183,
+    "id": 1,
+    "Description": "Riorganizzi i turni ospedalieri",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 183,
+    "id": 2,
+    "Description": "Mantieni i turni attuali",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 184,
+    "id": 1,
+    "Description": "Rifiuti la priorità al paziente VIP",
+    "FiduciaPazienti": 1,
+    "Budget": 0,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 184,
+    "id": 2,
+    "Description": "Accetti la richiesta del VIP",
+    "FiduciaPazienti": -2,
+    "Budget": 1,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 185,
+    "id": 1,
+    "Description": "Aumenti la sicurezza interna",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 185,
+    "id": 2,
+    "Description": "Mantieni la sicurezza attuale",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 186,
+    "id": 1,
+    "Description": "Applichi tagli ai reparti",
+    "FiduciaPazienti": -1,
+    "Budget": 2,
+    "MoralePersonale": -2,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 186,
+    "id": 2,
+    "Description": "Eviti i tagli di budget",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 187,
+    "id": 1,
+    "Description": "Organizzi corsi di formazione",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 2,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 187,
+    "id": 2,
+    "Description": "Rifiuti la richiesta di formazione",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -2,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 188,
+    "id": 1,
+    "Description": "Rinnovi le attrezzature obsolete",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 188,
+    "id": 2,
+    "Description": "Rimandi il rinnovo",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 189,
+    "id": 1,
+    "Description": "Migliori la comunicazione tra reparti",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 189,
+    "id": 2,
+    "Description": "Ignori le segnalazioni",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 190,
+    "id": 1,
+    "Description": "Introduci un sistema di valutazione del personale",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": -1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 190,
+    "id": 2,
+    "Description": "Rinunci al sistema di valutazione",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 191,
+    "id": 1,
+    "Description": "Aumenti i posti letto disponibili",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 191,
+    "id": 2,
+    "Description": "Mantieni la capacità attuale",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 192,
+    "id": 1,
+    "Description": "Ripari l’impianto di climatizzazione",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 192,
+    "id": 2,
+    "Description": "Utilizzi soluzioni temporanee",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 193,
+    "id": 1,
+    "Description": "Incontri i cittadini per ascoltare le proteste",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 193,
+    "id": 2,
+    "Description": "Ignori le proteste",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 194,
+    "id": 1,
+    "Description": "Investi per migliorare i servizi",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 194,
+    "id": 2,
+    "Description": "Rinunci agli investimenti",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 195,
+    "id": 1,
+    "Description": "Apri un nuovo reparto specialistico",
+    "FiduciaPazienti": 2,
+    "Budget": -3,
+    "MoralePersonale": 2,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 195,
+    "id": 2,
+    "Description": "Rifiuti l’apertura del nuovo reparto",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 196,
+    "id": 1,
+    "Description": "Avvii un’indagine sull’errore medico",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": -1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 196,
+    "id": 2,
+    "Description": "Minimizzi l’accaduto",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -2,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 197,
+    "id": 1,
+    "Description": "Aumenti la trasparenza amministrativa",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 197,
+    "id": 2,
+    "Description": "Mantieni la gestione attuale",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 198,
+    "id": 1,
+    "Description": "Introduci un sistema di prenotazioni online",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 198,
+    "id": 2,
+    "Description": "Rinunci al sistema digitale",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 199,
+    "id": 1,
+    "Description": "Cerchi nuovi finanziamenti esterni",
+    "FiduciaPazienti": 1,
+    "Budget": 2,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 199,
+    "id": 2,
+    "Description": "Riduci i progetti futuri",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 200,
+    "id": 1,
+    "Description": "Migliori la comunicazione con i media",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 200,
+    "id": 2,
+    "Description": "Mantieni la comunicazione attuale",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 201,
+    "id": 1,
+    "Description": "Dai priorità immediata alla chemioterapia urgente",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 201,
+    "id": 2,
+    "Description": "Inserisci il paziente nella lista standard",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 202,
+    "id": 1,
+    "Description": "Ordini subito i farmaci mancanti",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 202,
+    "id": 2,
+    "Description": "Ridistribuisci le scorte rimanenti",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 203,
+    "id": 1,
+    "Description": "Modifichi subito la terapia per ridurre gli effetti collaterali",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 203,
+    "id": 2,
+    "Description": "Continui con la terapia attuale",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 204,
+    "id": 1,
+    "Description": "Applichi il nuovo protocollo terapeutico",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 204,
+    "id": 2,
+    "Description": "Mantieni il protocollo attuale",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 205,
+    "id": 1,
+    "Description": "Ripari subito la pompa di infusione",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 205,
+    "id": 2,
+    "Description": "Usi una pompa alternativa meno efficiente",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 206,
+    "id": 1,
+    "Description": "Assumi nuovo personale infermieristico",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 2,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 206,
+    "id": 2,
+    "Description": "Rifiuti nuove assunzioni",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -2,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 207,
+    "id": 1,
+    "Description": "Organizzi un colloquio per convincere il paziente",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 207,
+    "id": 2,
+    "Description": "Rispetti la decisione senza approfondire",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 208,
+    "id": 1,
+    "Description": "Aumenti il personale per ridurre le attese",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 208,
+    "id": 2,
+    "Description": "Ignori le proteste dei familiari",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 209,
+    "id": 1,
+    "Description": "Richiedi accesso ai farmaci sperimentali",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 209,
+    "id": 2,
+    "Description": "Rifiuti l’uso di farmaci sperimentali",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 210,
+    "id": 1,
+    "Description": "Ricoveri immediatamente il paziente",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 210,
+    "id": 2,
+    "Description": "Ritardi il ricovero per mancanza di posti",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 211,
+    "id": 1,
+    "Description": "Crei un’area dedicata alle cure palliative",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 2,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 211,
+    "id": 2,
+    "Description": "Rinunci al progetto",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 212,
+    "id": 1,
+    "Description": "Aumenti le postazioni per infusioni",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 212,
+    "id": 2,
+    "Description": "Mantieni la capacità attuale",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 213,
+    "id": 1,
+    "Description": "Scarti il farmaco preparato male e rifai la dose",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 0,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 213,
+    "id": 2,
+    "Description": "Usi comunque il farmaco preparato male",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -2,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 214,
+    "id": 1,
+    "Description": "Aumenti il supporto psicologico",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 2,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 214,
+    "id": 2,
+    "Description": "Mantieni il supporto attuale",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 215,
+    "id": 1,
+    "Description": "Rifiuti la priorità al paziente VIP",
+    "FiduciaPazienti": 1,
+    "Budget": 0,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 215,
+    "id": 2,
+    "Description": "Accetti la richiesta del VIP",
+    "FiduciaPazienti": -2,
+    "Budget": 1,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 216,
+    "id": 1,
+    "Description": "Acquisti nuove apparecchiature diagnostiche",
+    "FiduciaPazienti": 2,
+    "Budget": -3,
+    "MoralePersonale": 2,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 216,
+    "id": 2,
+    "Description": "Rimandi l’acquisto",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 217,
+    "id": 1,
+    "Description": "Migliori la comunicazione con il paziente",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 217,
+    "id": 2,
+    "Description": "Non modifichi le procedure comunicative",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 218,
+    "id": 1,
+    "Description": "Aumenti i controlli sui farmaci",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 218,
+    "id": 2,
+    "Description": "Mantieni i controlli attuali",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 219,
+    "id": 1,
+    "Description": "Ripari il sistema di refrigerazione",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 219,
+    "id": 2,
+    "Description": "Trasferisci temporaneamente i farmaci altrove",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 220,
+    "id": 1,
+    "Description": "Organizzi subito il trasporto per radioterapia",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 220,
+    "id": 2,
+    "Description": "Ritardi il trasporto",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 221,
+    "id": 1,
+    "Description": "Introduci un servizio di telemedicina",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 221,
+    "id": 2,
+    "Description": "Rinunci alla telemedicina",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 222,
+    "id": 1,
+    "Description": "Assumi personale per ridurre il sovraccarico",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 2,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 222,
+    "id": 2,
+    "Description": "Mantieni l’organico attuale",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -2,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 223,
+    "id": 1,
+    "Description": "Aumenti la privacy nelle sale trattamento",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 223,
+    "id": 2,
+    "Description": "Mantieni l’organizzazione attuale",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 224,
+    "id": 1,
+    "Description": "Accetti il secondo parere richiesto",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 0,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 224,
+    "id": 2,
+    "Description": "Sconsigli il secondo parere",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 225,
+    "id": 1,
+    "Description": "Riorganizzi completamente il reparto",
+    "FiduciaPazienti": 2,
+    "Budget": -3,
+    "MoralePersonale": 2,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 225,
+    "id": 2,
+    "Description": "Rifiuti la riorganizzazione",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 226,
+    "id": 1,
+    "Description": "Dai priorità assoluta al sospetto infarto",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 226,
+    "id": 2,
+    "Description": "Segui l’ordine di arrivo",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 227,
+    "id": 1,
+    "Description": "Trasferisci un paziente stabile per liberare un posto",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 0,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 227,
+    "id": 2,
+    "Description": "Rifiuti nuovi ricoveri",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 228,
+    "id": 1,
+    "Description": "Ripari subito l’elettrocardiografo",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 228,
+    "id": 2,
+    "Description": "Usi un ECG di backup meno preciso",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 229,
+    "id": 1,
+    "Description": "Dai priorità all’ecocardiogramma urgente",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 229,
+    "id": 2,
+    "Description": "Segui la lista d’attesa",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 230,
+    "id": 1,
+    "Description": "Organizzi un colloquio per convincere il paziente",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 230,
+    "id": 2,
+    "Description": "Rispetti la decisione senza approfondire",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 231,
+    "id": 1,
+    "Description": "Applichi il nuovo protocollo per aritmie",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 231,
+    "id": 2,
+    "Description": "Mantieni il protocollo attuale",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 232,
+    "id": 1,
+    "Description": "Ordini subito farmaci antiaritmici",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 232,
+    "id": 2,
+    "Description": "Ridistribuisci le scorte rimanenti",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 233,
+    "id": 1,
+    "Description": "Intervieni subito sulle complicazioni post-angioplastica",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 233,
+    "id": 2,
+    "Description": "Monitori il paziente senza intervenire",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 234,
+    "id": 1,
+    "Description": "Assumi nuovo personale infermieristico",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 2,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 234,
+    "id": 2,
+    "Description": "Rifiuti nuove assunzioni",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -2,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 235,
+    "id": 1,
+    "Description": "Aumenti il personale per ridurre le attese",
+    "FiduciaPazienti": 2,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 235,
+    "id": 2,
+    "Description": "Ignori le proteste dei pazienti",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 236,
+    "id": 1,
+    "Description": "Ripari il monitor multiparametrico",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 236,
+    "id": 2,
+    "Description": "Usi un monitor alternativo meno preciso",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 237,
+    "id": 1,
+    "Description": "Richiedi accesso al farmaco sperimentale",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 237,
+    "id": 2,
+    "Description": "Rifiuti l’uso del farmaco sperimentale",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 238,
+    "id": 1,
+    "Description": "Rifiuti la priorità al paziente VIP",
+    "FiduciaPazienti": 1,
+    "Budget": 0,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 238,
+    "id": 2,
+    "Description": "Accetti la richiesta del VIP",
+    "FiduciaPazienti": -2,
+    "Budget": 1,
+    "MoralePersonale": -1,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 239,
+    "id": 1,
+    "Description": "Acquisti il nuovo ecocardiografo",
+    "FiduciaPazienti": 2,
+    "Budget": -3,
+    "MoralePersonale": 2,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 239,
+    "id": 2,
+    "Description": "Rimandi l’acquisto",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 240,
+    "id": 1,
+    "Description": "Correggi subito l’errore nel referto ECG",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 0,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 240,
+    "id": 2,
+    "Description": "Ignori l’errore per evitare ritardi",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 241,
+    "id": 1,
+    "Description": "Aumenti i controlli qualità",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 241,
+    "id": 2,
+    "Description": "Mantieni i controlli attuali",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 242,
+    "id": 1,
+    "Description": "Organizzi subito il trasporto in emodinamica",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 242,
+    "id": 2,
+    "Description": "Ritardi il trasporto",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 243,
+    "id": 1,
+    "Description": "Assumi personale per ridurre il sovraccarico",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 2,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 243,
+    "id": 2,
+    "Description": "Mantieni l’organico attuale",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -2,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 244,
+    "id": 1,
+    "Description": "Introduci il telemonitoraggio cardiaco",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 244,
+    "id": 2,
+    "Description": "Rinunci al telemonitoraggio",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 245,
+    "id": 1,
+    "Description": "Acquisti nuovi elettrodi monouso",
+    "FiduciaPazienti": 1,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 245,
+    "id": 2,
+    "Description": "Riutilizzi elettrodi non ideali",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 246,
+    "id": 1,
+    "Description": "Accetti il secondo parere richiesto",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 0,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 246,
+    "id": 2,
+    "Description": "Sconsigli il secondo parere",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 247,
+    "id": 1,
+    "Description": "Ripari il defibrillatore principale",
+    "FiduciaPazienti": 1,
+    "Budget": -2,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 247,
+    "id": 2,
+    "Description": "Usi un defibrillatore alternativo",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": -1
+  },
+  {
+    "IdEvento": 248,
+    "id": 1,
+    "Description": "Aumenti la privacy nelle sale visita",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 1
+  },
+  {
+    "IdEvento": 248,
+    "id": 2,
+    "Description": "Mantieni l’organizzazione attuale",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 249,
+    "id": 1,
+    "Description": "Ricoveri immediatamente il paziente con insufficienza cardiaca",
+    "FiduciaPazienti": 2,
+    "Budget": -1,
+    "MoralePersonale": 1,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 249,
+    "id": 2,
+    "Description": "Ritardi il ricovero per mancanza di posti",
+    "FiduciaPazienti": -2,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -2
+  },
+  {
+    "IdEvento": 250,
+    "id": 1,
+    "Description": "Riorganizzi completamente il reparto",
+    "FiduciaPazienti": 2,
+    "Budget": -3,
+    "MoralePersonale": 2,
+    "QualitaCure": 2
+  },
+  {
+    "IdEvento": 250,
+    "id": 2,
+    "Description": "Rifiuti la riorganizzazione",
+    "FiduciaPazienti": -1,
+    "Budget": 0,
+    "MoralePersonale": -1,
+    "QualitaCure": -1
   }
 ]

@@ -8,5 +8,7 @@ public enum TypeReparto {
     Radiologia,
     LaboratorioAnalisi,
     Mensa,
-    DirezioneSanitaria
+    Direzione,
+    Oncologia,
+    Cardiologia
 }

@@ -3,6 +3,7 @@ package it.unicam.cs.mpgc.RPG122755.gestione;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
+import it.unicam.cs.mpgc.RPG122755.controller.GameBoardController;
 import it.unicam.cs.mpgc.RPG122755.model.Eventi;
 import it.unicam.cs.mpgc.RPG122755.model.Scelte;
 import it.unicam.cs.mpgc.RPG122755.model.TypeReparto;
@@ -39,11 +40,10 @@ public class GestioneGameBoard {
 
     public void LoadBoard(javafx.stage.Stage stage) throws IOException {
         loader = new FXMLLoader(getClass().getResource("/Fxml/GameBoard.fxml"));
-        GenerateEvento();
         Parent root = loader.load();
 
         // Passa questa istanza (già inizializzata) al controller
-        it.unicam.cs.mpgc.RPG122755.controller.GameBoardController controller = loader.getController();
+        GameBoardController controller = loader.getController();
         controller.setGestioneGameBoard(this);
 
         Scene scene = new Scene(root, 1200, 800);
