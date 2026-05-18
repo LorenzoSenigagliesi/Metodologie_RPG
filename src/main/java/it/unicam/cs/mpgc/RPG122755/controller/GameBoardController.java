@@ -1,6 +1,7 @@
 package it.unicam.cs.mpgc.RPG122755.controller;
 
 import it.unicam.cs.mpgc.RPG122755.gestione.GestioneGameBoard;
+import it.unicam.cs.mpgc.RPG122755.gestione.GestioneGameOver;
 import it.unicam.cs.mpgc.RPG122755.gestione.GestioneOspedale;
 import it.unicam.cs.mpgc.RPG122755.model.Eventi;
 import it.unicam.cs.mpgc.RPG122755.model.Ospedale;
@@ -67,7 +68,7 @@ public class GameBoardController {
     }
 
     @FXML
-    private void RunScelta(MouseEvent event) {
+    private void RunScelta(MouseEvent event) throws IOException {
         if (!event.getButton().equals(MouseButton.PRIMARY))
             return;
         GestioneOspedale ospedale = new GestioneOspedale();
@@ -77,12 +78,14 @@ public class GameBoardController {
             SceltaIndex = 1;
         }
         Scelte Scelta = gestioneGameBoard.ReadScelte().get(SceltaIndex);
-        if (! ospedale.ChangeParameters(Scelta.getFiduciaPazienti(),Scelta.getBudget(),Scelta.getMoralePersonale(),Scelta.getQualitaCure())) {
-            return;
+        if (ospedale.ChangeParameters(Scelta.getFiduciaPazienti(),Scelta.getBudget(),Scelta.getMoralePersonale(),Scelta.getQualitaCure())) {
+            gestioneGameBoard.GenerateEvento();
+            Update();
+        }else{
+            GestioneGameOver gameOver = new GestioneGameOver();
+            Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            gameOver.LoadInterface(currentStage);
         }
-
-        gestioneGameBoard.GenerateEvento();
-        Update();
     }
 
     @FXML
@@ -109,10 +112,10 @@ public class GameBoardController {
         }
 
         Ospedale ospedale = Gestioneospedale.getOspedale();
-        testoQualitaCure.set(ospedale.getQualitaCure() + "/100");
-        testoMoralePersonale.set(ospedale.getMoralePersonale() + "/100");
-        testoBudgetOperativo.set(ospedale.getBudget() + "/100");
-        testoFiduciaPazienti.set(ospedale.getFiduciaPazienti() + "/100");
+        testoQualitaCure.set(ospedale.getQualitaCure() + "/10");
+        testoMoralePersonale.set(ospedale.getMoralePersonale() + "/10");
+        testoBudgetOperativo.set(ospedale.getBudget() + "/10");
+        testoFiduciaPazienti.set(ospedale.getFiduciaPazienti() + "/10");
     }
 
     private void Update(){

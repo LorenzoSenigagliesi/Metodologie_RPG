@@ -5,12 +5,14 @@ public class Ospedale {
     private int Budget;
     private int MoralePersonale;
     private int QualitaCure;
+    private int ScelteFatte;
 
     public Ospedale(){
-        FiduciaPazienti = 50;
-        Budget = 50;
-        MoralePersonale = 50;
-        QualitaCure = 50;
+        FiduciaPazienti = 5;
+        Budget = 5;
+        MoralePersonale = 5;
+        QualitaCure = 5;
+        ScelteFatte = 0;
     }
 
     public int getFiduciaPazienti() {
@@ -19,8 +21,8 @@ public class Ospedale {
 
     public void setFiduciaPazienti(int fiduciaPazienti) {
         FiduciaPazienti = fiduciaPazienti;
-        if (FiduciaPazienti > 100) {
-            FiduciaPazienti = 100;
+        if (FiduciaPazienti > 10) {
+            FiduciaPazienti = 10;
         }
     }
 
@@ -30,8 +32,8 @@ public class Ospedale {
 
     public void setBudget(int budget) {
         Budget = budget;
-        if (Budget > 100) {
-            Budget = 100;
+        if (Budget > 10) {
+            Budget = 10;
         }
     }
 
@@ -41,8 +43,8 @@ public class Ospedale {
 
     public void setMoralePersonale(int moralePersonale) {
         MoralePersonale = moralePersonale;
-        if (MoralePersonale > 100) {
-            MoralePersonale = 100;
+        if (MoralePersonale > 10) {
+            MoralePersonale = 10;
         }
     }
 
@@ -52,8 +54,16 @@ public class Ospedale {
 
     public void setQualitaCure(int qualitaCure) {
         QualitaCure = qualitaCure;
-        if (QualitaCure > 100) {
-            QualitaCure = 100;
+        if (QualitaCure > 10) {
+            QualitaCure = 10;
         }
+    }
+
+    public int getScelteFatte() {
+        return ScelteFatte;
+    }
+
+    public void addScelteFatte() {
+        ScelteFatte += 1;
     }
 }

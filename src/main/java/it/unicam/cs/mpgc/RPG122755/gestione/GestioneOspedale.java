@@ -34,44 +34,32 @@ public class GestioneOspedale {
         }
     }
 
-    public boolean ChangeParameters(int FiduciaPazienti, int Budget, int MoralePersonale,int QualitaCure) {
+    public boolean ChangeParameters(int FiduciaPazienti, int Budget, int MoralePersonale, int QualitaCure) {
         if(FiduciaPazienti != 0)
         {
             ospedale.setFiduciaPazienti(ospedale.getFiduciaPazienti() + FiduciaPazienti);
-            if (ospedale.getFiduciaPazienti() <= 0)
-            {
-                return false;
-            }
         }
 
         if(Budget != 0)
         {
             ospedale.setBudget(ospedale.getBudget() + Budget);
-            if (ospedale.getBudget() <= 0)
-            {
-                return false;
-            }
         }
 
         if(MoralePersonale != 0)
         {
             ospedale.setMoralePersonale(ospedale.getMoralePersonale() + MoralePersonale);
-            if (ospedale.getMoralePersonale() <= 0)
-            {
-                return false;
-            }
         }
 
         if(QualitaCure != 0)
         {
             ospedale.setQualitaCure(ospedale.getQualitaCure() + QualitaCure);
-
-            if (ospedale.getQualitaCure() <= 0)
-            {
-                return false;
-            }
         }
+        ospedale.addScelteFatte();
         CaricaOspedale(ospedale);
+        if (ospedale.getFiduciaPazienti() <= 0 || ospedale.getBudget() <= 0 || ospedale.getQualitaCure() <= 0 || ospedale.getMoralePersonale() <= 0)
+        {
+            return false;
+        }
         return true;
     }
 

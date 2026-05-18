@@ -7,8 +7,6 @@ import it.unicam.cs.mpgc.RPG122755.controller.GameBoardController;
 import it.unicam.cs.mpgc.RPG122755.model.Eventi;
 import it.unicam.cs.mpgc.RPG122755.model.Scelte;
 import it.unicam.cs.mpgc.RPG122755.model.TypeReparto;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -38,7 +36,7 @@ public class GestioneGameBoard {
 
     public GestioneGameBoard() { }
 
-    public void LoadBoard(javafx.stage.Stage stage) throws IOException {
+    public void LoadInterface(javafx.stage.Stage stage) throws IOException {
         loader = new FXMLLoader(getClass().getResource("/Fxml/GameBoard.fxml"));
         Parent root = loader.load();
 

@@ -11,7 +11,7 @@
 
 <StackPane xmlns="http://javafx.com/javafx"
            xmlns:fx="http://javafx.com/fxml"
-           fx:controller="CONTROLLER_NAME"
+           fx:controller="it.unicam.cs.mpgc.RPG122755.controller.GameOverController"
            prefHeight="720.0" prefWidth="1080.0"
            style="-fx-background-color: #0f1419;">
 
@@ -52,25 +52,12 @@
             </Label>
 
             <HBox spacing="40.0" alignment="CENTER">
-                <Label text="Giorni in carica:" textFill="#bdc3c7">
-                    <font>
-                        <Font size="14.0"/>
-                    </font>
-                </Label>
-                <Label fx:id="lblGiorni" text="0" textFill="WHITE">
-                    <font>
-                        <Font name="System Bold" size="14.0"/>
-                    </font>
-                </Label>
-            </HBox>
-
-            <HBox spacing="40.0" alignment="CENTER">
                 <Label text="Decisioni prese:" textFill="#bdc3c7">
                     <font>
                         <Font size="14.0"/>
                     </font>
                 </Label>
-                <Label fx:id="lblDecisioni" text="0" textFill="WHITE">
+                <Label fx:id="LabelDecisioni" text="0" textFill="WHITE">
                     <font>
                         <Font name="System Bold" size="14.0"/>
                     </font>
@@ -83,7 +70,7 @@
                         <Font size="14.0"/>
                     </font>
                 </Label>
-                <Label fx:id="lblStatFiduciaPazienti" text="0" textFill="#4FC3F7">
+                <Label fx:id="LabelFiduciaPazienti" text="0" textFill="#4FC3F7">
                     <font>
                         <Font name="System Bold" size="14.0"/>
                     </font>
@@ -96,7 +83,7 @@
                         <Font size="14.0"/>
                     </font>
                 </Label>
-                <Label fx:id="lblStatBudgetOperativo" text="0" textFill="#FFD54F">
+                <Label fx:id="LabelBudgetOperativo" text="0" textFill="#FFD54F">
                     <font>
                         <Font name="System Bold" size="14.0"/>
                     </font>
@@ -109,7 +96,7 @@
                         <Font size="14.0"/>
                     </font>
                 </Label>
-                <Label fx:id="lblStatMoralePersonale" text="0" textFill="#81C784">
+                <Label fx:id="LabelMoralePersonale" text="0" textFill="#81C784">
                     <font>
                         <Font name="System Bold" size="14.0"/>
                     </font>
@@ -122,7 +109,7 @@
                         <Font size="14.0"/>
                     </font>
                 </Label>
-                <Label fx:id="lblStatQualitaCure" text="0" textFill="#E57373">
+                <Label fx:id="LabelQualitaCure" text="0" textFill="#E57373">
                     <font>
                         <Font name="System Bold" size="14.0"/>
                     </font>

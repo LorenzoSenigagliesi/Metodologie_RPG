@@ -56,7 +56,7 @@ public class Main extends Application {
         String id = source.getId();
         Stage stage = (Stage) source.getScene().getWindow();
         Board = new GestioneGameBoard(TypeReparto.valueOf(id));
-        Board.LoadBoard(stage);
+        Board.LoadInterface(stage);
     }
 
     private void aggiornaPiantina() {
