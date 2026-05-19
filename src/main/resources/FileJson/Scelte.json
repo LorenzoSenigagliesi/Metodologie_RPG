@@ -4498,5 +4498,307 @@
     "Budget": 0,
     "MoralePersonale": -1,
     "QualitaCure": -1
+  },
+  {
+    "IdEvento": 251,
+    "id": 1,
+    "Description": "Invia tecnici a controllare l'impianto elettrico.",
+    "FiduciaPazienti": 0,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 251,
+    "id": 2,
+    "Description": "Ignora i blackout, potrebbero essere casuali.",
+    "FiduciaPazienti": 0,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+
+  {
+    "IdEvento": 252,
+    "id": 1,
+    "Description": "Apri la cartella e leggi il contenuto.",
+    "FiduciaPazienti": 0,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 252,
+    "id": 2,
+    "Description": "Conserva la cartella senza aprirla.",
+    "FiduciaPazienti": 0,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+
+  {
+    "IdEvento": 253,
+    "id": 1,
+    "Description": "Ordina un controllo completo della stanza.",
+    "FiduciaPazienti": 0,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 253,
+    "id": 2,
+    "Description": "Correggi i registri senza approfondire.",
+    "FiduciaPazienti": 0,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+
+  {
+    "IdEvento": 254,
+    "id": 1,
+    "Description": "Interroga l'infermiere su ciò che ha sentito.",
+    "FiduciaPazienti": 0,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 254,
+    "id": 2,
+    "Description": "Liquidalo come stress da turno.",
+    "FiduciaPazienti": 0,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+
+  {
+    "IdEvento": 255,
+    "id": 1,
+    "Description": "Prendi la chiave e conservala.",
+    "FiduciaPazienti": 0,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 255,
+    "id": 2,
+    "Description": "Falla portare alla sicurezza.",
+    "FiduciaPazienti": 0,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+
+  {
+    "IdEvento": 256,
+    "id": 1,
+    "Description": "Analizza i movimenti del badge.",
+    "FiduciaPazienti": 0,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 256,
+    "id": 2,
+    "Description": "Disattiva il badge senza indagare.",
+    "FiduciaPazienti": 0,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+
+  {
+    "IdEvento": 257,
+    "id": 1,
+    "Description": "Raccogli la pagina e leggila.",
+    "FiduciaPazienti": 0,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 257,
+    "id": 2,
+    "Description": "Ignora la pagina e fai pulire l'area.",
+    "FiduciaPazienti": 0,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+
+  {
+    "IdEvento": 258,
+    "id": 1,
+    "Description": "Controlla il monitor ECG.",
+    "FiduciaPazienti": 0,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 258,
+    "id": 2,
+    "Description": "Spegni il monitor e vai via.",
+    "FiduciaPazienti": 0,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+
+  {
+    "IdEvento": 259,
+    "id": 1,
+    "Description": "Apri la porta misteriosa.",
+    "FiduciaPazienti": 0,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 259,
+    "id": 2,
+    "Description": "Evita la porta e chiudi l'area.",
+    "FiduciaPazienti": 0,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+
+  {
+    "IdEvento": 260,
+    "id": 1,
+    "Description": "Verifica i log del tuo ID.",
+    "FiduciaPazienti": 0,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 260,
+    "id": 2,
+    "Description": "Considera l'accesso un errore tecnico.",
+    "FiduciaPazienti": 0,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+
+  {
+    "IdEvento": 261,
+    "id": 1,
+    "Description": "Chiedi al paziente maggiori dettagli.",
+    "FiduciaPazienti": 0,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 261,
+    "id": 2,
+    "Description": "Rassicuralo e cambia discorso.",
+    "FiduciaPazienti": 0,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+
+  {
+    "IdEvento": 262,
+    "id": 1,
+    "Description": "Esamina l'etichetta della siringa.",
+    "FiduciaPazienti": 0,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 262,
+    "id": 2,
+    "Description": "Falla smaltire immediatamente.",
+    "FiduciaPazienti": 0,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+
+  {
+    "IdEvento": 263,
+    "id": 1,
+    "Description": "Controlla chi ha usato il letto.",
+    "FiduciaPazienti": 0,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 263,
+    "id": 2,
+    "Description": "Segna l'anomalia e prosegui.",
+    "FiduciaPazienti": 0,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+
+  {
+    "IdEvento": 264,
+    "id": 1,
+    "Description": "Ascolta la registrazione più volte.",
+    "FiduciaPazienti": 0,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 264,
+    "id": 2,
+    "Description": "Cancella la registrazione dal sistema.",
+    "FiduciaPazienti": 0,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+
+  {
+    "IdEvento": 265,
+    "id": 1,
+    "Description": "Prendi la chiave e conservala nel tuo ufficio.",
+    "FiduciaPazienti": 0,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 265,
+    "id": 2,
+    "Description": "Consegnala alla sicurezza e chiedi un rapporto.",
+    "FiduciaPazienti": 0,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 266,
+    "id": 1,
+    "Description": "Indaga personalmente sull'avvistamento.",
+    "FiduciaPazienti": 0,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
+  },
+  {
+    "IdEvento": 266,
+    "id": 2,
+    "Description": "Archivia la segnalazione come errore.",
+    "FiduciaPazienti": 0,
+    "Budget": 0,
+    "MoralePersonale": 0,
+    "QualitaCure": 0
   }
 ]

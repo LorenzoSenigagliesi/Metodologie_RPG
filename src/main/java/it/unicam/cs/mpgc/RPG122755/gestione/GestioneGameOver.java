@@ -3,9 +3,11 @@ package it.unicam.cs.mpgc.RPG122755.gestione;
 import it.unicam.cs.mpgc.RPG122755.controller.GameBoardController;
 import it.unicam.cs.mpgc.RPG122755.controller.GameOverController;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.Region;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 
@@ -25,10 +27,5 @@ public class GestioneGameOver {
             region.prefHeightProperty().bind(scene.heightProperty());
         }
         stage.setScene(scene);
-    }
-
-    private void ReloadGame()
-    {
-
     }
 }

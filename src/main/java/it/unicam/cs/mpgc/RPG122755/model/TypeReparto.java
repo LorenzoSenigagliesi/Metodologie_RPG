@@ -10,5 +10,6 @@ public enum TypeReparto {
     Mensa,
     Direzione,
     Oncologia,
-    Cardiologia
+    Cardiologia,
+    Special
 }

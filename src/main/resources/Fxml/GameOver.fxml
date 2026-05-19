@@ -125,7 +125,8 @@
                     text="Ricomincia"
                     prefWidth="180.0"
                     prefHeight="45.0"
-                    style="-fx-background-color: #27ae60; -fx-text-fill: white; -fx-background-radius: 8;">
+                    style="-fx-background-color: #27ae60; -fx-text-fill: white; -fx-background-radius: 8;"
+                    onAction="#ReloadGame">
                 <font>
                     <Font name="System Bold" size="15.0"/>
                 </font>

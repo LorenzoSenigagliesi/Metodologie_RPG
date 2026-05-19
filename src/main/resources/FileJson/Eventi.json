@@ -1248,5 +1248,85 @@
     "id": 250,
     "Description": "Proposta di riorganizzare completamente il reparto",
     "typeReparto": "Cardiologia"
+  },
+  {
+    "id": 251,
+    "Description": "Il personale segnala strani blackout solo nel Reparto Special, sempre alla stessa ora.",
+    "typeReparto": "Special"
+  },
+  {
+    "id": 252,
+    "Description": "Una cartella clinica appare improvvisamente sulla scrivania: è datata il giorno prima, ma nessuno ricorda di averla scritta.",
+    "typeReparto": "Special"
+  },
+  {
+    "id": 253,
+    "Description": "Un letto d’ospedale risulta occupato nei registri, ma la stanza è vuota.",
+    "typeReparto": "Special"
+  },
+  {
+    "id": 254,
+    "Description": "Un infermiere giura di aver sentito qualcuno chiamare il tuo nome da una stanza sigillata.",
+    "typeReparto": "Special"
+  },
+  {
+    "id": 255,
+    "Description": "Una chiave arrugginita viene trovata nel corridoio. Nessuno sa a quale porta appartenga.",
+    "typeReparto": "Special"
+  },
+  {
+    "id": 256,
+    "Description": "Il badge di un medico scomparso da giorni viene rilevato vicino al Reparto Special.",
+    "typeReparto": "Special"
+  },
+  {
+    "id": 257,
+    "Description": "Una pagina strappata con scritto 'Paziente 0' viene trovata sotto un carrello medico.",
+    "typeReparto": "Special"
+  },
+  {
+    "id": 258,
+    "Description": "Un monitor ECG mostra un battito cardiaco attivo, ma nessun paziente è collegato.",
+    "typeReparto": "Special"
+  },
+  {
+    "id": 259,
+    "Description": "Una porta che prima non esisteva appare nel corridoio. Il personale dice di non averla mai vista.",
+    "typeReparto": "Special"
+  },
+  {
+    "id": 260,
+    "Description": "Il sistema informatico registra un accesso notturno al Reparto Special, effettuato con il tuo ID.",
+    "typeReparto": "Special"
+  },
+  {
+    "id": 261,
+    "Description": "Un paziente dice di averti visto nel Reparto Special la notte scorsa, ma tu eri nel tuo ufficio.",
+    "typeReparto": "Special"
+  },
+  {
+    "id": 262,
+    "Description": "Una siringa vuota con etichetta 'Protocollo N°0' viene trovata nel cestino.",
+    "typeReparto": "Special"
+  },
+  {
+    "id": 263,
+    "Description": "Il personale riferisce che il letto 7 è stato usato, ma risulta inutilizzato da settimane.",
+    "typeReparto": "Special"
+  },
+  {
+    "id": 264,
+    "Description": "Una voce registrata nel sistema dice: 'Non dovevi tornare qui'. Nessuno sa chi l'abbia caricata.",
+    "typeReparto": "Special"
+  },
+  {
+    "id": 265,
+    "Description": "Un’infermiera trova una vecchia chiave arrugginita nel corridoio del Reparto Special. L’etichetta consumata riporta solo la lettera 'S'. Nessuno del personale riconosce la chiave.",
+    "typeReparto": "Special"
+  },
+  {
+    "id": 266,
+    "Description": "Un paziente riferisce di aver visto qualcuno aggirarsi nel seminterrato, ma le telecamere non mostrano nulla.",
+    "typeReparto": "Special"
   }
 ]

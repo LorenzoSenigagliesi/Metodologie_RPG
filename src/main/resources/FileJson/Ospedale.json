@@ -1,7 +1,7 @@
 {
-  "FiduciaPazienti": 10,
-  "Budget": 0,
-  "MoralePersonale": 8,
-  "QualitaCure": 10,
-  "ScelteFatte": 4
+  "FiduciaPazienti": 5,
+  "Budget": 5,
+  "MoralePersonale": 5,
+  "QualitaCure": 5,
+  "ScelteFatte": 0
 }
