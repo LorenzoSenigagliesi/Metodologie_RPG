@@ -28,7 +28,7 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         primaryStage = stage;
-        loader = new FXMLLoader(getClass().getResource("/Fxml/PiantaOspedale.fxml"));
+        loader = new FXMLLoader(getClass().getResource("/Fxml/Intro.fxml"));
 
         root = loader.load();
         Scene scene = new Scene(root, 1200, 800);

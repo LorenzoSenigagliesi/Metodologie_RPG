@@ -1,0 +1,85 @@
+package it.unicam.cs.mpgc.RPG122755.controller;
+
+import it.unicam.cs.mpgc.RPG122755.gestione.GestioneTesti;
+import it.unicam.cs.mpgc.RPG122755.model.Testi;
+import it.unicam.cs.mpgc.RPG122755.model.TypeTesto;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.layout.Region;
+import javafx.stage.Stage;
+import javafx.util.Duration;
+
+import java.io.IOException;
+import java.util.List;
+
+public class IntroController {
+
+    @FXML private Label LabelTesto;
+    @FXML private Button btnAvanti;
+    List<Testi> testi;
+    private static final String TESTO_INTRO =
+            "Benvenuto, Direttore.\n\n"
+            + "L'ospedale è nelle tue mani.\n"
+            + "Ogni decisione che prenderai avrà conseguenze sul personale, "
+            + "sui pazienti e sul futuro della struttura.\n\n"
+            + "Scegli con saggezza.";
+
+    @FXML
+    private void initialize() {
+//        GestioneTesti gestiontesti = new GestioneTesti();
+//        List<Testi> testi= gestiontesti.ReadOspedale(TypeTesto.StartGame);
+//        if (testi.isEmpty()){
+//            return;
+//        }
+//        animaTesto(testi.getFirst().getTesto());
+//        testi.remove(testi.getFirst());
+        animaTesto(TESTO_INTRO);
+    }
+
+    private void animaTesto(String testo) {
+        Timeline timeline = new Timeline();
+        for (int i = 0; i < testo.length(); i++) {
+            final int index = i;
+            KeyFrame kf = new KeyFrame(
+                    Duration.millis(70.0 * (i + 1)),
+                    e -> LabelTesto.setText(testo.substring(0, index + 1))
+            );
+            timeline.getKeyFrames().add(kf);
+        }
+        timeline.setOnFinished(e -> btnAvanti.setVisible(true));
+        timeline.play();
+    }
+
+
+    @FXML
+    private void avanti(ActionEvent event) throws IOException {
+        if (testi.isEmpty())
+        {
+            CambiaScena(event);
+        }else{
+            animaTesto(testi.getFirst().getTesto());
+            testi.remove(testi.getFirst());
+        }
+    }
+
+
+    private void CambiaScena(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Fxml/PiantaOspedale.fxml"));
+        Parent root = loader.load();
+        Scene scene = new Scene(root, 1200, 800);
+        if (root instanceof Region region) {
+            region.prefWidthProperty().bind(scene.widthProperty());
+            region.prefHeightProperty().bind(scene.heightProperty());
+        }
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+    }
+}
