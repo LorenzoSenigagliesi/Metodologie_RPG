@@ -391,10 +391,10 @@
                  ════════════════════════════════ -->
 
             <!-- Vano Scale -->
-            <Rectangle arcHeight="4" arcWidth="4" fill="#1a1f2b" height="65" layoutX="296" layoutY="30" stroke="#484f58" strokeWidth="1.5" width="82" />
-            <Text fill="#484f58" layoutX="315" layoutY="50" text="SCALE">
-                <font><Font name="System Bold" size="9.0" /></font>
-            </Text>
+            <Button fx:id="Special" alignment="TOP_CENTER" layoutX="296" layoutY="30" prefHeight="65" prefWidth="82"
+                    style="-fx-background-color: #1a1f2b; -fx-border-color: #484f58; -fx-border-width: 1.5; -fx-border-radius: 4; -fx-background-radius: 4; -fx-text-fill: #484f58; -fx-font-weight: bold; -fx-font-size: 9; -fx-padding: 8 5 5 5; -fx-cursor: hand;"
+                    text="SCALE" wrapText="true"
+                    onAction="#OpenSemiterrato"/>
             <Line endX="368" endY="60" startX="305" startY="60" stroke="#484f58" strokeWidth="0.6" />
             <Line endX="368" endY="67" startX="305" startY="67" stroke="#484f58" strokeWidth="0.6" />
             <Line endX="368" endY="74" startX="305" startY="74" stroke="#484f58" strokeWidth="0.6" />
