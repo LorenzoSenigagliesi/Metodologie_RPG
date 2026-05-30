@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+  "testo": "TU: D-Dove mi trovo? Ho dolore un dolore alla testa ...",
+  "tipo": "StartGame"
+  },
+  {
+    "id": 2,
+    "testo": "Assistente: Buongiorno, Direttore.\nHa di nuovo fatto le ore piccole?!",
+    "tipo": "StartGame"
+  },
+  {
+    "id": 3,
+    "testo": "Assistente: Si ricordi che l'ospedale è nelle sue mani.\nOgni decisione che prende ha conseguenze sul personale,sui pazienti e sul futuro della struttura",
+    "tipo": "StartGame"
+  },
+  {
+    "id": 3,
+    "testo": "Mentre l'assistente esce trovi un biglietto nella tasca.\nDentro cè scritto:\n\"non fidarti di nessuno\"",
+    "tipo": "StartGame"
+  }
+]

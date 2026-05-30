@@ -2,7 +2,6 @@ package it.unicam.cs.mpgc.RPG122755;
 
 import it.unicam.cs.mpgc.RPG122755.gestione.GestioneGameBoard;
 import it.unicam.cs.mpgc.RPG122755.gestione.GestioneOspedale;
-import it.unicam.cs.mpgc.RPG122755.gestione.GestioneSeminterrato;
 import it.unicam.cs.mpgc.RPG122755.model.TypeReparto;
 import javafx.application.Application;
 import javafx.fxml.FXML;
@@ -17,7 +16,9 @@ import java.io.IOException;
 
 public class Main extends Application {
     Parent root;
+    GestioneGameBoard Board;
     FXMLLoader loader;
+    private Stage primaryStage;
     @FXML private Label LabelFiduciaPazienti;
     @FXML private Label LabelBudgetOperativo;
     @FXML private Label LabelMoralePersonale;
@@ -26,7 +27,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Stage primaryStage = stage;
+        primaryStage = stage;
         loader = new FXMLLoader(getClass().getResource("/Fxml/PiantaOspedale.fxml"));
 
         root = loader.load();
@@ -54,7 +55,7 @@ public class Main extends Application {
         javafx.scene.Node source = (javafx.scene.Node) event.getSource();
         String id = source.getId();
         Stage stage = (Stage) source.getScene().getWindow();
-        GestioneGameBoard Board = new GestioneGameBoard(TypeReparto.valueOf(id));
+        Board = new GestioneGameBoard(TypeReparto.valueOf(id));
         Board.LoadInterface(stage);
     }
 
@@ -81,14 +82,6 @@ public class Main extends Application {
             LabelStatoGenerale.setText("Stato: Critico");
             LabelStatoGenerale.setStyle("-fx-text-fill: #e74c3c;");
         }
-    }
-
-    @FXML
-    private void OpenSemiterrato(javafx.event.ActionEvent event) throws IOException{
-        javafx.scene.Node source = (javafx.scene.Node) event.getSource();
-        Stage stage = (Stage) source.getScene().getWindow();
-        GestioneSeminterrato seminterrato = new GestioneSeminterrato();
-        seminterrato.LoadInterface(stage);
     }
 
     public static void main(String[] args) {
