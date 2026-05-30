@@ -13,7 +13,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #0d1117;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unicam.cs.mpgc.RPG122755.Main">
+<BorderPane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #0d1117;" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.unicam.cs.mpgc.RPG122755.Main">
 
     <!-- ══════════ HEADER ══════════ -->
     <top>
@@ -56,10 +56,7 @@
                  ════════════════════════════════ -->
 
             <!-- PRONTO SOCCORSO -->
-            <Button fx:id="ProntoSoccorso" alignment="TOP_CENTER" layoutX="50.0" layoutY="30.0" prefHeight="120" prefWidth="230"
-                    style="-fx-background-color: #1a1f2b; -fx-border-color: #f85149; -fx-border-width: 2.5; -fx-border-radius: 6; -fx-background-radius: 6; -fx-text-fill: #f85149; -fx-font-weight: bold; -fx-font-size: 12; -fx-padding: 12 5 5 5;"
-                    text="PRONTO SOCCORSO" wrapText="true"
-                    onAction="#OpenBoard"/>
+            <Button fx:id="ProntoSoccorso" alignment="TOP_CENTER" layoutX="50.0" layoutY="30.0" onAction="#OpenBoard" prefHeight="120" prefWidth="230" style="-fx-background-color: #1a1f2b; -fx-border-color: #f85149; -fx-border-width: 2.5; -fx-border-radius: 6; -fx-background-radius: 6; -fx-text-fill: #f85149; -fx-font-weight: bold; -fx-font-size: 12; -fx-padding: 12 5 5 5;" text="PRONTO SOCCORSO" wrapText="true" />
             <Circle fill="#f85149" layoutX="75" layoutY="55" opacity="0.7" radius="7" />
             <Text fill="WHITE" layoutX="70" layoutY="60" text="✚">
                 <font><Font name="System Bold" size="9.0" /></font>
@@ -92,10 +89,7 @@
             </Text>
 
             <!-- CHIRURGIA -->
-            <Button fx:id="Chirurgia" alignment="TOP_CENTER" layoutX="50.0" layoutY="160.0" prefHeight="110" prefWidth="230"
-                    style="-fx-background-color: #1a1f2b; -fx-border-color: #58a6ff; -fx-border-width: 2.5; -fx-border-radius: 6; -fx-background-radius: 6; -fx-text-fill: #58a6ff; -fx-font-weight: bold; -fx-font-size: 12; -fx-padding: 12 5 5 5;"
-                    text="CHIRURGIA" wrapText="true"
-                    onAction="#OpenBoard"/>
+            <Button fx:id="Chirurgia" alignment="TOP_CENTER" layoutX="50.0" layoutY="160.0" onAction="#OpenBoard" prefHeight="110" prefWidth="230" style="-fx-background-color: #1a1f2b; -fx-border-color: #58a6ff; -fx-border-width: 2.5; -fx-border-radius: 6; -fx-background-radius: 6; -fx-text-fill: #58a6ff; -fx-font-weight: bold; -fx-font-size: 12; -fx-padding: 12 5 5 5;" text="CHIRURGIA" wrapText="true" />
             <!-- Tavolo operatorio 1 -->
             <Rectangle arcHeight="5" arcWidth="5" fill="#21262d" height="22" layoutX="70" layoutY="200" stroke="#58a6ff" strokeWidth="1.5" width="50" />
             <Circle fill="TRANSPARENT" layoutX="95" layoutY="195" opacity="0.5" radius="7" stroke="#58a6ff" strokeWidth="1.0" />
@@ -120,10 +114,7 @@
                  ════════════════════════════════ -->
 
             <!-- PEDIATRIA -->
-            <Button fx:id="Pediatria" alignment="TOP_CENTER" layoutX="50" layoutY="365" prefHeight="120" prefWidth="220"
-                    style="-fx-background-color: #1a1f2b; -fx-border-color: #3fb950; -fx-border-width: 2.5; -fx-border-radius: 6; -fx-background-radius: 6; -fx-text-fill: #3fb950; -fx-font-weight: bold; -fx-font-size: 12; -fx-padding: 12 5 5 5;"
-                    text="PEDIATRIA" wrapText="true"
-                    onAction="#OpenBoard"/>
+            <Button fx:id="Pediatria" alignment="TOP_CENTER" layoutX="50" layoutY="365" onAction="#OpenBoard" prefHeight="120" prefWidth="220" style="-fx-background-color: #1a1f2b; -fx-border-color: #3fb950; -fx-border-width: 2.5; -fx-border-radius: 6; -fx-background-radius: 6; -fx-text-fill: #3fb950; -fx-font-weight: bold; -fx-font-size: 12; -fx-padding: 12 5 5 5;" text="PEDIATRIA" wrapText="true" />
             <!-- Lettini piccoli (fila 1) -->
             <Rectangle arcHeight="3" arcWidth="3" fill="#21262d" height="14" layoutX="65" layoutY="400" stroke="#3fb950" strokeWidth="1.0" width="28" />
             <Circle fill="#8b949e" layoutX="79" layoutY="396" radius="3" />
@@ -147,10 +138,7 @@
             </Text>
 
             <!-- FARMACIA -->
-            <Button fx:id="Farmacia" alignment="TOP_CENTER" layoutX="50" layoutY="500" prefHeight="120" prefWidth="220"
-                    style="-fx-background-color: #1a1f2b; -fx-border-color: #d2a8ff; -fx-border-width: 2.5; -fx-border-radius: 6; -fx-background-radius: 6; -fx-text-fill: #d2a8ff; -fx-font-weight: bold; -fx-font-size: 12; -fx-padding: 12 5 5 5;"
-                    text="FARMACIA" wrapText="true"
-                    onAction="#OpenBoard"/>
+            <Button fx:id="Farmacia" alignment="TOP_CENTER" layoutX="50" layoutY="500" onAction="#OpenBoard" prefHeight="120" prefWidth="220" style="-fx-background-color: #1a1f2b; -fx-border-color: #d2a8ff; -fx-border-width: 2.5; -fx-border-radius: 6; -fx-background-radius: 6; -fx-text-fill: #d2a8ff; -fx-font-weight: bold; -fx-font-size: 12; -fx-padding: 12 5 5 5;" text="FARMACIA" wrapText="true" />
             <!-- Scaffali -->
             <Rectangle fill="#d2a8ff" height="7" layoutX="65" layoutY="535" opacity="0.15" width="65" />
             <Rectangle fill="#d2a8ff" height="7" layoutX="65" layoutY="550" opacity="0.15" width="65" />
@@ -174,10 +162,7 @@
                  ════════════════════════════════ -->
 
             <!-- CARDIOLOGIA -->
-            <Button fx:id="Cardiologia" alignment="TOP_CENTER" layoutX="621.0" layoutY="24.0" prefHeight="120" prefWidth="240"
-                    style="-fx-background-color: #1a1f2b; -fx-border-color: #f778ba; -fx-border-width: 2.5; -fx-border-radius: 6; -fx-background-radius: 6; -fx-text-fill: #f778ba; -fx-font-weight: bold; -fx-font-size: 12; -fx-padding: 12 5 5 5;"
-                    text="CARDIOLOGIA" wrapText="true"
-                    onAction="#OpenBoard"/>
+            <Button fx:id="Cardiologia" alignment="TOP_CENTER" layoutX="621.0" layoutY="24.0" onAction="#OpenBoard" prefHeight="120" prefWidth="240" style="-fx-background-color: #1a1f2b; -fx-border-color: #f778ba; -fx-border-width: 2.5; -fx-border-radius: 6; -fx-background-radius: 6; -fx-text-fill: #f778ba; -fx-font-weight: bold; -fx-font-size: 12; -fx-padding: 12 5 5 5;" text="CARDIOLOGIA" wrapText="true" />
             <!-- Letti con monitor ECG -->
             <Rectangle arcHeight="3" arcWidth="3" fill="#21262d" height="18" layoutX="635" layoutY="72" stroke="#f778ba" strokeWidth="1.0" width="36" />
             <Rectangle fill="#f778ba" height="14" layoutX="635.0" layoutY="74.0" opacity="0.3" width="9" />
@@ -206,10 +191,7 @@
             </Text>
 
             <!-- ONCOLOGIA -->
-            <Button fx:id="Oncologia" alignment="TOP_CENTER" layoutX="624.0" layoutY="155.0" prefHeight="110" prefWidth="240"
-                    style="-fx-background-color: #1a1f2b; -fx-border-color: #d29922; -fx-border-width: 2.5; -fx-border-radius: 6; -fx-background-radius: 6; -fx-text-fill: #d29922; -fx-font-weight: bold; -fx-font-size: 12; -fx-padding: 12 5 5 5;"
-                    text="ONCOLOGIA" wrapText="true"
-                    onAction="#OpenBoard"/>
+            <Button fx:id="Oncologia" alignment="TOP_CENTER" layoutX="624.0" layoutY="155.0" onAction="#OpenBoard" prefHeight="110" prefWidth="240" style="-fx-background-color: #1a1f2b; -fx-border-color: #d29922; -fx-border-width: 2.5; -fx-border-radius: 6; -fx-background-radius: 6; -fx-text-fill: #d29922; -fx-font-weight: bold; -fx-font-size: 12; -fx-padding: 12 5 5 5;" text="ONCOLOGIA" wrapText="true" />
             <!-- Poltrone chemioterapia -->
             <Rectangle arcHeight="5" arcWidth="5" fill="#21262d" height="22" layoutX="640" layoutY="200" stroke="#d29922" strokeWidth="1.0" width="22" />
             <Circle fill="#8b949e" layoutX="651" layoutY="196" radius="4" />
@@ -233,10 +215,7 @@
                  ════════════════════════════════ -->
 
             <!-- RADIOLOGIA / TAC -->
-            <Button fx:id="Radiologia" alignment="TOP_CENTER" layoutX="620" layoutY="365" prefHeight="120" prefWidth="240"
-                    style="-fx-background-color: #1a1f2b; -fx-border-color: #79c0ff; -fx-border-width: 2.5; -fx-border-radius: 6; -fx-background-radius: 6; -fx-text-fill: #79c0ff; -fx-font-weight: bold; -fx-font-size: 12; -fx-padding: 12 5 5 5;"
-                    text="RADIOLOGIA" wrapText="true"
-                    onAction="#OpenBoard"/>
+            <Button fx:id="Radiologia" alignment="TOP_CENTER" layoutX="620" layoutY="365" onAction="#OpenBoard" prefHeight="120" prefWidth="240" style="-fx-background-color: #1a1f2b; -fx-border-color: #79c0ff; -fx-border-width: 2.5; -fx-border-radius: 6; -fx-background-radius: 6; -fx-text-fill: #79c0ff; -fx-font-weight: bold; -fx-font-size: 12; -fx-padding: 12 5 5 5;" text="RADIOLOGIA" wrapText="true" />
             <!-- Macchinario TAC (anello) -->
             <Circle fill="TRANSPARENT" layoutX="700" layoutY="435" radius="28" stroke="#79c0ff" strokeWidth="2.0" />
             <Circle fill="#79c0ff" layoutX="700" layoutY="435" opacity="0.07" radius="16" />
@@ -251,9 +230,7 @@
             <Circle fx:id="ledRadiologia" fill="#2ecc71" layoutX="845" layoutY="375" radius="6" />
 
             <!-- LABORATORIO ANALISI -->
-            <Button fx:id="LaboratorioAnalisi" alignment="TOP_CENTER" layoutX="620" layoutY="500" prefHeight="120"
-                    prefWidth="240" style="-fx-background-color: #1a1f2b; -fx-border-color: #7ee787; -fx-border-width: 2.5; -fx-border-radius: 6; -fx-background-radius: 6; -fx-text-fill: #7ee787; -fx-font-weight: bold; -fx-font-size: 11; -fx-padding: 12 5 5 5;"
-                    text="LABORATORIO ANALISI" wrapText="true" onAction="#OpenBoard"/>
+            <Button fx:id="LaboratorioAnalisi" alignment="TOP_CENTER" layoutX="620" layoutY="500" onAction="#OpenBoard" prefHeight="120" prefWidth="240" style="-fx-background-color: #1a1f2b; -fx-border-color: #7ee787; -fx-border-width: 2.5; -fx-border-radius: 6; -fx-background-radius: 6; -fx-text-fill: #7ee787; -fx-font-weight: bold; -fx-font-size: 11; -fx-padding: 12 5 5 5;" text="LABORATORIO ANALISI" wrapText="true" />
             <!-- Bancone -->
             <Rectangle fill="#7ee787" height="9" layoutX="635" layoutY="540" opacity="0.12" width="100" />
             <Rectangle fill="#7ee787" height="2" layoutX="635" layoutY="540" opacity="0.35" width="100" />
@@ -276,9 +253,7 @@
                  ════════════════════════════════ -->
 
             <!-- Struttura degenza -->
-            <Button fx:id="Degenza" alignment="TOP_CENTER" layoutX="880" layoutY="30" prefHeight="250" prefWidth="258"
-                    style="-fx-background-color: #1a1f2b; -fx-border-color: #8b949e; -fx-border-width: 2; -fx-border-radius: 6; -fx-background-radius: 6; -fx-text-fill: #8b949e; -fx-font-weight: bold; -fx-font-size: 13; -fx-padding: 12 5 5 5;"
-                    text="DEGENZA" wrapText="true"/>
+            <Button fx:id="Degenza" alignment="TOP_CENTER" layoutX="880" layoutY="30" prefHeight="250" prefWidth="258" style="-fx-background-color: #1a1f2b; -fx-border-color: #8b949e; -fx-border-width: 2; -fx-border-radius: 6; -fx-background-radius: 6; -fx-text-fill: #8b949e; -fx-font-weight: bold; -fx-font-size: 13; -fx-padding: 12 5 5 5;" text="DEGENZA" wrapText="true" />
             <!-- Camera 101 -->
             <Rectangle arcHeight="3" arcWidth="3" fill="#21262d" height="60" layoutX="893" layoutY="65" stroke="#484f58" strokeWidth="1.0" width="112" />
             <Text fill="#484f58" layoutX="900" layoutY="79" text="Camera 101">
@@ -346,9 +321,7 @@
                  ════════════════════════════════ -->
 
             <!-- DIREZIONE SANITARIA -->
-            <Button fx:id="Direzione" alignment="TOP_CENTER" layoutX="880" layoutY="365" prefHeight="100" prefWidth="258"
-                    style="-fx-background-color: #1a1f2b; -fx-border-color: #a371f7; -fx-border-width: 2; -fx-border-radius: 6; -fx-background-radius: 6; -fx-text-fill: #a371f7; -fx-font-weight: bold; -fx-font-size: 11; -fx-padding: 12 5 5 5;"
-                    text="DIREZIONE SANITARIA" wrapText="true" onAction="#OpenBoard"/>
+            <Button fx:id="Direzione" alignment="TOP_CENTER" layoutX="880" layoutY="365" onAction="#OpenBoard" prefHeight="100" prefWidth="258" style="-fx-background-color: #1a1f2b; -fx-border-color: #a371f7; -fx-border-width: 2; -fx-border-radius: 6; -fx-background-radius: 6; -fx-text-fill: #a371f7; -fx-font-weight: bold; -fx-font-size: 11; -fx-padding: 12 5 5 5;" text="DIREZIONE SANITARIA" wrapText="true" />
             <!-- Scrivanie -->
             <Rectangle arcHeight="3" arcWidth="3" fill="#a371f7" height="20" layoutX="900" layoutY="405" opacity="0.12" width="55" />
             <Rectangle arcHeight="3" arcWidth="3" fill="#21262d" height="15" layoutX="918" layoutY="428" stroke="#a371f7" strokeWidth="0.8" width="16" />
@@ -359,9 +332,7 @@
             <Line endX="1122" endY="417" opacity="0.5" startX="1090" startY="417" stroke="#a371f7" strokeWidth="0.5" />
 
             <!-- MENSA -->
-            <Button fx:id="Mensa" alignment="TOP_CENTER" layoutX="880" layoutY="478" prefHeight="142"
-                    prefWidth="258" style="-fx-background-color: #1a1f2b; -fx-border-color: #ffa657; -fx-border-width: 2; -fx-border-radius: 6; -fx-background-radius: 6; -fx-text-fill: #ffa657; -fx-font-weight: bold; -fx-font-size: 12; -fx-padding: 12 5 5 5;"
-                    text="MENSA" wrapText="true" onAction="#OpenBoard"/>
+            <Button fx:id="Mensa" alignment="TOP_CENTER" layoutX="880" layoutY="478" onAction="#OpenBoard" prefHeight="142" prefWidth="258" style="-fx-background-color: #1a1f2b; -fx-border-color: #ffa657; -fx-border-width: 2; -fx-border-radius: 6; -fx-background-radius: 6; -fx-text-fill: #ffa657; -fx-font-weight: bold; -fx-font-size: 12; -fx-padding: 12 5 5 5;" text="MENSA" wrapText="true" />
             <!-- Tavoli rotondi -->
             <Circle fill="TRANSPARENT" layoutX="930" layoutY="535" opacity="0.35" radius="14" stroke="#ffa657" strokeWidth="1.0" />
             <Circle fill="#8b949e" layoutX="930" layoutY="521" radius="3" />
@@ -391,7 +362,7 @@
                  ════════════════════════════════ -->
 
             <!-- Vano Scale -->
-            <Rectangle arcHeight="4" arcWidth="4" fill="#1a1f2b" height="65" layoutX="296" layoutY="30" stroke="#484f58" strokeWidth="1.5" width="82" />
+            <Rectangle arcHeight="4" arcWidth="4" fill="#1a1f2b" height="65" layoutX="296" layoutY="30" onMouseClicked="#GoSotteranei" stroke="#484f58" strokeWidth="1.5" width="82" />
             <Text fill="#484f58" layoutX="315" layoutY="50" text="SCALE">
                 <font><Font name="System Bold" size="9.0" /></font>
             </Text>
