@@ -1,6 +1,6 @@
 package it.unicam.cs.mpgc.RPG122755.controller;
 
-import it.unicam.cs.mpgc.RPG122755.gestione.GestioneIntro;
+import it.unicam.cs.mpgc.RPG122755.gestione.GestioneTesti;
 import it.unicam.cs.mpgc.RPG122755.model.Testi;
 import it.unicam.cs.mpgc.RPG122755.model.TypeTesto;
 import javafx.animation.KeyFrame;
@@ -28,7 +28,7 @@ public class IntroController {
 
     @FXML
     private void initialize() {
-        GestioneIntro gestiontesti = new GestioneIntro();
+        GestioneTesti gestiontesti = new GestioneTesti();
         testi= gestiontesti.ReadTesti(TypeTesto.StartGame);
         if (testi.isEmpty()){
             return;
@@ -39,6 +39,7 @@ public class IntroController {
     }
 
     private void animaTesto(String testo) {
+        btnAvanti.setVisible(false);
         Timeline timeline = new Timeline();
         for (int i = 0; i < testo.length(); i++) {
             final int index = i;

@@ -5,6 +5,4 @@ public enum TypeTesto {
     EndGame,
     SotteraneoChiave,
     SotteraneoNoChiave,
-    Stanza,
-    CartellaClinica,
 }

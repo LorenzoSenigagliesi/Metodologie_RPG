@@ -23,15 +23,18 @@ import java.util.Random;
 public class GestioneGameBoard {
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
     private static FXMLLoader loader;
+    private static boolean Special;
     private static final String FILE_Eventi = "src/main/resources/FileJson/Eventi.json";
     private static final String FILE_Scelte = "src/main/resources/FileJson/Scelte.json";
     private static List<Eventi> Eventi;
+    private static List<Eventi> EventiSpeciali;
     private static List<Scelte> Scelte;
     private int NEvento;
     private GestioneOspedale ospedale= new GestioneOspedale();
 
     public GestioneGameBoard(TypeReparto reparto) {
         Eventi = ReadEventi(reparto);
+        EventiSpeciali = ReadEventi(TypeReparto.Special);
     }
 
     public GestioneGameBoard() { }
@@ -90,12 +93,24 @@ public class GestioneGameBoard {
     }
 
     public void GenerateEvento(){
+        Special = false;
         Random random = new Random();
-        NEvento = random.nextInt(0, Eventi.size()-1);
+        if (ospedale.getOspedale().getScelteFatte() == 6)
+        {
+            Special = true;
+            NEvento = random.nextInt(0, EventiSpeciali.size()-1);
+        } else {
+            NEvento = random.nextInt(0, Eventi.size()-1);
+        }
     }
 
     public Eventi getEvento()
     {
+        if (Special)
+        {
+            return EventiSpeciali.get(NEvento);
+        }
+
         return Eventi.get(NEvento);
     }
 }

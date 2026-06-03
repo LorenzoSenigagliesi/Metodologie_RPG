@@ -14,7 +14,7 @@ import java.io.Reader;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GestioneIntro {
+public class GestioneTesti {
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
     private static FXMLLoader loader;
     private static final String FILE_Ospedale = "src/main/resources/FileJson/Testi.json";

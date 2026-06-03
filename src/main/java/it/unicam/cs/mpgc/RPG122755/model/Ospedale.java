@@ -6,8 +6,22 @@ public class Ospedale {
     private int MoralePersonale;
     private int QualitaCure;
     private int ScelteFatte;
+    private boolean Chiave;
+
+    public void setScelteFatte(int scelteFatte) {
+        ScelteFatte = scelteFatte;
+    }
+
+    public boolean getChiave() {
+        return Chiave;
+    }
+
+    public void setChiave(boolean chiave) {
+        Chiave = chiave;
+    }
 
     public Ospedale(){
+        Chiave = false;
         FiduciaPazienti = 5;
         Budget = 5;
         MoralePersonale = 5;

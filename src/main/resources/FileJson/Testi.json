@@ -15,8 +15,23 @@
     "tipo": "StartGame"
   },
   {
-    "id": 3,
-    "testo": "Mentre l'assistente esce trovi un biglietto nella tasca.\nDentro cè scritto:\n\"non fidarti di nessuno\"",
-    "tipo": "StartGame"
+  "id": 4,
+  "testo": "Mentre l'assistente esce trovi un biglietto nella tasca.\nDentro cè scritto:\n\"non fidarti di nessuno\"",
+  "tipo": "StartGame"
+  },
+  {
+    "id": 5,
+    "testo": "TU: Questo posto è inquietante. non pensavo esistesse un posto del genere",
+    "tipo": "SotteraneoNoChiave"
+  },
+  {
+    "id": 6,
+    "testo": "TU: La porta sembra chiusa a chiave... e dal vetro non vedo nulla",
+    "tipo": "SotteraneoNoChiave"
+  },
+  {
+    "id": 7,
+    "testo": "TU: Meglio tornare sopra prima che qualcuno mi cerchi",
+    "tipo": "SotteraneoNoChiave"
   }
 ]
