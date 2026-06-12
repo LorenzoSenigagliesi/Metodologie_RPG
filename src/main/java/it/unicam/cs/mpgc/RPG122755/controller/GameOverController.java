@@ -40,7 +40,7 @@ public class GameOverController {
     public void ReloadGame(ActionEvent event) throws IOException {
         GestioneOspedale gestioneOspedale = new GestioneOspedale();
         gestioneOspedale.StartGame();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Fxml/PiantaOspedale.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Fxml/Intro.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root, 1200, 800);
         if (root instanceof Region region) {

@@ -7,6 +7,12 @@ plugins {
 group = 'it.unicam.cs.mpgc'
 version = '1.0-SNAPSHOT'
 
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(25)
+    }
+}
+
 repositories {
     mavenCentral()
 }
@@ -14,8 +20,8 @@ repositories {
 dependencies {
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
-    implementation("org.openjfx:javafx-controls:21.0.7")
-    implementation("org.openjfx:javafx-fxml:21.0.7")
+    implementation("org.openjfx:javafx-controls:25")
+    implementation("org.openjfx:javafx-fxml:25")
     implementation 'com.google.code.gson:gson:2.10.1'
     implementation('com.calendarfx:view:11.8.3')
     implementation("org.controlsfx:controlsfx:8.0.5")
@@ -26,7 +32,7 @@ test {
 }
 
 javafx {
-    version = "21.0.7"
+    version = "25"
     modules = [ 'javafx.controls', 'javafx.fxml' ]
 }
 

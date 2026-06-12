@@ -33,5 +33,15 @@
     "id": 7,
     "testo": "TU: Meglio tornare sopra prima che qualcuno mi cerchi",
     "tipo": "SotteraneoNoChiave"
+  },
+  {
+    "id": 8,
+    "testo": "TU: C-cosa è successo? sono di nuovo in ufficio...",
+    "tipo": "Respawn"
+  },
+  {
+    "id": 9,
+    "testo": "Assistente: Buongiorno, Direttore.\nHa di nuovo fatto le ore piccole?!",
+    "tipo": "Respawn"
   }
 ]

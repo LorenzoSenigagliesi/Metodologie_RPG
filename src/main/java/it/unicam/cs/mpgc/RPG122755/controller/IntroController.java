@@ -1,5 +1,6 @@
 package it.unicam.cs.mpgc.RPG122755.controller;
 
+import it.unicam.cs.mpgc.RPG122755.gestione.GestioneOspedale;
 import it.unicam.cs.mpgc.RPG122755.gestione.GestioneTesti;
 import it.unicam.cs.mpgc.RPG122755.model.Testi;
 import it.unicam.cs.mpgc.RPG122755.model.TypeTesto;
@@ -25,11 +26,17 @@ public class IntroController {
     @FXML private Label LabelTesto;
     @FXML private Button btnAvanti;
     private static List<Testi> testi;
+    GestioneOspedale gestioneOspedale = new GestioneOspedale();
 
     @FXML
     private void initialize() {
         GestioneTesti gestiontesti = new GestioneTesti();
-        testi= gestiontesti.ReadTesti(TypeTesto.StartGame);
+        if (gestioneOspedale.getOspedale().getScelteFatte() == 0) {
+            testi = gestiontesti.ReadTesti(TypeTesto.StartGame);
+        }else{
+            testi = gestiontesti.ReadTesti(TypeTesto.Respawn);
+        }
+
         if (testi.isEmpty()){
             return;
         }
