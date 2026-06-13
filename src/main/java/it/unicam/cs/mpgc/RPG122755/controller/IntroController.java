@@ -2,6 +2,8 @@ package it.unicam.cs.mpgc.RPG122755.controller;
 
 import it.unicam.cs.mpgc.RPG122755.gestione.GestioneOspedale;
 import it.unicam.cs.mpgc.RPG122755.gestione.GestioneTesti;
+import it.unicam.cs.mpgc.RPG122755.gestione.IGestioneOspedale;
+import it.unicam.cs.mpgc.RPG122755.gestione.IGestioneTesti;
 import it.unicam.cs.mpgc.RPG122755.model.Testi;
 import it.unicam.cs.mpgc.RPG122755.model.TypeTesto;
 import javafx.animation.KeyFrame;
@@ -26,18 +28,17 @@ public class IntroController {
     @FXML private Label LabelTesto;
     @FXML private Button btnAvanti;
     private static List<Testi> testi;
-    GestioneOspedale gestioneOspedale = new GestioneOspedale();
+    private IGestioneOspedale gestioneOspedale = GestioneOspedale.getInstance();
 
     @FXML
     private void initialize() {
-        GestioneTesti gestiontesti = new GestioneTesti();
+        IGestioneTesti gestiontesti = new GestioneTesti();
         if (gestioneOspedale.getOspedale().getScelteFatte() == 0) {
             testi = gestiontesti.ReadTesti(TypeTesto.StartGame);
-        }else{
+        } else {
             testi = gestiontesti.ReadTesti(TypeTesto.Respawn);
         }
-
-        if (testi.isEmpty()){
+        if (testi.isEmpty()) {
             return;
         }
         String testo = testi.getFirst().getTesto();
@@ -60,19 +61,16 @@ public class IntroController {
         timeline.play();
     }
 
-
     @FXML
     private void avanti(ActionEvent event) throws IOException {
-        if (testi.isEmpty())
-        {
+        if (testi.isEmpty()) {
             CambiaScena(event);
-        }else{
+        } else {
             String testo = testi.getFirst().getTesto();
             testi.remove(testi.getFirst());
             animaTesto(testo);
         }
     }
-
 
     private void CambiaScena(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/Fxml/PiantaOspedale.fxml"));

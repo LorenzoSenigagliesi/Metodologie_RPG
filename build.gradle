@@ -23,7 +23,6 @@ dependencies {
     implementation("org.openjfx:javafx-controls:25")
     implementation("org.openjfx:javafx-fxml:25")
     implementation 'com.google.code.gson:gson:2.10.1'
-    implementation('com.calendarfx:view:11.8.3')
     implementation("org.controlsfx:controlsfx:8.0.5")
 }
 

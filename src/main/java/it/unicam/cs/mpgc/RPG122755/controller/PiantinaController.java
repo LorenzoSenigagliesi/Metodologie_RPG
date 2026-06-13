@@ -3,6 +3,9 @@ package it.unicam.cs.mpgc.RPG122755.controller;
 import it.unicam.cs.mpgc.RPG122755.gestione.GestioneGameBoard;
 import it.unicam.cs.mpgc.RPG122755.gestione.GestioneOspedale;
 import it.unicam.cs.mpgc.RPG122755.gestione.GestioneSeminterrato;
+import it.unicam.cs.mpgc.RPG122755.gestione.IGestioneGameBoard;
+import it.unicam.cs.mpgc.RPG122755.gestione.IGestioneOspedale;
+import it.unicam.cs.mpgc.RPG122755.gestione.IGestioneSeminterrato;
 import it.unicam.cs.mpgc.RPG122755.model.TypeReparto;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
@@ -29,15 +32,15 @@ public class PiantinaController {
         Node source = (Node) event.getSource();
         String id = source.getId();
         Stage stage = (Stage) source.getScene().getWindow();
-        GestioneGameBoard Board = new GestioneGameBoard(TypeReparto.valueOf(id));
-        Board.LoadInterface(stage);
+        IGestioneGameBoard board = new GestioneGameBoard(TypeReparto.valueOf(id));
+        board.LoadInterface(stage);
     }
 
     @FXML
     public void OpenSeminterrato(javafx.event.ActionEvent event) throws IOException {
         Node source = (Node) event.getSource();
         Stage stage = (Stage) source.getScene().getWindow();
-        GestioneSeminterrato gestioneSeminterrato = new GestioneSeminterrato();
+        IGestioneSeminterrato gestioneSeminterrato = new GestioneSeminterrato();
         gestioneSeminterrato.LoadInterface(stage);
     }
 
@@ -47,13 +50,12 @@ public class PiantinaController {
                 || LabelStatoGenerale == null) {
             return;
         }
-        GestioneOspedale gestioneOspedale = new GestioneOspedale();
+        IGestioneOspedale gestioneOspedale = GestioneOspedale.getInstance();
         var ospedale = gestioneOspedale.getOspedale();
         LabelFiduciaPazienti.setText("Fiducia: " + ospedale.getFiduciaPazienti());
         LabelBudgetOperativo.setText("Budget: " + ospedale.getBudget());
         LabelMoralePersonale.setText("Morale: " + ospedale.getMoralePersonale());
         LabelQualitaCure.setText("Qualità: " + ospedale.getQualitaCure());
-
         int minimo = Math.min(Math.min(ospedale.getFiduciaPazienti(), ospedale.getBudget()),
                 Math.min(ospedale.getMoralePersonale(), ospedale.getQualitaCure()));
         if (minimo > 70) {

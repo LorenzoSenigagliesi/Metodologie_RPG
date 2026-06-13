@@ -1,6 +1,8 @@
 package it.unicam.cs.mpgc.RPG122755.controller;
-import it.unicam.cs.mpgc.RPG122755.gestione.GestioneSeminterrato;
+
 import it.unicam.cs.mpgc.RPG122755.gestione.GestioneTesti;
+import it.unicam.cs.mpgc.RPG122755.gestione.IGestioneSeminterrato;
+import it.unicam.cs.mpgc.RPG122755.gestione.IGestioneTesti;
 import it.unicam.cs.mpgc.RPG122755.model.Testi;
 import it.unicam.cs.mpgc.RPG122755.model.TypeTesto;
 import javafx.animation.KeyFrame;
@@ -23,20 +25,19 @@ import java.io.IOException;
 import java.util.List;
 
 public class SeminterratoController {
-    private GestioneSeminterrato gestioneseminterrato;
+    private IGestioneSeminterrato gestioneseminterrato;
     private static List<Testi> testi;
     @FXML private ImageView imgScena;
     @FXML private Label LabelTesto;
     @FXML private Button btnAvanti;
 
-    public void setSeminterrato(GestioneSeminterrato gestioneseminterrato , boolean chiave){
+    public void setSeminterrato(IGestioneSeminterrato gestioneseminterrato, boolean chiave) {
         this.gestioneseminterrato = gestioneseminterrato;
-        GestioneTesti gestioneTesti = new GestioneTesti();
+        IGestioneTesti gestioneTesti = new GestioneTesti();
         imgScena.setImage(new Image(getClass().getResourceAsStream("/immagini/Seminterrato.jpeg")));
-
         if (chiave) {
             testi = gestioneTesti.ReadTesti(TypeTesto.SotteraneoChiave);
-        } else{
+        } else {
             testi = gestioneTesti.ReadTesti(TypeTesto.SotteraneoNoChiave);
         }
         String testo = testi.getFirst().getTesto();
@@ -61,10 +62,9 @@ public class SeminterratoController {
 
     @FXML
     private void Avanti(ActionEvent event) throws IOException {
-        if (testi.isEmpty())
-        {
+        if (testi.isEmpty()) {
             CambiaScena(event);
-        }else{
+        } else {
             String testo = testi.getFirst().getTesto();
             testi.remove(testi.getFirst());
             animaTesto(testo);

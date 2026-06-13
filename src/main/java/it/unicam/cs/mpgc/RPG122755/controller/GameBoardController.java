@@ -1,8 +1,10 @@
 package it.unicam.cs.mpgc.RPG122755.controller;
 
-import it.unicam.cs.mpgc.RPG122755.gestione.GestioneGameBoard;
 import it.unicam.cs.mpgc.RPG122755.gestione.GestioneGameOver;
 import it.unicam.cs.mpgc.RPG122755.gestione.GestioneOspedale;
+import it.unicam.cs.mpgc.RPG122755.gestione.IGestioneGameBoard;
+import it.unicam.cs.mpgc.RPG122755.gestione.IGestioneGameOver;
+import it.unicam.cs.mpgc.RPG122755.gestione.IGestioneOspedale;
 import it.unicam.cs.mpgc.RPG122755.model.Eventi;
 import it.unicam.cs.mpgc.RPG122755.model.Ospedale;
 import it.unicam.cs.mpgc.RPG122755.model.Scelte;
@@ -19,8 +21,8 @@ import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Region;
 import javafx.stage.Stage;
-import java.io.IOException;
 
+import java.io.IOException;
 import java.util.List;
 
 public class GameBoardController {
@@ -34,7 +36,8 @@ public class GameBoardController {
     private final StringProperty testoMoralePersonale = new SimpleStringProperty();
     private final StringProperty testoBudgetOperativo = new SimpleStringProperty();
     private final StringProperty testoFiduciaPazienti = new SimpleStringProperty();
-    GestioneGameBoard gestioneGameBoard;
+    private IGestioneGameBoard gestioneGameBoard;
+    private IGestioneOspedale gestioneOspedale = GestioneOspedale.getInstance();
     @FXML private Label LabelEvento;
     @FXML private Label LabelScelta1;
     @FXML private Label LabelScelta2;
@@ -49,20 +52,18 @@ public class GameBoardController {
 
     @FXML
     private void initialize() {
-        // Imposta solo i binding — le label @FXML sono pronte qui
         LabelEvento.textProperty().bind(testoEvento);
         LabelScelta1.textProperty().bind(testoScelta1);
         LabelScelta2.textProperty().bind(testoScelta2);
         LabelEffettiScelta1.textProperty().bind(testoEffettiScelta1);
         LabelEffettiScelta2.textProperty().bind(testoEffettiScelta2);
-
         LabelQualitaCure.textProperty().bind(testoQualitaCure);
         LabelMoralePersonale.textProperty().bind(testoMoralePersonale);
         LabelBudgetOperativo.textProperty().bind(testoBudgetOperativo);
         LabelFiduciaPazienti.textProperty().bind(testoFiduciaPazienti);
     }
 
-    public void setGestioneGameBoard(GestioneGameBoard gestione) {
+    public void setGestioneGameBoard(IGestioneGameBoard gestione) {
         this.gestioneGameBoard = gestione;
         Update();
     }
@@ -71,18 +72,17 @@ public class GameBoardController {
     private void RunScelta(MouseEvent event) throws IOException {
         if (!event.getButton().equals(MouseButton.PRIMARY))
             return;
-        GestioneOspedale ospedale = new GestioneOspedale();
-        int SceltaIndex = 0;
+        int sceltaIndex = 0;
         String id = ((Node) event.getSource()).getId();
         if (id.equals("cartaDestra")) {
-            SceltaIndex = 1;
+            sceltaIndex = 1;
         }
-        Scelte Scelta = gestioneGameBoard.ReadScelte().get(SceltaIndex);
-        if (ospedale.ChangeParameters(Scelta.getFiduciaPazienti(),Scelta.getBudget(),Scelta.getMoralePersonale(),Scelta.getQualitaCure())) {
+        Scelte scelta = gestioneGameBoard.ReadScelte().get(sceltaIndex);
+        if (gestioneOspedale.ChangeParameters(scelta.getFiduciaPazienti(), scelta.getBudget(), scelta.getMoralePersonale(), scelta.getQualitaCure())) {
             gestioneGameBoard.GenerateEvento();
             Update();
-        }else{
-            GestioneGameOver gameOver = new GestioneGameOver();
+        } else {
+            IGestioneGameOver gameOver = new GestioneGameOver();
             Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             gameOver.LoadInterface(currentStage);
         }
@@ -102,27 +102,24 @@ public class GameBoardController {
     }
 
     private void FillLabel() {
-        GestioneOspedale Gestioneospedale = new GestioneOspedale();
-        List<Scelte> Scelte = gestioneGameBoard.ReadScelte();
-        if (!Scelte.isEmpty()) {
-            testoScelta1.set(Scelte.get(0).getDescription());
-            testoScelta2.set(Scelte.get(1).getDescription());
-            testoEffettiScelta1.set(Scelte.get(0).toString());
-            testoEffettiScelta2.set(Scelte.get(1).toString());
+        List<Scelte> scelte = gestioneGameBoard.ReadScelte();
+        if (!scelte.isEmpty()) {
+            testoScelta1.set(scelte.get(0).getDescription());
+            testoScelta2.set(scelte.get(1).getDescription());
+            testoEffettiScelta1.set(scelte.get(0).toString());
+            testoEffettiScelta2.set(scelte.get(1).toString());
         }
-
-        Ospedale ospedale = Gestioneospedale.getOspedale();
+        Ospedale ospedale = gestioneOspedale.getOspedale();
         testoQualitaCure.set(ospedale.getQualitaCure() + "/10");
         testoMoralePersonale.set(ospedale.getMoralePersonale() + "/10");
         testoBudgetOperativo.set(ospedale.getBudget() + "/10");
         testoFiduciaPazienti.set(ospedale.getFiduciaPazienti() + "/10");
     }
 
-    private void Update(){
-        gestioneGameBoard.GenerateEvento();;
+    private void Update() {
+        gestioneGameBoard.GenerateEvento();
         Evento = gestioneGameBoard.getEvento();
         testoEvento.set(Evento.getDescription());
         FillLabel();
     }
-
 }
